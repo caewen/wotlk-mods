@@ -1,0 +1,33 @@
+------------------------------------------------------------------------
+r154 | xinhuan | 2010-01-04 02:14:53 +0000 (Mon, 04 Jan 2010) | 1 line
+Changed paths:
+   M /trunk/BankItems.lua
+
+Items with the same name but with different itemIDs (such as heroic and non-heroic versions of the same item) are now treated as different items in the tooltips.
+------------------------------------------------------------------------
+r153 | xinhuan | 2010-01-03 13:23:27 +0000 (Sun, 03 Jan 2010) | 1 line
+Changed paths:
+   M /trunk/BankItems.lua
+
+Fix error attempt to index field 'Bag100' (a nil value) for fresh characters or fresh install.
+------------------------------------------------------------------------
+r152 | xinhuan | 2009-12-28 16:13:09 +0000 (Mon, 28 Dec 2009) | 1 line
+Changed paths:
+   M /trunk/BankItems.lua
+
+Fix bug where ammo is not registering as unequipped when you unequip ammo.
+------------------------------------------------------------------------
+r150 | xinhuan | 2009-12-24 02:19:18 +0000 (Thu, 24 Dec 2009) | 1 line
+Changed paths:
+   M /trunk/BankItems.lua
+   M /trunk/BankItems.toc
+
+Add support for oGlow (github version - http://github.com/haste/oGlow, not the wowinterface one)
+------------------------------------------------------------------------
+r149 | xinhuan | 2009-12-24 01:04:24 +0000 (Thu, 24 Dec 2009) | 1 line
+Changed paths:
+   M /trunk/BankItems.lua
+   M /trunk/BankItems.toc
+
+Ammo will no longer count double when equipped.
+------------------------------------------------------------------------

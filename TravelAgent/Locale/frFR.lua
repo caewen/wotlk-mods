@@ -1,0 +1,26 @@
+﻿local L = LibStub("AceLocale-3.0"):NewLocale("TravelAgent", "frFR")
+
+if not L then return end
+
+L["Control+Left-click to toggle Atlas."] = "Ctrl+Clic gauche pour afficher/cacher Atlas."
+L["Datafeed"] = "Source de données"
+L["Displays the coordinates of the current location."] = "Affiche les coordonnées de la position actuelle."
+L["Displays the name of the current subzone."] = "Affiche le nom de la région actuelle."
+L["Displays the name of the current zone."] = "Affiche le nom de la zone actuelle."
+L["Draws the icon on the minimap."] = "Affiche l'icône sur la minicarte."
+L["Hide Hint Text"] = "Cacher les astuces"
+L["Hides the hint text at the bottom of the tooltip."] = "Cache le texte des astuces du bas de la bulle d'aide."
+L["Left-click to open the World Map."] = "Clic gauche pour ouvrir la carte du monde."
+L["Minimap Icon"] = "Icône de la minicarte"
+L["Move the slider to adjust the scale of the tooltip."] = "Définit l'échelle de la bulle d'aide."
+L["Move the slider to adjust the tooltip fade time."] = "Définit la durée du fondu de la bulle d'aide."
+L["Recommended Instances"] = "Instances recommandées"
+L["Recommended Zones"] = "Zones recommandées"
+L["Right-click to open configuration menu."] = "Clic droit pour ouvrir le menu de configuration."
+L["Shift+Left-click to announce your location."] = "Shift+Clic gauche pour annoncer votre position."
+L["Show Coordinates"] = "Afficher les coordonnées"
+L["Show Subzone Name"] = "Afficher le nom de la région"
+L["Show Zone Name"] = "Afficher le nom de la zone"
+L["Tooltip"] = "Bulle d'aide"
+L["Tooltip Scale"] = "Échelle de la bulle"
+L["Tooltip Timer"] = "Fondu de la bulle"

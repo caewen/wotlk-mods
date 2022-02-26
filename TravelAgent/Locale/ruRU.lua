@@ -1,0 +1,26 @@
+﻿local L = LibStub("AceLocale-3.0"):NewLocale("TravelAgent", "ruRU", true)
+
+if not L then return end
+
+L["Control+Left-click to toggle Atlas."] = "Ctrl-ЛКМ - включить Atlas"
+L["Datafeed"] = "Источник данных"
+L["Displays the coordinates of the current location."] = "Отображение координат текущего положения персонажа."
+L["Displays the name of the current subzone."] = "Отображение названия текущей подзоны."
+L["Displays the name of the current zone."] = "Отображение названия текущей зоны."
+L["Draws the icon on the minimap."] = "Отображает иконку у миникарты."
+L["Hide Hint Text"] = "Скрыть текст подсказки"
+L["Hides the hint text at the bottom of the tooltip."] = "Отключение подсказки в информационном окне."
+L["Left-click to open the World Map."] = "ЛКМ - открыть карту мира"
+L["Minimap Icon"] = "Иконка у миникарты"
+L["Move the slider to adjust the scale of the tooltip."] = "Перемещение ползунка изменяет масштаб информационного окна."
+L["Move the slider to adjust the tooltip fade time."] = "Перемещение ползунка изменяет время затухания информационного окна."
+L["Recommended Instances"] = "Рекомендованные подземелья"
+L["Recommended Zones"] = "Рекомендованные зоны"
+L["Right-click to open configuration menu."] = "ПКМ - открыть окно настроек."
+L["Shift+Left-click to announce your location."] = "Shift-ЛКМ - сообщить ваши координаты"
+L["Show Coordinates"] = "Отображение координат"
+L["Show Subzone Name"] = "Отобразить название подзоны"
+L["Show Zone Name"] = "Отобразить название зоны"
+L["Tooltip"] = "Информационное окно"
+L["Tooltip Scale"] = "Масштаб информационного окна"
+L["Tooltip Timer"] = "Таймер информационного окна"

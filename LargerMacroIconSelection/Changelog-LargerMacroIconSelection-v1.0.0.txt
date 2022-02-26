@@ -1,0 +1,15 @@
+------------------------------------------------------------------------
+r33 | xinhuan | 2010-10-12 21:58:09 +0000 (Tue, 12 Oct 2010) | 1 line
+Changed paths:
+   A /tags/v1.0.0 (from /trunk:32)
+
+Well ok, I can't retag v1.0, so how about v1.0.0?
+------------------------------------------------------------------------
+r32 | xinhuan | 2010-10-12 21:56:00 +0000 (Tue, 12 Oct 2010) | 2 lines
+Changed paths:
+   M /trunk/LargerMacroIconSelection.lua
+   M /trunk/LargerMacroIconSelection.toc
+
+Update 1 digit in the TOC (interface number).
+Update 2 digits in the code comments (copyright year).
+------------------------------------------------------------------------

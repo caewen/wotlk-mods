@@ -1,0 +1,24 @@
+## Interface: 30300
+## Title: TravelAgent
+## Notes: Gives detailed descriptions of particular localities, as zones or instances, and provides optional TomTom integration.
+## Author: Torhal
+## Version: 3.3.5-1.0.7
+## X-Date: 2010-08-11T20:34:32Z
+## X-Email: torhal-wow@googlegroups.com
+## X-Category: Map & Minimap, Plugins: Data Broker
+## OptionalDeps: Ace3, LibBabble-Zone-3.0, LibQTip-1.0, LibTourist-3.0, LibDBIcon-1.0, TomTom, TipTac, Atlas
+## SavedVariables: TravelAgentDB
+## X-Curse-Packaged-Version: 3.3.5-1.0.7
+## X-Curse-Project-Name: TravelAgent
+## X-Curse-Project-ID: travelagent
+## X-Curse-Repository-ID: wow/travelagent/mainline
+
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: Delayed
+
+#@no-lib-strip@
+embeds.xml
+#@end-no-lib-strip@
+
+locale.xml
+TravelAgent.lua

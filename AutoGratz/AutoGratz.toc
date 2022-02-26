@@ -1,0 +1,12 @@
+## Interface: 30300
+## Title: AutoGratz
+## Notes: Automatically says Gratz to people if they say ding in guild or party chat, get an achievement, or whisper you ding.
+## Author: Spectre
+## Version: 1.3
+## SavedVariables: AutoGratzDB
+## OptionalDeps: Ace3
+
+embeds.xml
+
+Locale-enUS.lua
+Core.lua

@@ -1,0 +1,23 @@
+------------------------------------------------------------------------
+r51 | elkano | 2010-06-04 09:53:06 +0000 (Fri, 04 Jun 2010) | 1 line
+Changed paths:
+   M /trunk/ItemDB.toc
+
+pushed version to 2.0.4
+------------------------------------------------------------------------
+r50 | elkano | 2010-06-04 09:51:41 +0000 (Fri, 04 Jun 2010) | 1 line
+Changed paths:
+   M /trunk/ItemDB.lua
+   M /trunk/ItemDB.toc
+   M /trunk/ItemDB_Browser.xml
+   M /trunk/localization.lua
+
+fixed layout
+------------------------------------------------------------------------
+r49 | elkano | 2009-09-18 07:32:26 +0000 (Fri, 18 Sep 2009) | 2 lines
+Changed paths:
+   M /trunk/ItemDB.lua
+
+name search for item:x or spell:x will now show an entry for that item/spell, only
+this can be used to lookup items by id
+------------------------------------------------------------------------

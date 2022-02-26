@@ -1,0 +1,26 @@
+﻿local L = LibStub("AceLocale-3.0"):NewLocale("TravelAgent", "zhCN", false);
+
+if not L then return end
+
+L["Control+Left-click to toggle Atlas."] = "Control+左键点击切换地图。"
+L["Datafeed"] = "资料回授"
+L["Displays the coordinates of the current location."] = "显示当前的坐标位置。"
+L["Displays the name of the current subzone."] = "显示当前子区域的名称。"
+L["Displays the name of the current zone."] = "显示当前区域的名称。"
+L["Draws the icon on the minimap."] = "在小地图上增加图标。"
+L["Hide Hint Text"] = "隐藏提示文本"
+L["Hides the hint text at the bottom of the tooltip."] = "隐藏的提示文本底部的提示。"
+L["Left-click to open the World Map."] = "左键点击开启世界地图"
+L["Minimap Icon"] = "小地图图示"
+L["Move the slider to adjust the scale of the tooltip."] = "移动滑块来调整规模的提示。"
+L["Move the slider to adjust the tooltip fade time."] = "移动滑块来调整提示渐隐时间。"
+L["Recommended Instances"] = "推荐副本"
+L["Recommended Zones"] = "推荐区域"
+L["Right-click to open configuration menu."] = "右键点击开启设定选单。"
+L["Shift+Left-click to announce your location."] = "Shift+左键点击通报你的位置。"
+L["Show Coordinates"] = "显示坐标"
+L["Show Subzone Name"] = "查看子区域名称"
+L["Show Zone Name"] = "显示区域名称"
+L["Tooltip"] = "提示"
+L["Tooltip Scale"] = "缩放提示"
+L["Tooltip Timer"] = "提示定时器"

@@ -1,0 +1,15 @@
+------------------------------------------------------------------------
+r58 | Nickenyfiken | 2010-09-28 18:06:46 +0000 (Tue, 28 Sep 2010) | 1 line
+Changed paths:
+   M /trunk/Core.lua
+
+Fix error (in Cata?) where the item link sometimes is not available.
+------------------------------------------------------------------------
+r57 | Nickenyfiken | 2010-09-10 17:04:47 +0000 (Fri, 10 Sep 2010) | 2 lines
+Changed paths:
+   M /trunk/Core.lua
+   M /trunk/QuestItemBar.toc
+
+-Only set key binding if item is usable.
+-X-Compatible-With: 40000
+------------------------------------------------------------------------

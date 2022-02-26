@@ -1,0 +1,19 @@
+## Interface: 30300
+## X-Curse-Packaged-Version: r37
+## X-Curse-Project-Name: LibInventory-2.1
+## X-Curse-Project-ID: libinventory-2-1
+## X-Curse-Repository-ID: wow/libinventory-2-1/mainline
+
+## Title: Lib: Inventory-2.1
+## Notes: A library that maintains a cache of items and their types.
+## Author: Elkano
+## Version: 2.1-37
+## X-Website: http://www.wowace.com/projects/libinventory-2-1/
+## X-Category: Library
+## LoadOnDemand: 1
+
+## X-Revision: 37
+## X-Date: 2010-03-09T10:03:47Z
+
+LibStub\LibStub.lua
+lib.xml
