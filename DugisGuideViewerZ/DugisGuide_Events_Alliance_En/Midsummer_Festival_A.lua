@@ -1,147 +1,148 @@
 DugisGuideViewer:RegisterGuide("Midsummer Festival Azeroth (50+)", nil, "Alliance", "D", function() 
 return [[
+AAA
 
-N Manual Tick Required |N|Due to the unique nature of the Midsummer event, DugisGuideViewerZ is currently unable to automatically detect the quest and you will need to tick the completed quest manually. We are working on a solution|
-R Darnassus |N|Begin at Darnassus|
+KJ^kr^iQf`hObnrfobayKyArbqlqebrkfnrbk^qroblcqebJfaprjjbobsbkq)ArdfpDrfabSfbtboWfp`roobkqivrk^_ibql^rqlj^qf`^iivabqb`qqebnrbpq^kavlrtfiikbbaqlqf`hqeb`ljmibqbanrbpqj^kr^iiv+Tb^obtlohfkdlk^plirqflky
+OA^ok^pprpyKy?bdfk^qA^ok^pprpy
 
-A Honor the Flame (Dolanaar) |N| (55, 60)| |QID|11824| |Z|Teldrassil| |E|
-R Teldrassil |N|Run back to Darnassus and take the portal (28.8, 46) to Rut'theran Village| |Z|Darnassus|
-F Auberdine |N|Fly to Auberdine, (54.8, 94)| |Z|Teldrassil|
-h Auberdine |N|Set your Hearthstone to Auberdine, Innkeeper Shaussiy (37, 44.1)| |Z|Darkshore|
-b Azuremyst Isle |N|Take the Boat to Azuremyst Isle, (30.7, 41)| |Z|Darkshore|
-A Honor the Flame (Azure Watch) |N|Azuremyst Isle (44, 53)| |Z|Azuremyst Isle| |QID|11806| |E|
-A Honor the Flame (Blood Watch) |N|Bloodmyst Isle (55, 69)| |Z|Bloodmyst Isle| |QID|11809| |E|
-H Auberdine |N|Hearth back to Auberdine| |U|6948|
-A Honor the Flame (Auberdine) |N|Darkshore (37, 46)| |Z|Darkshore| |QID|11811| |E|
+>ElkloqebCi^jb%Ali^k^^o&yKy%22)3-&yyNFAy..5/1yyWyQbiao^ppfiyyBy
+OQbiao^ppfiyKyOrk_^`hqlA^ok^pprp^kaq^hbqebmloq^i%/5+5)13&qlOrq$qebo^kSfii^dbyyWyA^ok^pprpy
+C>r_boafkbyKyCivql>r_boafkb)%21+5)61&yyWyQbiao^ppfiy
+e>r_boafkbyKyPbqvlroEb^oqepqlkbql>r_boafkb)FkkhbbmboPe^rppfv%04)11+.&yyWyA^ohpeloby
+_>wrobjvpqFpibyKyQ^hbqeb?l^qql>wrobjvpqFpib)%0-+4)1.&yyWyA^ohpeloby
+>ElkloqebCi^jb%>wrobT^q`e&yKy>wrobjvpqFpib%11)20&yyWy>wrobjvpqFpibyyNFAy..5-3yyBy
+>ElkloqebCi^jb%?illaT^q`e&yKy?illajvpqFpib%22)36&yyWy?illajvpqFpibyyNFAy..5-6yyBy
+E>r_boafkbyKyEb^oqe_^`hql>r_boafkbyyRy3615y
+>ElkloqebCi^jb%>r_boafkb&yKyA^ohpelob%04)13&yyWyA^ohpelobyyNFAy..5..yyBy
 
-F Everlook |N|Fly to Everlook, Caylais Moonfeather (36.4, 45.6)| |Z|Darkshore|
-A Desecrate this Fire! (Everlook) |N|Winterspring (59, 35)| |Z|Winterspring| |QID|11803| |E|
-A Honor the Flame (Everlook) |N|Winterspring (62, 35)| |Z|Winterspring| |QID|11834| |E|
+CBsboillhyKyCivqlBsboillh)@^vi^fpJllkcb^qebo%03+1)12+3&yyWyA^ohpeloby
+>Abpb`o^qbqefpCfob%Bsboillh&yKyTfkqbopmofkd%26)02&yyWyTfkqbopmofkdyyNFAy..5-0yyBy
+>ElkloqebCi^jb%Bsboillh&yKyTfkqbopmofkd%3/)02&yyWyTfkqbopmofkdyyNFAy..501yyBy
 
-F Astranaar |N|Fly to Astranaar, Maethrya (62.3, 36.6)| |Z|Winterspring|
-A Honor the Flame (Astranaar) |N|Ashenvale (38, 54)| |Z|Ashenvale| |QID|11805| |E|
-A Desecrate this Fire! (Splintertree Post) |N|Ashenvale (70, 69)| |Z|Ashenvale| |QID|11765| |E|
+C>pqo^k^^oyKyCivql>pqo^k^^o)J^bqeov^%3/+0)03+3&yyWyTfkqbopmofkdy
+>ElkloqebCi^jb%>pqo^k^^o&yKy>pebks^ib%05)21&yyWy>pebks^ibyyNFAy..5-2yyBy
+>Abpb`o^qbqefpCfob%PmifkqboqobbMlpq&yKy>pebks^ib%4-)36&yyWy>pebks^ibyyNFAy..432yyBy
 
-R The Barrens |N|Run South to The Barrens (48.3, 11.3)| |Z|The Barrens|
-A Desecrate this Fire! (Crossroads) |N|The Barrens (52, 28)| |Z|The Barrens| |QID|11783| |E|
+OQeb?^oobkpyKyOrkPlrqeqlQeb?^oobkp%15+0)..+0&yyWyQeb?^oobkpy
+>Abpb`o^qbqefpCfob%@olppol^ap&yKyQeb?^oobkp%2/)/5&yyWyQeb?^oobkpyyNFAy..450yyBy
 
-R Durotar |N|Run to Durotar (35.2, 42.4)| |Z|Durotar|
-A Desecrate this Fire! (Razor Hill) |N|Durotar (52, 47)| |Z|Durotar| |QID|11770| |E|
-N Steal [Flame of Orgrimmar] |N|Either sneak inside or just run in with your mount (46, 38)| |L|23179| |Z|Orgrimmar|
-A Stealing Orgrimmar's Flame |U|23179| |O| |QID|9324| |E|
-H Auberdine |N|Hearth back to Auberdine| |U|6948|
+OArolq^oyKyOrkqlArolq^o%02+/)1/+1&yyWyArolq^oy
+>Abpb`o^qbqefpCfob%O^wloEfii&yKyArolq^o%2/)14&yyWyArolq^oyyNFAy..44-yyBy
+KPqb^iXCi^jblcLodofjj^oZyKyBfqebopkb^hfkpfablogrpqorkfktfqevlrojlrkq%13)05&yyIy/0.46yyWyLodofjj^oy
+>Pqb^ifkdLodofjj^o$pCi^jbyRy/0.46yyLyyNFAy60/1yyBy
+E>r_boafkbyKyEb^oqe_^`hql>r_boafkbyyRy3615y
 
-F Stonetalon Peak |N|Fly to Everlook, Caylais Moonfeather (36.4, 45.6)| |Z|Darkshore|
-A Desecrate this Fire! (Sun Rock Retreat) |N|Stonetalon Mountains (50, 60)| |Z|Stonetalon Mountains| |QID|11780| |E|
-R Desolace |N|Run to Desolace (27, 85)| |Z|Stonetalon Mountains|
-A Honor the Flame (Nijel's Point) |N|Desolace (65, 17)| |Z|Desolace| |QID|11812| |E|
-A Desecrate this Fire! (Shadowprey Village) |N|Desolace (26, 76)| |Z|Desolace| |QID|11769| |E|
+CPqlkbq^ilkMb^hyKyCivqlBsboillh)@^vi^fpJllkcb^qebo%03+1)12+3&yyWyA^ohpeloby
+>Abpb`o^qbqefpCfob%PrkOl`hObqob^q&yKyPqlkbq^ilkJlrkq^fkp%2-)3-&yyWyPqlkbq^ilkJlrkq^fkpyyNFAy..45-yyBy
+OAbpli^`byKyOrkqlAbpli^`b%/4)52&yyWyPqlkbq^ilkJlrkq^fkpy
+>ElkloqebCi^jb%Kfgbi$pMlfkq&yKyAbpli^`b%32).4&yyWyAbpli^`byyNFAy..5./yyBy
+>Abpb`o^qbqefpCfob%Pe^altmobvSfii^db&yKyAbpli^`b%/3)43&yyWyAbpli^`byyNFAy..436yyBy
 
-R Feralas |N|Run to Feralas (45, 8.5)| |Z|Feralas|
-b Feathermoon |N|Use the boat at (43.4, 42.7)| |Z|Feralas|
-A Honor the Flame (Feathermoon Stronghold) |N|Feralas (28, 44)| |Z|Feralas| |QID|11817|  |E|
-F Thalanaar |N|Fly to Thalanaar (30.2, 43.3)| |Z|Feralas|
-A Desecrate this Fire! (Camp Mojache) |N|Feralas (72, 47)| |Z|Feralas| |QID|11773| |E|
-F Cenarion Hold |N|Fly to Cenarion Hold,  (89.5, 45.9)| |Z|Feralas|
+OCbo^i^pyKyOrkqlCbo^i^p%12)5+2&yyWyCbo^i^py
+_Cb^qebojllkyKyRpbqeb_l^q^q%10+1)1/+4&yyWyCbo^i^py
+>ElkloqebCi^jb%Cb^qebojllkPqolkdelia&yKyCbo^i^p%/5)11&yyWyCbo^i^pyyNFAy..5.4yyBy
+CQe^i^k^^oyKyCivqlQe^i^k^^o%0-+/)10+0&yyWyCbo^i^py
+>Abpb`o^qbqefpCfob%@^jmJlg^`eb&yKyCbo^i^p%4/)14&yyWyCbo^i^pyyNFAy..440yyBy
+C@bk^oflkEliayKyCivql@bk^oflkElia)%56+2)12+6&yyWyCbo^i^py
 
-A Desecrate this Fire! (Cenarion Hold) |N|Silithus (46, 44)| |Z|Silithus| |QID|11800| |E|
-A Honor the Flame (Cenarion Hold) |N|Silithus (57, 34)| |Z|Silithus| |QID|11831|  |E|
+>Abpb`o^qbqefpCfob%@bk^oflkElia&yKyPfifqerp%13)11&yyWyPfifqerpyyNFAy..5--yyBy
+>ElkloqebCi^jb%@bk^oflkElia&yKyPfifqerp%24)01&yyWyPfifqerpyyNFAy..50.yyBy
 
-F Thalanaar |N|Fly back to Thalanaar, Cloud Skydancer (50.6, 34.5)| |Z|Silithus|
-A Desecrate this Fire! (Freewind Post) |N|Thousand Needles (41, 52)| |Z|Thousand Needles| |QID|11785| |E|
+CQe^i^k^^oyKyCiv_^`hqlQe^i^k^^o)@ilraPhva^k`bo%2-+3)01+2&yyWyPfifqerpy
+>Abpb`o^qbqefpCfob%CobbtfkaMlpq&yKyQelrp^kaKbbaibp%1.)2/&yyWyQelrp^kaKbbaibpyyNFAy..452yyBy
 
-R Tanaris |N|Run to Tanaris (73.8, 96.1)| |Z|Thousand Needles|
-A Desecrate this Fire! (Gadgetzan) |N|Tanaris (49, 27)| |Z|Tanaris| |QID|11802| |E|
-A Honor the Flame (Gadgetzan) |N|Tanaris (52, 29)| |Z|Tanaris| |QID|11833| |E|
+OQ^k^ofpyKyOrkqlQ^k^ofp%40+5)63+.&yyWyQelrp^kaKbbaibpy
+>Abpb`o^qbqefpCfob%D^adbqw^k&yKyQ^k^ofp%16)/4&yyWyQ^k^ofpyyNFAy..5-/yyBy
+>ElkloqebCi^jb%D^adbqw^k&yKyQ^k^ofp%2/)/6&yyWyQ^k^ofpyyNFAy..500yyBy
 
-F Theramore Isle |N|Fly to Theramore Isle, Bera (51, 29.3)| |Z|Tanaris|
-A Honor the Flame (Theramore Isle) |N|Dustwallow Marsh (62, 40)| |Z|Dustwallow Marsh| |QID|11815| |E|
-A Desecrate this Fire! (Brackenwall Village) |N|Dustwallow Marsh (33, 30)| |Z|Dustwallow Marsh| |QID|11771| |E|
+CQebo^jlobFpibyKyCivqlQebo^jlobFpib)?bo^%2.)/6+0&yyWyQ^k^ofpy
+>ElkloqebCi^jb%Qebo^jlobFpib&yKyArpqt^iiltJ^ope%3/)1-&yyWyArpqt^iiltJ^opeyyNFAy..5.2yyBy
+>Abpb`o^qbqefpCfob%?o^`hbkt^iiSfii^db&yKyArpqt^iiltJ^ope%00)0-&yyWyArpqt^iiltJ^opeyyNFAy..44.yyBy
 
-R The Barrens |N|Run to The Barrens (49.5, 78.3)| |Z|The Barrens|
-R Mulgore |N|Run to Mulgore (68.3, 60.4)| |Z|Mulgore| 
+OQeb?^oobkpyKyOrkqlQeb?^oobkp%16+2)45+0&yyWyQeb?^oobkpy
+OJridlobyKyOrkqlJridlob%35+0)3-+1&yyWyJridloby
 
-A Desecrate this Fire! (Bloodhoof Village) |N|Mulgore (51, 60)| |Z|Mulgore| |QID|11777| |E|
-N Steal [Flame of Thunder Bluff] |N|Either sneak inside or just run in with your mount (21, 25)| |Z|Thunder Bluff| |L|23180|
-A Stealing Thunder Bluff's Flame |U|23180| |O| |QID|9325| |E|
-H Auberdine |N|Hearth back to Auberdine| |U|6948|
+>Abpb`o^qbqefpCfob%?illaellcSfii^db&yKyJridlob%2.)3-&yyWyJridlobyyNFAy..444yyBy
+KPqb^iXCi^jblcQerkabo?irccZyKyBfqebopkb^hfkpfablogrpqorkfktfqevlrojlrkq%/.)/2&yyWyQerkabo?irccyyIy/0.5-y
+>Pqb^ifkdQerkabo?ircc$pCi^jbyRy/0.5-yyLyyNFAy60/2yyBy
+E>r_boafkbyKyEb^oqe_^`hql>r_boafkbyyRy3615y
 
-b Stormwind City |N|Take the south boat to Stormwind City (32.4, 43.8)| |Z|Darkshore|
-R Elwynn Forest |N|Run to Elwynn Forest (32.6, 49.9)| |Z|Elwynn Forest|
-A Honor the Flame (Goldshire) |N|Elwynn Forest (43, 65)| |Z|Elwynn Forest| |QID|11816| |E|
-R Westfall |N|Run to Westfall (59.6, 20.2)| |Z|Westfall|
-A Honor the Flame (Sentinel Hill) |N|Westfall (56, 54)| |Z|Westfall| |QID|11583| |E|
+_Pqlojtfka@fqvyKyQ^hbqebplrqe_l^qqlPqlojtfka@fqv%0/+1)10+5&yyWyA^ohpeloby
+OBitvkkClobpqyKyOrkqlBitvkkClobpq%0/+3)16+6&yyWyBitvkkClobpqy
+>ElkloqebCi^jb%Dliapefob&yKyBitvkkClobpq%10)32&yyWyBitvkkClobpqyyNFAy..5.3yyBy
+OTbpqc^iiyKyOrkqlTbpqc^ii%26+3)/-+/&yyWyTbpqc^iiy
+>ElkloqebCi^jb%PbkqfkbiEfii&yKyTbpqc^ii%23)21&yyWyTbpqc^iiyyNFAy..250yyBy
 
-F Booty Bay |N|Fly to Booty Bay, Thor (56.5, 52.6)| |Z|Westfall|
-A Desecrate this Fire! (Booty Bay) |N|Stranglethorn Vale (32, 75)| |Z|Stranglethorn Vale| |QID|11801| |E|
-A Honor the Flame (Booty Bay) |N|Stranglethorn Vale (33, 73)| |Z|Stranglethorn Vale| |QID|11832| |E|
+C?llqv?^vyKyCivql?llqv?^v)Qelo%23+2)2/+3&yyWyTbpqc^iiy
+>Abpb`o^qbqefpCfob%?llqv?^v&yKyPqo^kdibqelokS^ib%0/)42&yyWyPqo^kdibqelokS^ibyyNFAy..5-.yyBy
+>ElkloqebCi^jb%?llqv?^v&yKyPqo^kdibqelokS^ib%00)40&yyWyPqo^kdibqelokS^ibyyNFAy..50/yyBy
 
-F Darkshire |N|Fly to Darkshire (27.5, 77.8)| |Z|Stranglethorn Vale|
-h Darkshire |N|Set your Hearth in Darkshire, (73.9, 44.4) |Z|Duskwood|
-A Honor the Flame (Darkshire) |N|Duskwood (74, 51)| |Z|Duskwood| |QID|11814| |E|
+CA^ohpefobyKyCivqlA^ohpefob%/4+2)44+5&yyWyPqo^kdibqelokS^iby
+eA^ohpefobyKyPbqvlroEb^oqefkA^ohpefob)%40+6)11+1&yWyArphtllay
+>ElkloqebCi^jb%A^ohpefob&yKyArphtlla%41)2.&yyWyArphtllayyNFAy..5.1yyBy
 
-F Nethergarde Keep |N|Fly to Nethergarde Keep (77.5, 44.3)| |Z|Duskwood|
-A Honor the Flame (Nethergarde Keep) |N|Blasted Lands (58, 17)| |Z|Blasted Lands| |QID|11808| |E|
-R Swamp of Sorrows |N|Run to Swamp Sorrows (33.3, 65.2)| |Z|Swamp of Sorrows|
-A Desecrate this Fire! (Stonard) |N|Swamp of Sorrows (47, 47)| |Z|Swamp of Sorrows| |QID|11781| |E|
-H Darkshire |U|6948|
+CKbqebod^oabHbbmyKyCivqlKbqebod^oabHbbm%44+2)11+0&yyWyArphtllay
+>ElkloqebCi^jb%Kbqebod^oabHbbm&yKy?i^pqbaI^kap%25).4&yyWy?i^pqbaI^kapyyNFAy..5-5yyBy
+OPt^jmlcPlooltpyKyOrkqlPt^jmPlooltp%00+0)32+/&yyWyPt^jmlcPlooltpy
+>Abpb`o^qbqefpCfob%Pqlk^oa&yKyPt^jmlcPlooltp%14)14&yyWyPt^jmlcPlooltpyyNFAy..45.yyBy
+EA^ohpefobyRy3615y
 
-F Lakeshire |N|Fly to Lakeshire (77.5, 44.3)| |Z|Duskwood|
-A Honor the Flame (Lakeshire) |N|Redridge Mountains (24, 59)| |Z|Redridge Mountains| |QID|11822| |E|
+CI^hbpefobyKyCivqlI^hbpefob%44+2)11+0&yyWyArphtllay
+>ElkloqebCi^jb%I^hbpefob&yKyObaofadbJlrkq^fkp%/1)26&yyWyObaofadbJlrkq^fkpyyNFAy..5//yyBy
 
-F Morgan's Vigil |N|Fly to Morgan's Vigil (30.6, 59.4)| |Z|Redridge Mountains| 
-A Honor the Flame (Morgan's Vigil) |N|Burning Steppes (80, 62)| |Z|Burning Steppes| |QID|11810| |E|
-A Desecrate this Fire! (Flame Crest) |N|Burning Steppes (62, 29)| |Z|Burning Steppes| |QID|11768| |E|
+CJlod^k$pSfdfiyKyCivqlJlod^k$pSfdfi%0-+3)26+1&yyWyObaofadbJlrkq^fkpy
+>ElkloqebCi^jb%Jlod^k$pSfdfi&yKy?rokfkdPqbmmbp%5-)3/&yyWy?rokfkdPqbmmbpyyNFAy..5.-yyBy
+>Abpb`o^qbqefpCfob%Ci^jb@obpq&yKy?rokfkdPqbmmbp%3/)/6&yyWy?rokfkdPqbmmbpyyNFAy..435yyBy
 
-F Thorium Point |N|Fly to Thorium Point (84.3, 68.3)| |Z|Burning Steppes|
-R Badlands |N|Run to Badlands (76.7, 56.7)| |Z|Searing Gorge|
-A Desecrate this Fire! (Kargath) |N|Badlands (4, 49)| |Z|Badlands| |QID|11766| |E|
+CQelofrjMlfkqyKyCivqlQelofrjMlfkq%51+0)35+0&yyWy?rokfkdPqbmmbpy
+O?^ai^kapyKyOrkql?^ai^kap%43+4)23+4&yyWyPb^ofkdDlodby
+>Abpb`o^qbqefpCfob%H^od^qe&yKy?^ai^kap%1)16&yyWy?^ai^kapyyNFAy..433yyBy
 
-R Loch Modan  |N|Run to Loch Modan (47,80)| |Z|Loch Modan|
-A Honor the Flame (Thelsamar) |N|Loch Modan (32, 40)| |Z|Loch Modan| |QID|11820| |E|
+OIl`eJla^kyKyOrkqlIl`eJla^k%14)5-&yyWyIl`eJla^ky
+>ElkloqebCi^jb%Qebip^j^o&yKyIl`eJla^k%0/)1-&yyWyIl`eJla^kyyNFAy..5/-yyBy
 
-F City of Ironforge |N|Fly to Ironforge (33.9, 51)|  |Z|Loch Modan|
-A Honor the Flame (Kharanos) |N|Dun Morogh (46, 46)| |Z|Dun Morogh| |QID|11813| |E|
+C@fqvlcFolkclodbyKyCivqlFolkclodb%00+6)2.&yyWyIl`eJla^ky
+>ElkloqebCi^jb%He^o^klp&yKyArkJlolde%13)13&yyWyArkJloldeyyNFAy..5.0yyBy
 
-R City of Ironforge |N|Run back to Ironforge (53.3, 35.2| |Z|Dun Morogh|
-F Wetlands |N|Fly to the Wetlands (55.5, 47.8)| |Z|Ironforge|
-A Honor the Flame (Menethil Harbor) |N| (13, 47)| |Z|Wetlands| |QID|11828| |E|
+O@fqvlcFolkclodbyKyOrk_^`hqlFolkclodb%20+0)02+/yyWyArkJloldey
+CTbqi^kapyKyCivqlqebTbqi^kap%22+2)14+5&yyWyFolkclodby
+>ElkloqebCi^jb%JbkbqefiE^o_lo&yKy%.0)14&yyWyTbqi^kapyyNFAy..5/5yyBy
 
-F Refuge Pointe |N|Fly (9.5, 59.7)| |Z|Wetlands|
-A Honor the Flame (Refuge Point) |N|Arathi Highlands (50, 44)| |Z|Arathi Highlands| |QID|11804| |E|
-A Desecrate this Fire! (Hammerfall) |N|Arathi Highlands (74, 41)| |Z|Arathi Highlands| |QID|11764| |E|
+CObcrdbMlfkqbyKyCiv%6+2)26+4&yyWyTbqi^kapy
+>ElkloqebCi^jb%ObcrdbMlfkq&yKy>o^qefEfdei^kap%2-)11&yyWy>o^qefEfdei^kapyyNFAy..5-1yyBy
+>Abpb`o^qbqefpCfob%E^jjboc^ii&yKy>o^qefEfdei^kap%41)1.&yyWy>o^qefEfdei^kapyyNFAy..431yyBy
 
-F Southshore |N|Fly to Southshore (45.8, 56.1)| |Z|Arathi Highlands| 
-h Southshore |N|Set your Hearth to Southshore, Innkeeper Anderson (51.2, 58.9) |Z|Hillsbrad Foothills|
-A Honor the Flame (Southshore) |N|Hillsbrad Foothills (50, 46)| |Z|Hillsbrad Foothills| |QID|11819| |E|
-A Desecrate this Fire! (Tarren Mill) |N|Hillsbrad Foothills (58, 25)| |Z|Hillsbrad Foothills| |QID|11776| |E|
+CPlrqepelobyKyCivqlPlrqepelob%12+5)23+.&yyWy>o^qefEfdei^kapy
+ePlrqepelobyKyPbqvlroEb^oqeqlPlrqepelob)Fkkhbbmbo>kaboplk%2.+/)25+6&yWyEfiip_o^aCllqefiipy
+>ElkloqebCi^jb%Plrqepelob&yKyEfiip_o^aCllqefiip%2-)13&yyWyEfiip_o^aCllqefiipyyNFAy..5.6yyBy
+>Abpb`o^qbqefpCfob%Q^oobkJfii&yKyEfiip_o^aCllqefiip%25)/2&yyWyEfiip_o^aCllqefiipyyNFAy..443yyBy
 
-R Alterac Mountains |N|Run to Alterac Mountains (67.7, 74.3) |Z|Alterac Mountains|
-R Western Plaguelands |N|Run to Western Plaguelands (43.8, 88.9)| |Z|Western Plaguelands|
-A Honor the Flame (Chillwind Camp) |N|Western Plaguelands (43, 82)| |Z|Western Plaguelands| |QID|11827| |E|
+O>iqbo^`Jlrkq^fkpyKyOrkql>iqbo^`Jlrkq^fkp%34+4)41+0&yWy>iqbo^`Jlrkq^fkpy
+OTbpqbokMi^drbi^kapyKyOrkqlTbpqbokMi^drbi^kap%10+5)55+6&yyWyTbpqbokMi^drbi^kapy
+>ElkloqebCi^jb%@efiitfka@^jm&yKyTbpqbokMi^drbi^kap%10)5/&yyWyTbpqbokMi^drbi^kapyyNFAy..5/4yyBy
 
-F Aerie Peak |N|Fly to Aerie Peak (42.9, 85.1)| |Z|Western Plaguelands|
-A Honor the Flame (Aerie Peak) |N|The Hinterlands (14, 50)| |Z|The Hinterlands| |QID|11826| |E|
-A Desecrate this Fire! (Revantusk Village) |N|The Hinterlands (76, 74)| |Z|The Hinterlands| |QID|11784| |E|
-H Southshore |U|6948|
+C>bofbMb^hyKyCivql>bofbMb^h%1/+6)52+.&yyWyTbpqbokMi^drbi^kapy
+>ElkloqebCi^jb%>bofbMb^h&yKyQebEfkqboi^kap%.1)2-&yyWyQebEfkqboi^kapyyNFAy..5/3yyBy
+>Abpb`o^qbqefpCfob%Obs^kqrphSfii^db&yKyQebEfkqboi^kap%43)41&yyWyQebEfkqboi^kapyyNFAy..451yyBy
+EPlrqepelobyRy3615y
 
-R Silverpine Forest |N|Run to Silverpine Forest (66.1, 79.7) |Z|Silverpine Forest|
-A Desecrate this Fire! (The Sepulcher) |N| (49, 38)| |Z|Silverpine Forest| |QID|11580| |E|
+OPfisbomfkbClobpqyKyOrkqlPfisbomfkbClobpq%33+.)46+4&yWyPfisbomfkbClobpqy
+>Abpb`o^qbqefpCfob%QebPbmri`ebo&yKy%16)05&yyWyPfisbomfkbClobpqyyNFAy..25-yyBy
 
-R Tirisfal Glades |N|Run to Tirisfal Glades (53.8, 75.3)| |Z|Tirisfal Glades| 
-A Desecrate this Fire! (Brill) |N| (57, 52)| |Z|Tirisfal Glades| |QID|11786| |E|
-N Steal [Flame of Undercity] |N|Either sneak inside or just run in with your mount (68, 7)| |Z|Undercity| |L|23181|
-A Stealing Undecity's Flame |U|23181| |O| |QID|9326|
-R Western Plaguelands |N|Ride to Western Plaguelands (28.5, 57.2)| |Z|Western Plaguelands|
-F Eastern Plaguelands |N|Use the flight point at Chillwind Camp (42.9, 85.1)| |Z|Western Plaguelands|
-R Ghostlands |N|Use the portal at (48, 85)| |Z|Ghostlands|
-A Desecrate this Fire! (Tranquilien) |N|Ghostlands (46, 26)| |Z|Ghostlands| |QID|11774| |E|
-R Eversong Woods |N|Run to Eversong Woods (48.9, 88.2)| |Z|Eversong Woods|
-A Desecrate this Fire! (North Sanctum) |N|Eversong Woods (46, 50)| |Z|Eversong Woods| |QID|11772| |E|
-N Steal [Flame of Silvermoon] |N|Either sneak inside or just run in with your mount (68, 41)| |Z|Silvermoon City| |L|35568|
-A Stealing Silvermoon's Flame |U|35568| |O| |QID|11935|
+OQfofpc^iDi^abpyKyOrkqlQfofpc^iDi^abp%20+5)42+0&yyWyQfofpc^iDi^abpy
+>Abpb`o^qbqefpCfob%?ofii&yKy%24)2/&yyWyQfofpc^iDi^abpyyNFAy..453yyBy
+KPqb^iXCi^jblcRkabo`fqvZyKyBfqebopkb^hfkpfablogrpqorkfktfqevlrojlrkq%35)4&yyWyRkabo`fqvyyIy/0.5.y
+>Pqb^ifkdRkab`fqv$pCi^jbyRy/0.5.yyLyyNFAy60/3y
+OTbpqbokMi^drbi^kapyKyOfabqlTbpqbokMi^drbi^kap%/5+2)24+/&yyWyTbpqbokMi^drbi^kapy
+CB^pqbokMi^drbi^kapyKyRpbqebcifdeqmlfkq^q@efiitfka@^jm%1/+6)52+.&yyWyTbpqbokMi^drbi^kapy
+ODelpqi^kapyKyRpbqebmloq^i^q%15)52&yyWyDelpqi^kapy
+>Abpb`o^qbqefpCfob%Qo^knrfifbk&yKyDelpqi^kap%13)/3&yyWyDelpqi^kapyyNFAy..441yyBy
+OBsboplkdTllapyKyOrkqlBsboplkdTllap%15+6)55+/&yyWyBsboplkdTllapy
+>Abpb`o^qbqefpCfob%KloqeP^k`qrj&yKyBsboplkdTllap%13)2-&yyWyBsboplkdTllapyyNFAy..44/yyBy
+KPqb^iXCi^jblcPfisbojllkZyKyBfqebopkb^hfkpfablogrpqorkfktfqevlrojlrkq%35)1.&yyWyPfisbojllk@fqvyyIy02235y
+>Pqb^ifkdPfisbojllk$pCi^jbyRy02235yyLyyNFAy..602y
 
-N Azeroth Guide Complete!
+K>wbolqeDrfab@ljmibqb
 
 ]]
 end)

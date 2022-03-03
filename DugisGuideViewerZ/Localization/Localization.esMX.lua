@@ -41,7 +41,7 @@ if ( GetLocale() == "esMX" ) then
 	["Maps"] = "Mapas",
 	["Map each destination with TomTom"] = "Presentar cada destinación con Tomtom",
 	["No Guide Loaded"] = "Guía no instalada",
-	["No Guide Loaded. Right Click Here To Select One"] = "Guía no instalada. Haga clic aquí para seleccionar una",
+	["No Guide Loaded. Click Here To Select One"] = "Guía no instalada. Haga clic aquí para seleccionar una",
 	["Note"] = "Nota",
 	["Optional"] = "Opcional",
 	["Quest accepted: (.*)"] = "Has aceptado la misión: (.*)",	

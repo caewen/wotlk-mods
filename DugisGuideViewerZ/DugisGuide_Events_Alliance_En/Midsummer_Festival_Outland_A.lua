@@ -1,23 +1,24 @@
 DugisGuideViewer:RegisterGuide("Midsummer Festival Outland (60+)", nil, "Alliance", "D", function() 
 return [[
+AAA
 
-N Manual Tick Required |N|Due to the unique nature of the Midsummer event, DugisGuideViewerZ is currently unable to automatically detect the quest and you will need to tick the completed quest manually. We are working on a solution|
-N Take a Portal to Shattrath City
-A Honor the Flame (Terokkar Forest) |N|Allerian Stronghold (55, 55)| |Z|Terokkar Forest| |QID|11825| |E|
-A Desecrate this Fire! (Terokkar Forest) |N|Stonebreaker Hold (52, 43)| |Z|Terokkar Forest| |QID|11782| |E|
-A Honor the Flame (Shadowmoon Valley) |N|Wildhammer Stronghold (40, 55)| |Z|Shadowmoon Valley| |QID|11823| |E|
-A Desecrate this Fire! (Shadowmoon Valley) |N|Shadowmoon Village (33, 30)| |Z|Shadowmoon Valley| |QID|11779| |E|
-A Honor the Flame (Nagrand) |N|Telaar (50, 70)| |Z|Nagrand| |QID|11821| |E|
-A Desecrate this Fire! (Nagrand) |N|Garadar (51, 34)| |Z|Nagrand| |QID|11775| |E|
-A Honor the Flame (Zangarmarsh) |N|Telredor (69, 52)| |Z|Zangarmarsh| |QID|11829| |E|
-A Desecrate this Fire! (Zangarmarsh) |N|Zabra'Jin (36, 52)| |Z|Zangarmarsh| |QID|11787| |E|
-A Honor the Flame (Hellfire Peninsula) |N|Honor Hold (62, 58)| |Z|Hellfire Peninsula| |QID|11818| |E|
-A Desecrate this Fire! (Hellfire Peninsula) |N|Thrallmar (57, 42)| |Z|Hellfire Peninsula| |QID|11775| |E|
-A Honor the Flame (Blade's Edge Mountains) |N|Sylvanaar (42, 66)| |Z|Blade's Edge Mountains| |QID|11807| |E|
-A Desecrate this Fire! (Blade's Edge Mountains) |N|Thunderlord Stronghold (50, 59)| |Z|Blade's Edge Mountains| |QID|11767| |E|
-A Honor the Flame (Netherstorm) |N|Area 52 (31, 63)| |Z|Netherstorm| |QID|11830| |E|
-A Desecrate this Fire! (Netherstorm) |N|Area 52 (32, 68)| |Z|Netherstorm| |QID|11799| |E|
-N Guide Complete!
+KJ^kr^iQf`hObnrfobayKyArbqlqebrkfnrbk^qroblcqebJfaprjjbobsbkq)ArdfpDrfabSfbtboWfp`roobkqivrk^_ibql^rqlj^qf`^iivabqb`qqebnrbpq^kavlrtfiikbbaqlqf`hqeb`ljmibqbanrbpqj^kr^iiv+Tb^obtlohfkdlk^plirqflky
+KQ^hb^Mloq^iqlPe^qqo^qe@fqv
+>ElkloqebCi^jb%Qbolhh^oClobpq&yKy>iibof^kPqolkdelia%22)22&yyWyQbolhh^oClobpqyyNFAy..5/2yyBy
+>Abpb`o^qbqefpCfob%Qbolhh^oClobpq&yKyPqlkb_ob^hboElia%2/)10&yyWyQbolhh^oClobpqyyNFAy..45/yyBy
+>ElkloqebCi^jb%Pe^altjllkS^iibv&yKyTfiae^jjboPqolkdelia%1-)22&yyWyPe^altjllkS^iibvyyNFAy..5/0yyBy
+>Abpb`o^qbqefpCfob%Pe^altjllkS^iibv&yKyPe^altjllkSfii^db%00)0-&yyWyPe^altjllkS^iibvyyNFAy..446yyBy
+>ElkloqebCi^jb%K^do^ka&yKyQbi^^o%2-)4-&yyWyK^do^kayyNFAy..5/.yyBy
+>Abpb`o^qbqefpCfob%K^do^ka&yKyD^o^a^o%2.)01&yyWyK^do^kayyNFAy..442yyBy
+>ElkloqebCi^jb%W^kd^oj^ope&yKyQbiobalo%36)2/&yyWyW^kd^oj^opeyyNFAy..5/6yyBy
+>Abpb`o^qbqefpCfob%W^kd^oj^ope&yKyW^_o^$Gfk%03)2/&yyWyW^kd^oj^opeyyNFAy..454yyBy
+>ElkloqebCi^jb%EbiicfobMbkfkpri^&yKyElkloElia%3/)25&yyWyEbiicfobMbkfkpri^yyNFAy..5.5yyBy
+>Abpb`o^qbqefpCfob%EbiicfobMbkfkpri^&yKyQeo^iij^o%24)1/&yyWyEbiicfobMbkfkpri^yyNFAy..442yyBy
+>ElkloqebCi^jb%?i^ab$pBadbJlrkq^fkp&yKyPvis^k^^o%1/)33&yyWy?i^ab$pBadbJlrkq^fkpyyNFAy..5-4yyBy
+>Abpb`o^qbqefpCfob%?i^ab$pBadbJlrkq^fkp&yKyQerkaboiloaPqolkdelia%2-)26&yyWy?i^ab$pBadbJlrkq^fkpyyNFAy..434yyBy
+>ElkloqebCi^jb%Kbqebopqloj&yKy>ob^2/%0.)30&yyWyKbqebopqlojyyNFAy..50-yyBy
+>Abpb`o^qbqefpCfob%Kbqebopqloj&yKy>ob^2/%0/)35&yyWyKbqebopqlojyyNFAy..466yyBy
+KDrfab@ljmibqb
 
 ]]
 end)

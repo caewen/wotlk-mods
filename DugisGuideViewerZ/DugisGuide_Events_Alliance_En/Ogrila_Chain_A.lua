@@ -1,64 +1,65 @@
 DugisGuideViewer:RegisterGuide("Winter Veil: Ogri'la Quest Chain for 'Fa-la-la-la-Ogri'la'", nil, "Alliance", "D", function() 
 return [[
+AAA
 
-F Shattrath City |N|Go to Shattrath City|
-A Mog'dorg the Wizened |N|Grok (64.5, 68.2)| |QID|10983| |Z|Shattrath City|
+CPe^qqo^qe@fqvyKyDlqlPe^qqo^qe@fqvy
+>Jld$alodqebTfwbkbayKyDolh%31+2)35+/&yyNFAy.-650yyWyPe^qqo^qe@fqvy
 
-F Blade's Edge Mountain |N|Fly to Blade's Edge Mountain|
-T Mog'dorg the Wizened |N|Mog'dorg the Wizened (55.5, 44.9)| |QID|10983| |Z|Blade's Edge Mountains|
+C?i^ab$pBadbJlrkq^fkyKyCivql?i^ab$pBadbJlrkq^fky
+QJld$alodqebTfwbkbayKyJld$alodqebTfwbkba%22+2)11+6&yyNFAy.-650yyWy?i^ab$pBadbJlrkq^fkpy
 
-A Grulloc Has Two Skulls |N|Mog'dorg the Wizened (55.5, 44.9)| |QID|10995| |Z|Blade's Edge Mountains|
-A Maggoc's Treasure Chest |N|Mog'dorg the Wizened (55.5, 44.9)| |QID|10996| |Z|Blade's Edge Mountains|
-A Even Gronn Have Standards |N|Mog'dorg the Wizened (55.5, 44.9)| |QID|10997| |Z|Blade's Edge Mountains|
+>Doriil`E^pQtlPhriipyKyJld$alodqebTfwbkba%22+2)11+6&yyNFAy.-662yyWy?i^ab$pBadbJlrkq^fkpy
+>J^ddl`$pQob^prob@ebpqyKyJld$alodqebTfwbkba%22+2)11+6&yyNFAy.-663yyWy?i^ab$pBadbJlrkq^fkpy
+>BsbkDolkkE^sbPq^ka^oapyKyJld$alodqebTfwbkba%22+2)11+6&yyNFAy.-664yyWy?i^ab$pBadbJlrkq^fkpy
 
-C Grulloc Has Two Skulls |N|Kill Grulloc - just north of the arena (61, 47)|  |Z|Blade's Edge Mountains|
-C Maggoc's Treasure Chest |N|Kill Maggoc - he patrols on the road around deaths door (58,63)| |Z|Blade's Edge Mountains|
-F Shattrath City |N|Go to Shattrath City|
+@Doriil`E^pQtlPhriipyKyHfiiDoriil`*grpqkloqelcqeb^obk^%3.)14&yyWy?i^ab$pBadbJlrkq^fkpy
+@J^ddl`$pQob^prob@ebpqyKyHfiiJ^ddl`*ebm^qoliplkqebol^a^olrkaab^qepallo%25)30&yyWy?i^ab$pBadbJlrkq^fkpy
+CPe^qqo^qe@fqvyKyDlqlPe^qqo^qe@fqvy
 
-C Even Gronn Have Standards |N|Kill Slagg - in one of the huts (20.2, 16.6)| |QID|10997| |Z|Terokkar Forest|
+@BsbkDolkkE^sbPq^ka^oapyKyHfiiPi^dd*fklkblcqeberqp%/-+/).3+3&yyNFAy.-664yyWyQbolhh^oClobpqy
 
-F Blade's Edge Mountain |N|Fly to Blade's Edge Mountain|
-T Grulloc Has Two Skulls |N|Mog'dorg the Wizened (55.5, 44.9)| |QID|10995| |Z|Blade's Edge Mountains|
-T Maggoc's Treasure Chest |N|Mog'dorg the Wizened (55.5, 44.9)| |QID|10996| |Z|Blade's Edge Mountains|
-T Even Gronn Have Standards |N|Mog'dorg the Wizened (55.5, 44.9)| |QID|10997| |Z|Blade's Edge Mountains|
+C?i^ab$pBadbJlrkq^fkyKyCivql?i^ab$pBadbJlrkq^fky
+QDoriil`E^pQtlPhriipyKyJld$alodqebTfwbkba%22+2)11+6&yyNFAy.-662yyWy?i^ab$pBadbJlrkq^fkpy
+QJ^ddl`$pQob^prob@ebpqyKyJld$alodqebTfwbkba%22+2)11+6&yyNFAy.-663yyWy?i^ab$pBadbJlrkq^fkpy
+QBsbkDolkkE^sbPq^ka^oapyKyJld$alodqebTfwbkba%22+2)11+6&yyNFAy.-664yyWy?i^ab$pBadbJlrkq^fkpy
 
-A Grim(oire) Business |N|Mog'dorg the Wizened (55.5, 44.9)| |QID|10998| |Z|Blade's Edge Mountains| 
-C Grim(oire) Business |N|Fly to (77, 31) stand in ring of fire to summon Vim'gol and Kill Vim'gol| |QID|10998| |Z|Blade's Edge Mountains| 
-T Grim(oire) Business |N|Mog'dorg the Wizened (55.5, 44.9)| |QID|10998| |Z|Blade's Edge Mountains| 
+>Dofj%lfob&?rpfkbppyKyJld$alodqebTfwbkba%22+2)11+6&yyNFAy.-665yyWy?i^ab$pBadbJlrkq^fkpy
+@Dofj%lfob&?rpfkbppyKyCivql%44)0.&pq^kafkofkdlccfobqlprjjlkSfj$dli^kaHfiiSfj$dliyyNFAy.-665yyWy?i^ab$pBadbJlrkq^fkpy
+QDofj%lfob&?rpfkbppyKyJld$alodqebTfwbkba%22+2)11+6&yyNFAy.-665yyWy?i^ab$pBadbJlrkq^fkpy
 
-A Into the soulgrinder |N|Mog'dorg the Wizened (55.5, 44.9)| |QID|11000| |Z|Blade's Edge Mountains| 
-C Into the soulgrinder |N|Fly to (60,24) Use [Vim'gol's Grimoire], Kill the adds and Kill Skulloc| |QID|11000| |U|32467| |Z|Blade's Edge Mountains| 
-T Into the soulgrinder |N|Mog'dorg the Wizened (55.5, 44.9)| |QID|11000| |Z|Blade's Edge Mountains| 
+>FkqlqebplridofkaboyKyJld$alodqebTfwbkba%22+2)11+6&yyNFAy..---yyWy?i^ab$pBadbJlrkq^fkpy
+@FkqlqebplridofkaboyKyCivql%3-)/1&RpbXSfj$dli$pDofjlfobZ)Hfiiqeb^aap^kaHfiiPhriil`yyNFAy..---yyRy0/134yyWy?i^ab$pBadbJlrkq^fkpy
+QFkqlqebplridofkaboyKyJld$alodqebTfwbkba%22+2)11+6&yyNFAy..---yyWy?i^ab$pBadbJlrkq^fkpy
 
-A Ogre Heaven |N|Mog'dorg the Wizened (55.5, 44.9)| |QID|11009| |Z|Blade's Edge Mountains| 
-T Ogre Heaven |N|Chu'a'lor (28.6, 57.2)| |QID|11009| |Z|Blade's Edge Mountains| 
+>LdobEb^sbkyKyJld$alodqebTfwbkba%22+2)11+6&yyNFAy..--6yyWy?i^ab$pBadbJlrkq^fkpy
+QLdobEb^sbkyKy@er$^$ilo%/5+3)24+/&yyNFAy..--6yyWy?i^ab$pBadbJlrkq^fkpy
 
-A The Crystals |N|Chu'a'lor (28.6, 57.2)| |QID|11025| |Z|Blade's Edge Mountains| 
-C The Crystals |N|Kill any Apexis Flayer (30, 52), (28, 63) to collect 5x [Apexis Shard]| |QID|11025| |Z|Blade's Edge Mountains| 
-T The Crystals |N|Chu'a'lor (28.6, 57.2)| |QID|11025| |Z|Blade's Edge Mountains| 
+>Qeb@ovpq^ipyKy@er$^$ilo%/5+3)24+/&yyNFAy..-/2yyWy?i^ab$pBadbJlrkq^fkpy
+@Qeb@ovpq^ipyKyHfii^kv>mbufpCi^vbo%0-)2/&)%/5)30&ql`liib`q2uX>mbufpPe^oaZyyNFAy..-/2yyWy?i^ab$pBadbJlrkq^fkpy
+QQeb@ovpq^ipyKy@er$^$ilo%/5+3)24+/&yyNFAy..-/2yyWy?i^ab$pBadbJlrkq^fkpy
 
-A An Apexis Relic |N|Chu'a'lor (28.6, 57.2)| |QID|11058| |Z|Blade's Edge Mountains| 
-C An Apexis Relic |N|Go to an Apexis relic (31,61) and do the simon says game| |QID|11058| |Z|Blade's Edge Mountains| 
-T An Apexis Relic |N|Chu'a'lor (28.6, 57.2)| |QID|11058| |Z|Blade's Edge Mountains| 
+>>k>mbufpObif`yKy@er$^$ilo%/5+3)24+/&yyNFAy..-25yyWy?i^ab$pBadbJlrkq^fkpy
+@>k>mbufpObif`yKyDlql^k>mbufpobif`%0.)3.&^kaalqebpfjlkp^vpd^jbyyNFAy..-25yyWy?i^ab$pBadbJlrkq^fkpy
+Q>k>mbufpObif`yKy@er$^$ilo%/5+3)24+/&yyNFAy..-25yyWy?i^ab$pBadbJlrkq^fkpy
 
-A Our Boy Wants to be a Skyguard Ranger |N|Torkus (28.5, 57)| |QID|11030| |Z|Blade's Edge Mountains|
-N Collect 10x [Apexis Shard] |N|You will need 10x [Apexis Shard] to buy the potion| |L|32569 10| 
-C Our Boy Wants to be a Skyguard Ranger |N|Fly to (33, 41) and you should see a bubbling stack, Turn in 10 shards for the [Unstable Flask of the Beast]| |QID|11030| |Z|Blade's Edge Mountains| 
-T Our Boy Wants to be a Skyguard Ranger |N|Torkus (28.5, 57)| |QID|11030| |Z|Blade's Edge Mountains|
+>Lro?lvT^kqpql_b^Phvdr^oaO^kdboyKyQlohrp%/5+2)24&yyNFAy..-0-yyWy?i^ab$pBadbJlrkq^fkpy
+K@liib`q.-uX>mbufpPe^oaZyKyVlrtfiikbba.-uX>mbufpPe^oaZql_rvqebmlqflkyyIy0/236.-y
+@Lro?lvT^kqpql_b^Phvdr^oaO^kdboyKyCivql%00)1.&^kavlrpelriapbb^_r__ifkdpq^`h)Qrokfk.-pe^oapcloqebXRkpq^_ibCi^phlcqeb?b^pqZyyNFAy..-0-yyWy?i^ab$pBadbJlrkq^fkpy
+QLro?lvT^kqpql_b^Phvdr^oaO^kdboyKyQlohrp%/5+2)24&yyNFAy..-0-yyWy?i^ab$pBadbJlrkq^fkpy
 
-A A Father's Duty |N|Torkus (28.5, 57)| |QID|11061| |Z|Blade's Edge Mountains|
-N Collect 10x [Apexis Shard] |N|You will need another 10x [Apexis Shard] to buy the [Unstable Flask of the Sorcerer]| |L|32569 10| 
-C A Father's Duty |N|Fly to Bash'ir Crystalforge (54, 10), Turn in 10 shards for the [Unstable Flask of the Sorcerer]| |QID|11061| |Z|Blade's Edge Mountains|
-T A Father's Duty |N|Torkus (28.5, 57)| |QID|11061| |Z|Blade's Edge Mountains|
+>>C^qebo$pArqvyKyQlohrp%/5+2)24&yyNFAy..-3.yyWy?i^ab$pBadbJlrkq^fkpy
+K@liib`q.-uX>mbufpPe^oaZyKyVlrtfiikbba^klqebo.-uX>mbufpPe^oaZql_rvqebXRkpq^_ibCi^phlcqebPlo`boboZyyIy0/236.-y
+@>C^qebo$pArqvyKyCivql?^pe$fo@ovpq^iclodb%21).-&)Qrokfk.-pe^oapcloqebXRkpq^_ibCi^phlcqebPlo`boboZyyNFAy..-3.yyWy?i^ab$pBadbJlrkq^fkpy
+Q>C^qebo$pArqvyKyQlohrp%/5+2)24&yyNFAy..-3.yyWy?i^ab$pBadbJlrkq^fkpy
 
-A The Skyguard Outpost |N|Chu'a'lor (28.6, 57.2)| |QID|11062| |Z|Blade's Edge Mountains|
-T The Skyguard Outpost |N|Sky Commander Keller (27.5, 52.7)| |QID|11062| |Z|Blade's Edge Mountains|
+>QebPhvdr^oaLrqmlpqyKy@er$^$ilo%/5+3)24+/&yyNFAy..-3/yyWy?i^ab$pBadbJlrkq^fkpy
+QQebPhvdr^oaLrqmlpqyKyPhv@ljj^kaboHbiibo%/4+2)2/+4&yyNFAy..-3/yyWy?i^ab$pBadbJlrkq^fkpy
 
-A Bombing Run |N|Sky Sergeant Vanderlip (27.6,52.9)| |QID|11102| |Z|Blade's Edge Mountains|
-C Bombing Run |N|Fly over Camp: Wrath bombing the red arrows (33,40), (36, 39), (34, 43)| |QID|11102| |Z|Blade's Edge Mountains| |U|32456|
-T Bombing Run |N|Sky Sergeant Vanderlip (27.6,52.9)| |QID|11102| |Z|Blade's Edge Mountains|
+>?lj_fkdOrkyKyPhvPbodb^kqS^kaboifm%/4+3)2/+6&yyNFAy...-/yyWy?i^ab$pBadbJlrkq^fkpy
+@?lj_fkdOrkyKyCivlsbo@^jm7To^qe_lj_fkdqeboba^ooltp%00)1-&)%03)06&)%01)10&yyNFAy...-/yyWy?i^ab$pBadbJlrkq^fkpyyRy0/123y
+Q?lj_fkdOrkyKyPhvPbodb^kqS^kaboifm%/4+3)2/+6&yyNFAy...-/yyWy?i^ab$pBadbJlrkq^fkpy
 
-N You have unlocked 'Bomb them again!' Daily |N|This quest is needed for the wintervale achievement - Fa-la-la-la-Ogri'la.|
+KVlre^sbrkil`hba$?lj_qebj^d^fk$A^fivyKyQefpnrbpqfpkbbabacloqebtfkqbos^ib^`efbsbjbkq*C^*i^*i^*i^*Ldof$i^+y
 
 ]]
 end)

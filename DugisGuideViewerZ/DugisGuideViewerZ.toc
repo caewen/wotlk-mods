@@ -1,7 +1,7 @@
-## Interface: 40000
-## Title: DugisGuideViewer |cffffffffv4.32.4|r
-## Notes: Multi guide viewer created by Dugi of ultimatewowguide.com v4.32.4
-## Version: 4.32.4
+## Interface: 30300
+## Title: Dugi's Guide Viewer |cffffffffv4.19|r
+## Notes: Multi guide viewer created by Dugi of ultimatewowguide.com v4.19
+## Version: 4.19
 ## X-Website: http://www.ultimatewowguide.com/
 ## X-Email: webmaster@ultimatewowguide.com
 ## X-Category: Quest
@@ -30,12 +30,7 @@ UnlistedQuest.lua
 Chains.lua
 ReqLevel.lua
 Ants.lua
-Professions.lua
 
-DugisGuide_Ach_Alliance_En\Guides.xml
-DugisGuide_Ach_Horde_En\Guides.xml
-DugisGuide_Prof_Alliance_En\Guides.xml
-DugisGuide_Prof_Horde_En\Guides.xml
 DugisGuide_Alliance_En\Guides.xml
 DugisGuide_Horde_En\Guides.xml
 DugisGuide_Dungeons_Alliance_En\Guides.xml

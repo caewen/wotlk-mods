@@ -53,7 +53,7 @@ DugisGuideViewer.XVals = {}
 DugisGuideViewer.YVals = {}
 DugisGuideViewer.MappedPoints = {}
 DugisGuideViewer.tags = {}
-DugisGuideViewer.coords = {}
+coords = {}
 DugisGuideUser = {
 QuestState = {}, --Tristate either skipped (x), finished (check) or neither (empty)
 turnedinquests = {},
@@ -61,12 +61,20 @@ toskip = {},
 }
 local CurrentAction
 local CurrentQuestName
+--local CurrentQuestWatch
 local AbandonQID
 local JustTurnedInQID = -1 --A quest that has just been turned in has its isComplete status indeterminate in quest log
 local CurrentTag 
 local FirstTime = 1
 local UID
-patch4_0 = true
+--Saved Variables:
+--local CurrentTitle (no its global!)
+--local CurrentQuestIndex (no its global!)
+--local CurrentZone --Guide specified zone.  First parameter of RegisterGuide
+--[[local L = DUGISGUIDE_LOCALE
+DUGISGUIDE_LOCALE = nil
+DugisGuideViewer.Locale = L
+--]]
 local L = DugisLocals
 if GetLocale() == "enUS" then
 DUGIS_LOCALIZE = 0
@@ -93,8 +101,7 @@ function DugisGuideViewer_Reload_ButtonClick()
 DugisGuideViewer:DisplayViewTab(DugisGuideViewer:revlocalize(CurrentTitle, "GUIDE"))
 end
 function DugisGuideViewer_Reset_ButtonClick()
-local i
-for i = 1, LastGuideNumRows do
+for i =1, LastGuideNumRows do
 local IsEnabled = getglobal("RecapPanelDetail"..i.."Chk"):IsEnabled() 
 if DugisGuideUser.QuestState[CurrentTitle..':'..i] == "X" or (DugisGuideUser.QuestState[CurrentTitle..':'..i] == "C" and IsEnabled == 1) then
 --DebugPrint("CHK cleared index="..i.."DugisGuideUser.QuestState[i]="..DugisGuideUser.QuestState[i])
@@ -113,10 +120,14 @@ return first:upper()..rest:lower()
 end
 --Detect hearth, quest accept or quest complete
 function DugisGuideViewer:ChatMessage(event, msg)
-local msgqid, curqid, questnoparen, optional, gindex, i
+--DebugPrint("inChatmessage"..event..msg)
+local msgqid
+local curqid
+local questnoparen
+local optional 
+local gindex
 local _, _, loc = msg:find(L["(.*) is now your home."])
 local _, _, accept = msg:find(L["Quest accepted: (.*)"])
-if DugisGuideViewer:isValidGuide(CurrentTitle) == false then return end
 if loc then --Set Hearth
 loc = DugisGuideViewer:localize(loc, "ZONE")
  _, _, questnoparen = DugisGuideViewer.quests1[CurrentQuestIndex]:find("([^%(]*)")
@@ -127,9 +138,11 @@ DebugPrint( "Detected setting hearth to ".. loc.."message:".. msg)
 DugisGuideViewer:SetChkToComplete(CurrentQuestIndex)
 DugisGuideViewer:MoveToNextQuest()
 end
-elseif accept then--Quest accept
+elseif accept and CurrentTitle ~= nil then--Quest accept
 curqid = DugisGuideViewer.qid[CurrentQuestIndex]
 msgqid = DugisGuideViewer:GetQIDFromQuestName(accept)
+--gindx = DugisGuideViewer:GetGuideIndexByQID(msgqid)
+--optional = DugisGuideViewer:ReturnTag("O", gindx)
 DebugPrint("accept ="..accept.."quest id is"..msgqid.."*".."action ="..CurrentAction.."*")
 if CurrentAction == "A" and msgqid == curqid then
 DebugPrint("Detected quest accept ", accept)
@@ -145,29 +158,38 @@ end
 if type(DugisGuideViewer.Chains[msgqid]) == "table" and DugisGuideViewer.Chains[msgqid][1] == "OR" then 
 for i = 2, #DugisGuideViewer.Chains[msgqid] do
 DebugPrint("Found Breadcrumb:"..DugisGuideViewer.Chains[msgqid][i].." of "..msgqid)
+--table.insert(DugisGuideUser.toskip, DugisGuideViewer.Chains[msgqid][i])
 DugisGuideViewer:SkipQuestAcrossGuides(DugisGuideViewer.Chains[msgqid][i])
+--[[for j = 1, LastGuideNumRows do
+--if msgqid == DugisGuideViewer.qid[j] and (DugisGuideViewer.actions[j] == "A" or DugisGuideViewer.actions[j] == "C" or DugisGuideViewer.actions[j] == "T") then
+if (DugisGuideViewer.Chains[msgqid][i] == DugisGuideViewer.qid[j]) and strmatch(self.actions[j], "[ACT]") and DugisGuideViewer:GetTriStateChk(j) == "U" then
+DugisGuideViewer:SetChktoX(j)
+DebugPrint("Skip Breadcrumb"..DugisGuideViewer.Chains[msgqid][i])
+end
+end--]]
 end
 end
 end
 end
 function DugisGuideViewer:GetGuideIndexByQID(qid)
-local i
 for i=1, LastGuideNumRows do
 if DugisGuideViewer.qid[i] == qid then return i end
 end
 end
 function DugisGuideViewer:GetQuestLogIndexByQID(qid)
-local i
 local numq, tmp = GetNumQuestLogEntries()
+--DebugPrint("GetNumQuestLogEntries="..tmp..numq) --zero on startup?
 for i=1,numq do
+--temp = select(1, GetQuestLogTitle(i))
+--DebugPrint("quest #"..i..":"..temp)
 local qid2 = select(9, GetQuestLogTitle(i))
 if qid2 == qid then return i end
 end
 end
 function DugisGuideViewer:CompleteQID(qid, state)
-local i
-for i = 1, LastGuideNumRows do
+for i=1, LastGuideNumRows do
 if DugisGuideViewer.qid[i] == qid and DugisGuideViewer.actions[i] == state then
+--DebugPrint("Set "..i.."to complete")
 DugisGuideViewer:SetChkToComplete(i)
 end
 end
@@ -175,12 +197,17 @@ end
 function DugisGuideViewer:GetQIDFromQuestName(name)
 local logindx = getQuestIndexByQuestName(name)
 local qid
+--DebugPrint("logindx="..logindx)
 if logindx then
+--local qid = select(9, GetQuestLogTitle(4))
 qid = select(9, GetQuestLogTitle(logindx))
+--local questID = select(9, GetQuestLogTitle(QuestLogFrame.selectedIndex))
 end
+--DebugPrint("qid="..qid)
 return qid
 end
 function DugisGuideViewer:CompleteLOOTorQO(calledfrom, itemid)
+local flag = 0
 --Quest Objective or Loot completion
 local questtext = DugisGuideViewer:ReturnTag("QO")
 local logindex = DugisGuideViewer:GetQuestLogIndexByQID(DugisGuideViewer.qid[CurrentQuestIndex])
@@ -188,7 +215,6 @@ local done = DugisGuideViewer:IsQuestObjectiveComplete(logindex, questtext)
 local lootitem, lootqty = DugisGuideViewer:ReturnTag("L", CurrentQuestIndex)
 local optional = DugisGuideViewer:ReturnTag("O", CurrentQuestIndex)
 local inlog = DugisGuideViewer:GetQuestLogIndexByQID(DugisGuideViewer.qid[CurrentQuestIndex])
-local flag = 0
 if calledfrom == "CMSG" then
 --DebugPrint("lootqty="..lootqty.."GetItemCount(lootitem)="..GetItemCount(lootitem))
 if done == true or ((lootitem and (GetItemCount(lootitem) + 1) >= lootqty) and lootitem == itemid ) then  
@@ -217,10 +243,14 @@ if CurrentQuestName then
 DebugPrint("CurrentAction"..CurrentAction.."CurrentQuestName"..CurrentQuestName.."CQI:"..CurrentQuestIndex)
 end
 if event == "PLAYER_LOGIN" then
+--local addonName = "DugisGuideViewer"
+--if not addonName then return end
 DebugPrint("Player login")
+--DugisGuideViewer:HideLargeWindow()
 QueryQuestsCompleted()
 elseif event == "CHAT_MSG_LOOT" and CurrentTitle ~= nil then
 local _, _, itemid, name = msg:find(L["^You .*Hitem:(%d+).*(%[.+%])"])
+--DebugPrint("itemid="..itemid)
 --Check all previous quests to see if |O| + |L| or |U| item was picked up
 local newindex
 for i = 1, CurrentQuestIndex do
@@ -252,7 +282,10 @@ if correctzone == true then
 DugisGuideViewer:MoveToNextQuest()
 end
 elseif event == "CHAT_MSG_SYSTEM" then
+--if (CurrentAction == "T") or (CurrentAction == "A") or (CurrentAction == "SH") then
 DugisGuideViewer:ChatMessage(event, msg)
+--end
+--Works for completing a quest which turns its icon to '?'
 elseif event == "QUEST_LOG_UPDATE" then
 --PATCH: If I call OnLoad from PLAYER_LOGIN, 
 --GetNumQuestLogEntries == 0 when it is not.
@@ -269,8 +302,7 @@ if logidx then --user abandoned quest but it hasn't registered yet
 else
 DebugPrint("user abandoned")
 for i =1, LastGuideNumRows do
---if DugisGuideViewer.qid[i] == AbandonQID and (DugisGuideViewer.actions[i] == "A" or DugisGuideViewer.actions[i] == "C" or DugisGuideViewer.actions[i] == "T") then
-if  DugisGuideViewer.qid[i] == AbandonQID and strmatch(DugisGuideViewer.actions[i], "[ACTNK]") then
+if DugisGuideViewer.qid[i] == AbandonQID and (DugisGuideViewer.actions[i] == "A" or DugisGuideViewer.actions[i] == "C" or DugisGuideViewer.actions[i] == "T") then
 DugisGuideViewer:ClrChk(i)
 end
 end
@@ -326,7 +358,7 @@ if (CurrentAction == "f") then
 --local msg = select(1, ...)
 if msg == ERR_NEWTAXIPATH then
 DebugPrint("Detected completed new flight point")
-DugisGuideViewer:SetChkToComplete(fCurrentQuestIndex)
+DugisGuideViewer:SetChkToComplete(CurrentQuestIndex)
 DugisGuideViewer:MoveToNextQuest()
 end
 end
@@ -337,17 +369,14 @@ if DugisGuideViewer.queryquests then
 DugisGuideUser.turnedinquests = DugisGuideViewer.queryquests
 end
 elseif event == "ADDON_LOADED" then
+--DebugPrint("ADDON_LOADED"..msg)
 if msg == "DugisGuideViewerZ" then
 self:UnregisterEvent("ADDON_LOADED")
+DebugPrint("ADDON_LOADED"..msg)
+DebugPrint("SELF"..self:GetName())
 DugisGuideViewer:OnInitialize()
 end
-elseif event == "ACHIEVEMENT_EARNED" or event == "CRITERIA_UPDATE" then
-DugisGuideViewer:UpdateAchieveFrame()
-elseif event == "TRADE_SKILL_UPDATE" then
-DebugPrint("TRADE_SKILL_UPDATE")
-DugisGuideViewer:UpdateProfessions()
-elseif event == "PLAYER_LEVEL_UP" then
-DugisGuideViewer:UpdatePlayerLevels()
+elseif event == "ACHIEVEMENT_EARNED" then
 end
 end
 local tabs
@@ -363,7 +392,7 @@ sz = 7,
 [5] = { text = "Automatic Waypoints", checked = true,tooltip = "Map each destination with TomTom",},
 [6] = { text = "Manual Mode", checked = true,tooltip = "This mode lets the user individually complete or skip quests. When unchecked, the guide will skip all quests in the quest sequence",},
 [7] = { text = "Item Button",checked = true,tooltip = "Shows a small window to click when an item is needed for a quest",},
-[8] = { text = "Automatic Quest Watch", checked = true,tooltip = "",},
+--[[[8] = { text = "Automatic Quest Watch", checked = true,tooltip = "",},--]]
 },
 },
 }
@@ -374,7 +403,7 @@ tabs = {
 [3] = {text = "Dungeons", title = "Dungeon Guides", desc = "Select a leveling guide closest to your current level", frame = _G["DGVTabFrame3"], guidetype = "I"},
 [4] = {text = "Maps", title = "Dungeon Maps", desc = "Select a Dungeon Map", frame = _G["DGVTabFrame4"], guidetype = "M"},
 [5] = {text = "Dailies/Events",title = "Dailies and Events Guides", desc = "Complete the (Required For Dailies) guides first to qualify for dailies", frame = _G["DGVTabFrame5"], guidetype = "D"},
-[6] = {text = "Ach/Prof", title = "Achievements and Professions Guides", desc = "", frame = _G["DGVTabFrame6"], guidetype = "E"},
+[6] = {text = "Ach/Prof", title = "Achievements and Professions Guides", desc = "Coming soon.. stay tuned to UltimateWoWGuide.com", frame = _G["DGVTabFrame6"], guidetype = "E"},
 [7] = {text = "Settings",title = "Settings for Dugis Guide Viewer", desc = "", frame = _G["DGVTabFrame7"], guidetype = nil},
 }
 local i
@@ -390,19 +419,6 @@ for i, qid in ipairs(DugisGuideViewer.actions) do
 DugisGuideViewer:SetQuestColor(i)
 DugisGuideViewer:SetQuestText(i)
 getglobal("RecapPanelDetail"..i.."Button"):SetNormalTexture(DugisGuideViewer:getIcon(DugisGuideViewer.actions[i], i ))
-end
-end
-function DugisGuideViewer:UpdatePlayerLevels()
-local i
-if DugisGuideViewer:isValidGuide(CurrentTitle) == true then
-local guidesize = self:getGuideSize(CurrentTitle, string.split("\n","\n"..self.guides[CurrentTitle]()))
-for i=1, guidesize do
-local reqlvl = self:ReturnTag("PL", i)
-if reqlvl and reqlvl <= UnitLevel("player") then
-self:SetChkToComplete(i)
-if i == CurrentQuestIndex then self:MoveToNextQuest() end
-end
-end
 end
 end
 function DugisGuideViewer:SetQuestColor(i)
@@ -442,11 +458,13 @@ end
 end
 function DugisGuideViewer:GetQuestLevel(qid)
 if self.ReqLevel[qid] then
+--DebugPrint("QID:"..qid.."RL:"..self.ReqLevel[qid][1])
 return self.ReqLevel[qid][1]
 end
 end
 function DugisGuideViewer:GetReqQuestLevel(qid)
 if self.ReqLevel[qid] then
+--DebugPrint("QID:"..qid.."RL:"..self.ReqLevel[qid][1])
 return self.ReqLevel[qid][2]
 end
 end
@@ -456,54 +474,6 @@ getglobal("RecapPanelDetail"..i.."Chk"):SetChecked(1)
 if (DugisGuideViewer.actions[i] == "A" or DugisGuideViewer.actions[i] == "C" or DugisGuideViewer.actions[i] == "T") and (DugisGuideViewer.daily[i] == nil) then
 --getglobal("RecapPanelDetail"..i.."Chk"):Disable()
 if state == "T" then table.insert(DugisGuideUser.turnedinquests, DugisGuideViewer.qid[i]) end
-end
-end
-function DugisGuideViewer:AchieveCompleteFromAchieveID(achieveID, achieveIndex)
-local name, completed, description, cdescription, ccompleted
-if achieveIndex then
-cdescription, _, ccompleted = GetAchievementCriteriaInfo(achieveID, achieveIndex)
-if ccompleted == true then return true end
-else
-_, name, _, completed, _, _, _, description, _, _, _ = GetAchievementInfo(achieveID)
-if completed == true then return true end
-end
-end
-function DugisGuideViewer:AchieveCompleteFromGuideIndex(guideindx)
-local comp, categoryID, description, completed, achieveID, achieveIndex, ret
-achieveID = self:ReturnTag("AID", guideindx)
-achieveIndex = self:ReturnTag("AC", guideindx)
-if achieveID then
-ret = self:AchieveCompleteFromAchieveID(achieveID, achieveIndex)
-end
-return ret
-end
-function DugisGuideViewer:PrintAchieve(achieveID, achieveIndex)
-local name, completed, description, ccompleted, cdescription
-_, name, _, completed, _, _, _, description, _, _, _ = GetAchievementInfo(achieveID)
-if completed == true then comp = " complete" else comp = " NOT complete" end
-if achieveIndex then
-cdescription, _, ccompleted = GetAchievementCriteriaInfo(achieveID, achieveIndex)
-if ccompleted == true then ccomp = " complete" else ccomp = " NOT complete" end
-DebugPrint("["..achieveID.."] "..name..comp.." STEP: ["..achieveIndex.."] "..cdescription..ccomp)
-else
-DebugPrint("["..achieveID.."] "..name..comp)
-end
-end
-function DugisGuideViewer:PrintAllGuideAchieves()
-for i=1, LastGuideNumRows do
-local achieveID = self:ReturnTag("AID", i)
-local achieveIndex = self:ReturnTag("AC", i)
-if achieveID then self:PrintAchieve(achieveID, achieveIndex) end
-end
-end
-function DugisGuideViewer:UpdateAchieveFrame()
-if DugisGuideViewer:isValidGuide(CurrentTitle) == true then
-if DugisGuideViewer.gtype[CurrentTitle] == "E" then --achieve guide type
-DebugPrint("UpdateAchieveFrame()") 
-for i=1, LastGuideNumRows do
-if self:AchieveCompleteFromGuideIndex(i) then self:SetChkToComplete(i) end
-end
-end
 end
 end
 function DugisGuideViewer:SetQuestsState()
@@ -518,7 +488,7 @@ if DugisGuideUser.QuestState then
 for i=1, LastGuideNumRows do
 ret = DugisGuideViewer:HasQuestBeenTurnedIn(DugisGuideViewer.qid[i])
 logindex = DugisGuideViewer:GetQuestLogIndexByQID(DugisGuideViewer.qid[i])
-if ret == true or self:AchieveCompleteFromGuideIndex(i) then    --completed and turned in quest
+if ret == true then    --completed and turned in quest
 DugisGuideViewer:SetChkToComplete(i)
 elseif logindex then  --In quest log
 local temp, _, _, _, _, _, isComplete = GetQuestLogTitle(logindex)
@@ -584,15 +554,6 @@ elseif tag == "L" then
 local _, _, lootitem, lootqty = tags:find("|L|(%d+)%s?(%d*)|")
 lootqty = tonumber(lootqty) or 1
 return lootitem, lootqty
-elseif tag == "P" then
-local profession, professionlvl = tags:match("|P|(%w+%s?%w*)%s+(%d+)")
-return profession, tonumber(professionlvl)
-elseif tag == "PL" then
-local playerlvl = tags:match("|PL|(%d+)|")
-return tonumber(playerlvl)
-elseif tag == "PM" then --ex: |PM|Alchemy|75|
-local profession, maxlevel = tags:match("|PM|(%w+%s?%w*)%s*|(%d+)|")
-return profession, tonumber(maxlevel)
 end
 return select(3, tags:find("|"..tag.."|([^|]*)|?"))
 end
@@ -696,9 +657,8 @@ end
 function DugisGuideViewer:MapCurrentObjective()
 local i
 local ZoneToUse
-local ContToUse 
 if TomTom then --Either TomTom or Carbonite Emulator
-if self:GetFlag("WaypointsOn") and (CurrentTitle ~= "The Scarlet Enclave (55-58 Death Knight)") then
+if self:GetFlag("WaypointsOn") then
 local desc
 if DugisGuideViewer.actions[CurrentQuestIndex] == "A" or DugisGuideViewer.actions[CurrentQuestIndex] == "T" then
 desc = "[DG] "..DugisGuideViewer.quests1L[CurrentQuestIndex].." ("..self:RemoveParen(DugisGuideViewer.quests2[CurrentQuestIndex])..")"
@@ -706,6 +666,7 @@ else
 desc = "[DG] "..DugisGuideViewer.quests1L[CurrentQuestIndex]
 end
 local zonefromnotetag = DugisGuideViewer:ReturnTag("Z", CurrentQuestIndex)
+local ContToUse 
 --If there is a |Zone= Darnassus| tag
 if zonefromnotetag then 
 zonefromnotetag = DugisGuideViewer:localize(zonefromnotetag, "ZONE")
@@ -723,16 +684,11 @@ DebugPrint("Default zone"..ZoneToUse)
 end
 self.XVals, self.YVals = DugisGuideViewer:getCoords(CurrentQuestIndex)
 --Remove previous objective's mapping
---local mappedpoints = self:getAllCoords()
-local mappedpoints = DugisGuideViewer.coords
-if mappedpoints ~= nil then
-DebugPrint("size of mappedpoints="..#mappedpoints)
-DebugPrint("size of DugisGuideViewer.coords="..#DugisGuideViewer.coords)
+local mappedpoints = self:getAllCoords()
 for i=1, #mappedpoints do
 local uid = select ( 5, unpack(mappedpoints[i]))
 TomTom:RemoveWaypoint(uid) 
 --DebugPrint("REMOVE UID:"..uid)
-end
 end
 --Add new objectives
 self:removeAllPoints()
@@ -749,15 +705,15 @@ end--If DugisGuideViewer.Flag_Waypoints == 1
 end--If TomTom
 end
 function DugisGuideViewer:getAllCoords()
-return DugisGuideViewer.coords
+return coords
 end
  function DugisGuideViewer:addPoint(...)
 DebugPrint("add point")
 local c, z, x, y, uid, desc = ... 
     lastLocation = {c, z, x/100, y/100, uid, desc}
-tinsert(DugisGuideViewer.coords, 1, lastLocation)
+tinsert(coords, 1, lastLocation)
     show = true
---[[for i = 1, #DugisGuideViewer.coords do
+--[[for i = 1, #coords do
 x_shift[i], y_shift[i] = 0,0
 end--]]
 if Ants then 
@@ -767,7 +723,7 @@ end--Don't auto clear the arrow when arriving end
   end
   function DugisGuideViewer:removeAllPoints()
 if Ants then Ants:removeAllPoints() end
-table.wipe(DugisGuideViewer.coords)
+table.wipe(coords)
   end
 local zonei, zonec, zonenames = {}, {}, {}
 for ci,c in pairs{GetMapContinents()} do
@@ -798,9 +754,9 @@ local continent = zonec[zonename]
 --DebugPrint("Continent is"..continent)
 return continent
 end
-function SmallFrameClickHandler(self, button,...)
+function SmallFrameClickHandler(self,arg1)
 name = self:GetName()
-if name == "DugisSmallFrame" and button == "RightButton" then
+if name == "DugisSmallFrame" and arg1 == "RightButton" then
 if DugisMainframe:IsVisible() == 1 then
 DugisGuideViewer:HideLargeWindow()
 getglobal("DugisSmallFrameLogo"):Hide()
@@ -928,7 +884,7 @@ end
 function DugisGuideViewer:UnSkipQuest(qindex)
 local qid = DugisGuideViewer.qid[qindex]
 --if DugisGuideViewer.actions[qindex] == "A" or DugisGuideViewer.actions[qindex] == "C" or DugisGuideViewer.actions[qindex] == "T" then 
-if strmatch(self.actions[qindex], "[ACTNK]") then
+if strmatch(self.actions[qindex], "[ACT]") then
 --Mark all quests with this same qid
 --[[for i =1, LastGuideNumRows do
 if (DugisGuideViewer.qid[i] == qid) and (DugisGuideUser.QuestState[CurrentTitle..':'..i] ~= "C") then
@@ -955,7 +911,7 @@ local logindex = DugisGuideViewer:GetQuestLogIndexByQID(DugisGuideViewer.qid[qin
 if logindex then RemoveQuestWatch(logindex)end
 WatchFrame_Update()
 --if DugisGuideViewer.actions[qindex] == "A" or DugisGuideViewer.actions[qindex] == "C" or DugisGuideViewer.actions[qindex] == "T" then 
-if strmatch(self.actions[qindex], "[ACTNK]") then
+if strmatch(self.actions[qindex], "[ACT]") then
 --Mark all quests with this same qid
 --[[for i =1, LastGuideNumRows do
 --local prereq = DugisGuideViewer:ReturnTag("PRE", i)
@@ -994,7 +950,8 @@ DebugPrint("Current quest now is: "..DugisGuideViewer.quests1L[CurrentQuestIndex
 --end
 end
 function DugisGuideViewer:WatchQuest()
-if (CurrentAction == "C" or CurrentAction == "T") and self:GetFlag("EnableQW") then
+--if InterfaceOptionsObjectivesPanelAutoQuestTracking:GetChecked() then DebugPrint("AUto checked") else DebugPrint("AUto unchecked") end
+--[[if (CurrentAction == "C" or CurrentAction == "T")  and self:GetFlag("EnableQW") then
 local logindex = DugisGuideViewer:GetQuestLogIndexByQID(DugisGuideViewer.qid[CurrentQuestIndex])
 if logindex then AddQuestWatch(logindex) end
 local i = CurrentQuestIndex
@@ -1003,18 +960,7 @@ local logindex = DugisGuideViewer:GetQuestLogIndexByQID(DugisGuideViewer.qid[i])
 if logindex then AddQuestWatch(logindex) end
 i = i + 1
 end
-else --Remove all quest Watches
-local RemoveWatch = {}
-for watchIndex=1,GetNumQuestWatches() do
-local questIndex = GetQuestIndexForWatch(watchIndex)
---RemoveQuestWatch(questIndex)
-table.insert(RemoveWatch, questIndex)
-end
-for i = 1, #RemoveWatch do
---DebugPrint("Removing from QW: "..RemoveWatch[i])
-RemoveQuestWatch(RemoveWatch[i])
-end
-end
+end--]]
 WatchFrame_Update()
 end
 function havelootitem(qid)
@@ -1193,7 +1139,7 @@ local fontwidth = fontstring:GetStringWidth()
 return fontwidth
 end
 function DugisGuideViewer:PopulateSmallFrame(currquest)
-if currquest and DugisGuideViewer:isValidGuide(CurrentTitle) == true then
+if currquest and DugisGuideViewer:isValidGuide(CurrentTitle) ~= nil then
 local icon = getglobal("SmallFrameDetail1Button")
 local text = getglobal("SmallFrameDetail1Name")
 local frame = getglobal("DugisSmallFrame")
@@ -1253,7 +1199,10 @@ end
 function DugisGuideViewer:DisplayViewTab(title)
 --DebugPrint("CurrentTitle:"..CurrentTitle)
 --Clear existing guide if any and load this guide
-if title == nil or DugisGuideViewer:isValidGuide(title) == false then
+if title == nil or DugisGuideViewer:isValidGuide(title) == nil then
+--DugisGuideViewer:SetViewTabTitle(L["No Guide Loaded"])
+--DugisGuideViewer:InitSmallFrame(L["No Guide Loaded. Click Here To Select One"], "Interface\\Minimap\\TRACKING\\Class" )
+--DugisGuideViewer:WipeOutViewTab()
  DugisGuideViewer:ClearScreen()
 else--if title ~= CurrentTitle then
 CurrentTitle = title
@@ -1274,8 +1223,6 @@ DugisGuideViewer:ShowViewTab()
 DugisGuideViewer:SetQuestsState()
 DugisGuideViewer:PopulateSmallFrame(CurrentQuestIndex)
 DugisGuideViewer:SetAllPercents()
-DugisGuideViewer:UpdateProfessions()
-DugisGuideViewer:UpdatePlayerLevels()
 end
 end
 function Dugis_OnMouseWheel(self, delta)
@@ -1349,7 +1296,7 @@ end
 function SetPercentComplete()
 local percent
 local unchecked = 0
-if DugisGuideViewer:isValidGuide(CurrentTitle) == true then
+if CurrentTitle then
 DugisPercentButtonName:Show()
 for i=1, LastGuideNumRows do
 if DugisGuideUser.QuestState[CurrentTitle..':'..i] == "U" then unchecked = unchecked + 1 end
@@ -1418,8 +1365,7 @@ if not guideidx then DebugPrint(pr.." Not in current guide") end
 --if not DugisGuideUser.toskip then DugisGuideUser.toskip = {pr} else table.insert(DugisGuideUser.toskip, pr) end
 for i = 1, LastGuideNumRows do
 if (DugisGuideViewer.qid[i] == pr) and (DugisGuideUser.QuestState[CurrentTitle..':'..i] == "X") then 
---if (DugisGuideViewer.actions[i] == "A" or DugisGuideViewer.actions[i] == "C" or DugisGuideViewer.actions[i] == "T") then
-if strmatch(self.actions[i], "[ACTNK]") then
+if (DugisGuideViewer.actions[i] == "A" or DugisGuideViewer.actions[i] == "C" or DugisGuideViewer.actions[i] == "T") then
 DugisGuideViewer:ClrChk(i)
 end
 end
@@ -1499,8 +1445,7 @@ DebugPrint(qid.." Not in current guide")
 else
 for i = 1, LastGuideNumRows do
 if (DugisGuideViewer.qid[i] == qid) and (DugisGuideUser.QuestState[CurrentTitle..':'..i] ~= "C") then 
---if (DugisGuideViewer.actions[i] == "A" or DugisGuideViewer.actions[i] == "C" or DugisGuideViewer.actions[i] == "T") then
-if strmatch(self.actions[i], "[ACTNK]") then
+if (DugisGuideViewer.actions[i] == "A" or DugisGuideViewer.actions[i] == "C" or DugisGuideViewer.actions[i] == "T") then
 DugisGuideViewer:SetChktoX(i)
 end
 end
@@ -1570,38 +1515,53 @@ function DugisGuideViewer:isValidGuide(title)
 if self.guides[title] then 
 return true
 end
-return false
 end
 function DugisGuideViewer:Test()
-Ants:Debugz()
+if InterfaceOptionsObjectivesPanelAutoQuestTracking:GetChecked() then DebugPrint("AUto checked") else DebugPrint("AUto unchecked") end
+--Ants:Debugz()
+DebugPrint("L[Automatic Waypoints]="..L["Automatic Waypoints"])
+--[[
+local achievementID = 867 --http://www.wowhead.com/achievement=867
+index = 14
+local categoryID = GetAchievementCategory(achievementID)
+--local _, name, _, completed = GetAchievementInfo(categoryID, 1)
+local description, name, _, completed = GetAchievementCriteriaInfo(achievementID, index) 
+DebugPrint("CATEGORY ID:"..categoryID.."ACHIEVE NAME:"..description.."NAME:"..name.."completed"..completed) --Carrion Hill
+--]]
+local achievementID = 760 --http://www.wowhead.com/achievement=760 Explore alterac mountains
+index = 7 --Galvin's naze
+local categoryID = GetAchievementCategory(achievementID)
+--local _, name, _, completed = GetAchievementInfo(categoryID, 1)
+local description, name, _, completed = GetAchievementCriteriaInfo(achievementID, index) 
+DebugPrint("CATEGORY ID:"..categoryID.."ACHIEVE NAME:"..description.."NAME:"..name.."completed"..completed) --
+--[[
+DebugPrint("ACHIEVE NAME:"..name)
+if completed then DebugPrint("completed") else DebugPrint("NOT completed") end
+ _, name, _, completed = GetAchievementInfo(867, 6)
+DebugPrint("ACHIEVE NAME:"..name)
+if completed then DebugPrint("completed") else DebugPrint("NOT completed") end
+--]]
 end
 function DugisGuideViewer:OnLoad()
+DebugPrint("Localized item button="..L["Item Button"])
 DugisGuideViewer:PopulateTabs()
 DugisGuideViewer:InitViewTab()
 DugisGuideViewer:HideLargeWindow()
 --Load saved guide
-if DugisGuideViewer:isValidGuide(CurrentTitle) == true  then
+if CurrentTitle  then
 DugisGuideViewer:DisplayViewTab(CurrentTitle)
 --Load Default 
 else 
-local myRace = DugisGuideViewer:revlocalize(UnitRace("player"), "RACE")
-local myClass = DugisGuideViewer:revlocalize(UnitClass("player"), "CLASS")
-local myfaction = UnitFactionGroup("player")
-DebugPrint("UnitXP('player')"..UnitXP("player"))
 if UnitLevel("player") == 1 and UnitXP("player") == 0 then
-local startguides = {
-BloodElf = "Eversong Woods (1-13 Blood Elf)", Orc = "Durotar (1-12 Orc & Troll)", Troll = "Durotar (1-12 Orc & Troll)", 
+DebugPrint("RACE:"..select(2, UnitRace("player")))
+local startguides = {BloodElf = "Eversong Woods (1-13 Blood Elf)", Orc = "Durotar (1-12 Orc & Troll)", Troll = "Durotar (1-12 Orc & Troll)", 
 Tauren = "Mulgore (1-12 Tauren)", Undead = "Tirisfal Glades (1-12 Undead)", Dwarf = "Dun Morogh (1-12 Dwarf & Gnome)", Gnome = "Dun Morogh (1-12 Dwarf & Gnome)", 
-Draenei = "Azuremyst Isle (1-12 Draenei)", Human = "Elwynn Forest (1-12 Human)", NightElf = "Teldrassil (1-12 Night Elf)"
-}
+Draenei = "Azuremyst Isle (1-12 Draenei)", Human = "Elwynn Forest (1-12 Human)", NightElf = "Teldrassil (1-12 Night Elf)"}
 CurrentTitle = startguides[select(2, UnitRace("player"))] 
-DugisGuideViewer:DisplayViewTab(CurrentTitle)
-elseif UnitLevel("player") == 55 and  (myClass == "Death Knight" or myClass == "DEATH KNIGHT") and UnitXP("player") < 816  then
-CurrentTitle = "The Scarlet Enclave (55-58 Death Knight)"
 DugisGuideViewer:DisplayViewTab(CurrentTitle)
 else
 DugisGuideViewer:SetViewTabTitle(L["No Guide Loaded"])
-DugisGuideViewer:InitSmallFrame(L["No Guide Loaded. Right Click Here To Select One"], "Interface\\Minimap\\TRACKING\\Class" )
+DugisGuideViewer:InitSmallFrame(L["No Guide Loaded. Click Here To Select One"], "Interface\\Minimap\\TRACKING\\Class" )
 end
 end
 if Debug == 1 and DebugFramesON == 1 then
@@ -1624,88 +1584,31 @@ GameTooltip:ClearAllPoints()
 GameTooltip:SetPoint("TOPRIGHT", SmallFrameDetail1, "BOTTOMRIGHT", 0, 10)
 end
 --]]
-function DugisGuideViewer:GetToolTipSize()
-local ttwidth, ttheight = SmallFrameTooltip:GetSize()
-local fwidth = SmallFrameTooltipTextLeft1:GetStringWidth()
-local fheight = SmallFrameTooltipTextLeft1:GetStringHeight()
-local pad = SmallFrameTooltip:GetPadding()
-return ttwidth, ttheight, fwidth, fheight, pad
-end
 function DugisGuideViewer:SmallWindowTooltip_OnEnter(self, event)
-if DugisGuideViewer:isValidGuide(CurrentTitle) == true then
+if CurrentQuestIndex then
 local name = "RecapPanelDetail"..CurrentQuestIndex.."Desc"
-local text = _G[name]
---text = getglobal(name):GetText()
---DebugPrint(text:GetText())
-CreateFrame( "GameTooltip", "SmallFrameTooltip", nil, "GameTooltipTemplate" ); 
-SmallFrameTooltip:SetOwner( _G["SmallFrameDetail1"]);
-SmallFrameTooltip:SetParent(UIParent)
-SmallFrameTooltipTextLeft1:SetFont("Fonts\\FRIZQT__.TTF", 12)
-SmallFrameTooltip:SetPadding(5)
-SmallFrameTooltip:AddLine(text:GetText(), 1, 1, 1, 1,true)
-SmallFrameTooltip:Show()
-local ttwidth, ttheight, fwidth, fheight, pad = DugisGuideViewer:GetToolTipSize()
---DebugPrint("fwidth:"..fwidth.." fheight:"..fheight.." ttwidth"..ttwidth.." ttheight"..ttheight.." pad"..pad)
-local scaleFactor = fwidth / ttwidth
-local maxScale = 1.3
-if (scaleFactor > 1) then
-local newwidth
-if scaleFactor > maxScale then
-scaleFactor = maxScale
-end
-if(scaleFactor < 1.10) then
-newwidth = fwidth * 1.10
-else 
-newwidth = ttwidth * scaleFactor
-end
-SmallFrameTooltip:SetWidth(newwidth)
-SmallFrameTooltipTextLeft1:SetWidth(newwidth - 15)
-SmallFrameTooltip:SetHeight(SmallFrameTooltipTextLeft1:GetHeight() + 20)
-ttwidth, ttheight, fwidth, fheight, pad = DugisGuideViewer:GetToolTipSize()
---DebugPrint("2fwidth:"..fwidth.." fheight:"..fheight.." ttwidth"..ttwidth.." ttheight"..ttheight.." pad"..pad)
-end
-SmallFrameTooltip:SetFrameStrata("TOOLTIP")
-SmallFrameTooltip:ClearAllPoints()
-SmallFrameTooltip:SetPoint("TOPRIGHT", SmallFrameDetail1, "BOTTOMRIGHT", 0, 10)
+local text
+text = getglobal(name):GetText()
+GameTooltip:SetOwner( getglobal("SmallFrameDetail1"))--,"ANCHOR_TOPRIGHT", 0, 0)
+GameTooltip:AddLine(text, 1, 1, 1, 1, true)
+GameTooltip:Show()
+GameTooltip:ClearAllPoints()
+GameTooltip:SetPoint("TOPRIGHT", SmallFrameDetail1, "BOTTOMRIGHT", 0, 10)
 end
 end
 function DugisGuideViewer:SmallWindowTooltip_OnLeave()
-if SmallFrameTooltip then SmallFrameTooltip:Hide() end
+  GameTooltip:Hide()
 end
 function DugisGuideViewer:Tooltip_OnEnter(self, event, ...)
-  local name = self:GetName()
-local text = getglobal(self:GetName().."Desc"):GetText()
-CreateFrame( "GameTooltip", "LargeFrameTooltip", nil, "GameTooltipTemplate" ); 
-LargeFrameTooltip:SetOwner(getglobal(name), "ANCHOR_CURSOR")
-LargeFrameTooltip:SetParent(UIParent)
-LargeFrameTooltipTextLeft1:SetFont("Fonts\\FRIZQT__.TTF", 12)
-LargeFrameTooltip:SetPadding(5)
-LargeFrameTooltip:AddLine(text, 1, 1, 1, 1,true)
-LargeFrameTooltip:Show()
-local ttwidth, ttheight, fwidth, fheight, pad = DugisGuideViewer:GetToolTipSize()
---DebugPrint("fwidth:"..fwidth.." fheight:"..fheight.." ttwidth"..ttwidth.." ttheight"..ttheight.." pad"..pad)
-local scaleFactor = fwidth / ttwidth
-local maxScale = 1.3
-if (scaleFactor > 1) then
-local newwidth
-if scaleFactor > maxScale then
-scaleFactor = maxScale
-end
-if(scaleFactor < 1.10) then
-newwidth = fwidth * 1.10
-else 
-newwidth = ttwidth * scaleFactor
-end
-LargeFrameTooltip:SetWidth(newwidth)
-LargeFrameTooltipTextLeft1:SetWidth(newwidth - 15)
-LargeFrameTooltip:SetHeight(LargeFrameTooltipTextLeft1:GetHeight() + 20)
-ttwidth, ttheight, fwidth, fheight, pad = DugisGuideViewer:GetToolTipSize()
---DebugPrint("2fwidth:"..fwidth.." fheight:"..fheight.." ttwidth"..ttwidth.." ttheight"..ttheight.." pad"..pad)
-end
-LargeFrameTooltip:SetFrameStrata("TOOLTIP")
+ local name = self:GetName()
+  local text
+  text = getglobal(self:GetName().."Desc"):GetText()
+  GameTooltip:SetOwner(getglobal(name), "ANCHOR_CURSOR")
+  GameTooltip:AddLine(text, 1, 1, 1, 1, true)
+  GameTooltip:Show()
 end
 function DugisGuideViewer:Tooltip_OnLeave()
-  LargeFrameTooltip:Hide()
+  GameTooltip:Hide()
 end
 --[[
 A = "Interface\\AddOns\\DugisGuideViewer\\Artwork\\accept.tga" 'accept
@@ -1742,12 +1645,19 @@ local icontbl = {
 [17] = {path = "Interface\\AddOns\\DugisGuideViewerZ\\Artwork\\turnin_d.tga", text = "Turn in Daily"},
 [18] = {path = "Interface\\AddOns\\DugisGuideViewerZ\\Artwork\\dungeon.tga", text = "Use Dungeon Finder"},
 }
+--[[
+mt = {}
+setmetatable(icontbl, mt)
+function mt._index(t,key)
+   --if key == 'length' then return string.len(t.value) end
+DebugPrint("META T:"..t.."META KEY:"..key)
+end
+--]]
 function DugisGuideViewer:getIcon(objectiveType, i)
-local isDaily, isDungeon, isTooHigh, reqLevel, isKill
+local isDaily, isDungeon, isTooHigh, reqLevel
 reqLevel = DugisGuideViewer:GetReqQuestLevel(self.qid[i])
 if (DugisGuideViewer.daily[i]) then isDaily = true end
 if (DugisGuideViewer:ReturnTag("I", i)) then isDungeon = true end
-if (DugisGuideViewer:ReturnTag("K", i)) then isKill = true end
 if reqLevel and reqLevel >  UnitLevel("player") then isTooHigh = true end
 if isTooHigh and objectiveType == "A" then
 return "Interface\\AddOns\\DugisGuideViewerZ\\Artwork\\accept_g.tga" 
@@ -1759,8 +1669,6 @@ elseif isDaily and objectiveType == "T" then
 return "Interface\\AddOns\\DugisGuideViewerZ\\Artwork\\turnin_d.tga"
 elseif isDungeon then
 return "Interface\\AddOns\\DugisGuideViewerZ\\Artwork\\dungeon.tga" 
-elseif isKill then
-return "Interface\\Minimap\\TRACKING\\Ammunition"
 elseif (objectiveType == "A" ) then 
 return "Interface\\AddOns\\DugisGuideViewerZ\\Artwork\\accept.tga" 
 elseif (objectiveType == "C") then
@@ -1822,6 +1730,21 @@ if guidetype == "M" then
 if not self.guidelist["M"] then self.guidelist["M"] ={} end
 table.insert(self.guidelist["M"], title)
 end
+--[[if guidetype == "L" then 
+table.insert(self.Lguidelist, title)
+end
+if guidetype == "D" then
+table.insert(self.Dguidelist, title)
+end
+if guidetype == "E" then
+table.insert(self.Eguidelist, title)
+end
+if guidetype == "I" then
+table.insert(self.Iguidelist, title)
+end
+if guidetype == "M" then
+table.insert(self.Mguidelist, title)
+end--]]
 --DebugPrint( "Title: "..title.."rowinfo: "..self.guides[title])
 end
 --DebugPrint("guidename: "..title.."guidetype: "..guidetype.."Length of table is: "..#self.Eguidelist)
@@ -1901,7 +1824,6 @@ end
 for i = 1, select ("#", ...) do
 local text = select(i, ...)
 text = self:Retxyz(text, i)
---DebugPrint("TEXT ="..text)
 local _, _, classes = text:find("|C|([^|]+)|")         
 local _, _, races = text:find("|R|([^|]+)|")             
 local _, _, daily = text:find("(|D|)")
@@ -2022,7 +1944,7 @@ getglobal("SmallFrameDetail1Name"):SetText(text)
 end
 function DugisGuideViewer:ClearScreen()
 DugisGuideViewer:SetViewTabTitle(L["No Guide Loaded"])
-DugisGuideViewer:InitSmallFrame(L["No Guide Loaded. Right Click Here To Select One"], "Interface\\Minimap\\TRACKING\\Class" )
+DugisGuideViewer:InitSmallFrame(L["No Guide Loaded. Click Here To Select One"], "Interface\\Minimap\\TRACKING\\Class" )
 DugisGuideViewer:WipeOutViewTab()
 end
 --Fill screen with 3 items: Objective type (actions), Quest name, Note Tag (actions, quests, tags)
@@ -2246,15 +2168,6 @@ self:SetUseItem(self.useitem[CurrentQuestIndex])
 else
 DugisGuideViewerItemFrame:Hide()
 end
---[[if self:GetFlag("EnableQW") then
-AUTO_QUEST_WATCH = "1"
-DebugPrint("Auto Quest Watch ON")
-else
-AUTO_QUEST_WATCH = "0"
-DebugPrint("Auto Quest Watch OFF")
-end
---]]
---InterfaceOptionsFrameOkay_OnClick (nil, nil, true)
 --[[
 if self:GetFlag("EnableQW") then
 --InterfaceOptionsObjectivesPanelAutoQuestTracking:SetChecked(self.db.char.settings.autoquestwatch)
@@ -2367,6 +2280,7 @@ DelayFrame:SetScript("OnUpdate", function(self, elapsed)
 self.delay = self.delay - elapsed
 if self.delay <= 0 then
 self:Hide()
+--self.func()
 DugisGuideViewer:MoveToNextQuest()
 end
 end)
@@ -2384,6 +2298,7 @@ if self.delay <= 0 then
 self:Hide()
 end
 end)
+--self:GimmeTag("QuestObjective")
 function DugisGuideViewer:IsQuestObjectiveComplete(qi, questtext)
 for i=1,GetNumQuestLeaderBoards(qi) do if GetQuestLogLeaderBoard(i, qi) == questtext then return true end end
 end
@@ -2395,9 +2310,76 @@ AbandonQID = select(9, GetQuestLogTitle(i))
 DebugPrint("Clicked abandon on"..AbandonQID)
 return orig(...)
 end
+local togglewatch = {}
+--[[local addqworig = AddQuestWatch
+function AddQuestWatch(...)
+DebugPrint("In AddQuestWatch() *****")
+local i = select(1, ...)
+if togglewatch[i] == true then DebugPrint("togglewatch is true") elseif togglewatch[i] == false then DebugPrint("togglewatch is false") else DebugPrint("togglewatch is nil") end
+if (togglewatch[i] == true) then
+DebugPrint("add watch#" ..select(1, GetQuestLogTitle(GetQuestLogSelection())))  
+return addqworig(...)
+elseif ((not DugisGuideViewer:GetFlag("EnableQW")) and togglewatch[i] == nil) or togglewatch[i] == false then 
+DebugPrint("remove watch#" ..select(1, GetQuestLogTitle(GetQuestLogSelection()))) RemoveQuestWatch( i ) 
+end
+--QuestLog_Update();
+--WatchFrame_Update()
+togglewatch[i] = nil
+DebugPrint("***")
+--if DugisGuideViewer:GetFlag("EnableQW") or addwatch then addwatch = nil return addqworig(...) else RemoveQuestWatch( GetQuestLogSelection()) end
+--return addqworig(...) 
+end
+--]]
+--Called after Toggle quest watch button is clicked
+--[[QuestLogFrameTrackButton:HookScript("OnClick", function(...)
+--QuestLog_Update();
+local i = GetQuestLogSelection()
+--local questCheck = getglobal("QuestLogTitleButton"..i) 
+WatchFrame_Update()
+DebugPrint("In QuestLogFrameTrackButton() ***")
+--if not IsQuestWatched(i)  then 
+if not WatchFrame_GetVisibleIndex(i) then
+DebugPrint("Add Quest Watch #:"..select(1, GetQuestLogTitle(i)))
+togglewatch[i] = true
+--AddQuestWatch(i)
+else
+DebugPrint("Remove Quest Watch #:"..select(1, GetQuestLogTitle(i)))
+togglewatch[i] = false
+--RemoveQuestWatch( i ) 
+end
+--QuestLog_Update()
+WatchFrame_Update()
+DebugPrint("***")
+end)
+--]]
+--Called after AddQuestWatch
+--[[function Dugis_AddQuestWatch(...)
+DebugPrint("In AddQuestWatch() *****")
+local i = select(1, ...)
+if togglewatch[i] == true then DebugPrint("togglewatch is true") elseif togglewatch[i] == false then DebugPrint("togglewatch is false") else DebugPrint("togglewatch is nil") end
+if (togglewatch[i] == true) then
+DebugPrint("add watch#" ..select(1, GetQuestLogTitle(GetQuestLogSelection())))  
+--return addqworig(...)
+elseif ((not DugisGuideViewer:GetFlag("EnableQW")) and togglewatch[i] == nil) then 
+DebugPrint("remove watch#" ..select(1, GetQuestLogTitle(GetQuestLogSelection()))) RemoveQuestWatch( i ) 
+end
+--QuestLog_Update();
+--WatchFrame_Update()
+togglewatch[i] = nil
+DebugPrint("***")
+end
+hooksecurefunc("AddQuestWatch", Dugis_AddQuestWatch);
+--]]
+--[[
+function Dugis_QuestLogTitleButton_OnEvent( self, event, ...)
+DebugPrint("title button on event")
+end
+--QuestLogTitleButton_OnEvent(self, event, ...)
+hooksecurefunc("QuestLogTitleButton_OnEvent", Dugis_QuestLogTitleButton_OnEvent)
+--]]
 --Occurs BEFORE QuestFrameCompleteQuestButton OnClick (works with questguru, doesn't work with carbonite)
 function Dugis_RewardComplete_Click()
-if IsAddOnLoaded("QuestGuru") and DugisGuideViewer:isValidGuide(CurrentTitle) == true then
+if IsAddOnLoaded("QuestGuru") then
 DebugPrint("Finished a quest, hooked QuestRewardCompleteButton_OnClick")
 local qid = DugisGuideViewer:GetQIDFromQuestName(GetTitleText())
 --Turning in a quest '!'
@@ -2421,7 +2403,7 @@ end
 hooksecurefunc("QuestRewardCompleteButton_OnClick", Dugis_RewardComplete_Click);
 --Occurs AFTER QuestFrameCompleteQuestButton OnClick (doesn't work with questguru, works with carbonite)
 QuestFrameCompleteQuestButton:HookScript("OnClick", function(...)
-if (IsAddOnLoaded("QuestGuru") == nil) and DugisGuideViewer:isValidGuide(CurrentTitle) == true then
+if (IsAddOnLoaded("QuestGuru") == nil)  then
 DebugPrint("Finished a quest, HookScript QuestFrameCompleteQuestButton")
 local qid = DugisGuideViewer:GetQIDFromQuestName(GetTitleText())
 --Turning in a quest '!'

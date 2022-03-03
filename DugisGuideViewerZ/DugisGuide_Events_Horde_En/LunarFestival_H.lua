@@ -1,201 +1,202 @@
 DugisGuideViewer:RegisterGuide("The Lunar Festival (80+)", nil, "Horde", "D", function()
 return [[
+AAA
 
-N Please Read |N|This guide assumes you are level 80, and/or are in a large group. You will be visiting some nasty places which may be hard to solo. Good luck, brave adventurer!|
+KMib^pbOb^ayKyQefpdrfab^pprjbpvlr^obibsbi5-)^ka,lo^obfk^i^odbdolrm+Vlrtfii_bsfpfqfkdpljbk^pqvmi^`bptef`ej^v_be^oaqlplil+Dllair`h)_o^sb^asbkqroboy
 
-h Dalaran |N|If you are currently in Dalaran, make sure to set your Hearthstone there if you haven't already done so. You'll be coming back later.|
-R Orgrimmar |N|Use the portal|
+eA^i^o^kyKyFcvlr^ob`roobkqivfkA^i^o^k)j^hbprobqlpbqvlroEb^oqepqlkbqebobfcvlre^sbk$q^iob^avalkbpl+Vlr$ii_b`ljfkd_^`hi^qbo+y
+OLodofjj^oyKyRpbqebmloq^iy
 
-F Azshara
-T Skygleam the Elder |N|Ravencrest Monument, south-east (72.4,84.9)| |Z|Azshara|
+C>wpe^o^
+QPhvdib^jqebBiaboyKyO^sbk`obpqJlkrjbkq)plrqe*b^pq%4/+1)51+6&yyWy>wpe^o^y
 
-F Winterspring
-T Stonespire the Elder |N|In the center of Everlook (61.3,37.7)| |Z|Winterspring|
-T Brightspear the Elder |N|Southeastern edge of Lake Kel'Theril (55.3,43.8)| |Z|Winterspring|
+CTfkqbopmofkd
+QPqlkbpmfobqebBiaboyKyFkqeb`bkqbolcBsboillh%3.+0)04+4&yyWyTfkqbopmofkdy
+Q?ofdeqpmb^oqebBiaboyKyPlrqeb^pqbokbadblcI^hbHbi$Qebofi%22+0)10+5&yyWyTfkqbopmofkdy
 
-F Felwood
-T Nightwind the Elder |N|North of Jaedenar (37.7,52.9)| |Z|Felwood|
+CCbitlla
+QKfdeqtfkaqebBiaboyKyKloqelcG^babk^o%04+4)2/+6&yyWyCbitllay
 
-R Ashenvale |N|Fly to Emerald Sanctuary to save some time, if you like|
-T Riversong the Elder |N|In the gazebo near the Hippogryph Master (35.4,48.9)| |Z|Ashenvale|
+O>pebks^ibyKyCivqlBjbo^iaP^k`qr^ovqlp^sbpljbqfjb)fcvlrifhby
+QOfsboplkdqebBiaboyKyFkqebd^wb_lkb^oqebEfmmldovmeJ^pqbo%02+1)15+6&yyWy>pebks^iby
 
-F Darkshore
-T Starweave the Elder |N|Near the Hippogryph Master in Auberdine (36.7,46.6)| |Z|Darkshore|
+CA^ohpelob
+QPq^otb^sbqebBiaboyKyKb^oqebEfmmldovmeJ^pqbofk>r_boafkb%03+4)13+3&yyWyA^ohpeloby
 
-b Darnassus
-T Bladeswift the Elder |N|Center of the Cenarion Enclave (33.6,15.1)| |Z|Darnassus|
-T Bladeleaf the Elder |N|Southern edge of Dolanaar (57.2,60.7)| |Z|Teldrassil|
+_A^ok^pprp
+Q?i^abptfcqqebBiaboyKy@bkqbolcqeb@bk^oflkBk`i^sb%00+3).2+.&yyWyA^ok^pprpy
+Q?i^abib^cqebBiaboyKyPlrqebokbadblcAli^k^^o%24+/)3-+4&yyWyQbiao^ppfiy
 
-R Orgrimmar |N|Hearth to Dalaran, take the portal|
-T Darkhorn the Elder |N|Outside Thrall's chamber, Valley of Wisdom (40.9,32.9)| |Z|Orgrimmar|
+OLodofjj^oyKyEb^oqeqlA^i^o^k)q^hbqebmloq^iy
+QA^ohelokqebBiaboyKyLrqpfabQeo^ii$p`e^j_bo)S^iibvlcTfpalj%1-+6)0/+6&yyWyLodofjj^oy
 
-R Durotar
-T Runetotem the Elder |N|SE edge of Razor Hill (53.1,43.5)| |Z|Durotar|
+OArolq^o
+QOrkbqlqbjqebBiaboyKyPBbadblcO^wloEfii%20+.)10+2&yyWyArolq^oy
 
-R The Barrens
-T Windtotem the Elder |N|In Ratchet, outside of the Engineering building north of the bank (62.6,36.7)| |Z|The Barrens|
-T Moonwarden the Elder |N|Next to the flight master in the Crossroads (51.4,30.6)| |Z|The Barrens|
+OQeb?^oobkp
+QTfkaqlqbjqebBiaboyKyFkO^q`ebq)lrqpfablcqebBkdfkbbofkd_rfiafkdkloqelcqeb_^kh%3/+3)03+4&yyWyQeb?^oobkpy
+QJllkt^oabkqebBiaboyKyKbuqqlqebcifdeqj^pqbofkqeb@olppol^ap%2.+1)0-+3&yyWyQeb?^oobkpy
 
-F Desolace
-R Maraudon
-T Splitrock the Elder |N|Jump into the water by the Princess and Rotgrip. Swim to the east and head up the ramp. Turn right and head up a 2nd ramp. The Elder will be in front of you.|
+CAbpli^`b
+OJ^o^ralk
+QPmifqol`hqebBiaboyKyGrjmfkqlqebt^qbo_vqebMofk`bpp^kaOlqdofm+Ptfjqlqebb^pq^kaeb^armqebo^jm+Qrokofdeq^kaeb^arm^/kao^jm+QebBiabotfii_bfkcolkqlcvlr+y
 
-R Thunder Bluff |N|Hearth to Dalaran, use the portal|
-T Wheathoof the Elder |N|Elder Rise (72.2,23.5). In memoriam, Ezra Chatterton (1998-2008).| |Z|Thunder Bluff|
+OQerkabo?irccyKyEb^oqeqlA^i^o^k)rpbqebmloq^iy
+QTeb^qellcqebBiaboyKyBiaboOfpb%4/+/)/0+2&+Fkjbjlof^j)Bwo^@e^qqboqlk%.665*/--5&+yyWyQerkabo?irccy
 
-R Mulgore
-T Bloodhoof the Elder |N|North of Bloodhoof Village, next to the bridge (48.3,53.4)| |Z|Mulgore|
+OJridlob
+Q?illaellcqebBiaboyKyKloqelc?illaellcSfii^db)kbuqqlqeb_ofadb%15+0)20+1&yyWyJridloby
 
-R The Barrens
-T High Mountain the Elder |N|NE edge of Camp Taurajo, next to the forge (45,57.9)| |Z|The Barrens|
+OQeb?^oobkp
+QEfdeJlrkq^fkqebBiaboyKyKBbadblc@^jmQ^ro^gl)kbuqqlqebclodb%12)24+6&yyWyQeb?^oobkpy
 
-F Feralas
-T Grimtotem the Elder |N|Lariss Pavilion, northeast of Camp Mojache (76.7,37.7)| |Z|Feralas|
-T Mistwalker the Elder |N|Inside the Dire Maul arena, outside the instance (62,31)| |Z|Feralas|
+CCbo^i^p
+QDofjqlqbjqebBiaboyKyI^ofppM^sfiflk)kloqeb^pqlc@^jmJlg^`eb%43+4)04+4&yyWyCbo^i^py
+QJfpqt^ihboqebBiaboyKyFkpfabqebAfobJ^ri^obk^)lrqpfabqebfkpq^k`b%3/)0.&yyWyCbo^i^py
 
-F Thousand Needles
-T Skyseer the Elder |N|Middle of Freewind Post (45.3,49.8)| |Z|Thousand Needles|
-T Morningdew the Elder |N|Mirage Raceway, near the starting line (79,76.9)| |Z|Thousand Needles|
+CQelrp^kaKbbaibp
+QPhvpbboqebBiaboyKyJfaaiblcCobbtfkaMlpq%12+0)16+5&yyWyQelrp^kaKbbaibpy
+QJlokfkdabtqebBiaboyKyJfo^dbO^`bt^v)kb^oqebpq^oqfkdifkb%46)43+6&yyWyQelrp^kaKbbaibpy
 
-R Tanaris
-T Dreamseer the Elder |N|In Gadgetzan (51.3,27.8)| |Z|Tanaris|
+OQ^k^ofp
+QAob^jpbboqebBiaboyKyFkD^adbqw^k%2.+0)/4+5&yyWyQ^k^ofpy
 
-R Zul'Farrak
-T Wildmane the Elder |N|SE corner of the room with Gahz'rilla's gong|
+OWri$C^oo^h
+QTfiaj^kbqebBiaboyKyPB`lokbolcqebolljtfqeD^ew$ofii^$pdlkdy
 
-R Tanaris
-T Ragetotem the Elder |N|Valley of the Watchers, west side (36.2,80.4)| |Z|Tanaris|
+OQ^k^ofp
+QO^dbqlqbjqebBiaboyKyS^iibvlcqebT^q`ebop)tbpqpfab%03+/)5-+1&yyWyQ^k^ofpy
 
-R Un'Goro Crater
-T Thunderhorn the Elder |N|North of the Slithering Scar (50.1,76.1)| |Z|Un'Goro Crater|
+ORk$Dlol@o^qbo
+QQerkaboelokqebBiaboyKyKloqelcqebPifqebofkdP`^o%2-+.)43+.&yyWyRk$Dlol@o^qboy
 
-R Silithus
-T Bladesing the Elder |N|Standing in the Moon Well, Cenarion Hold (48.8,37.6)| |Z|Silithus|
-T Primestone the Elder |N|Center of the Crystal Vale (22.9,11.6)| |Z|Silithus|
+OPfifqerp
+Q?i^abpfkdqebBiaboyKyPq^kafkdfkqebJllkTbii)@bk^oflkElia%15+5)04+3&yyWyPfifqerpy
+QMofjbpqlkbqebBiaboyKy@bkqbolcqeb@ovpq^iS^ib%//+6)..+3&yyWyPfifqerpy
 
-R Undercity |N|Hearth to Dalaran, take the portal|
-T Darkcore the Elder |N|In the middle of Undercity, above ground (67.4,39.1)| |Z|Undercity|
+ORkabo`fqvyKyEb^oqeqlA^i^o^k)q^hbqebmloq^iy
+QA^oh`lobqebBiaboyKyFkqebjfaaiblcRkabo`fqv)^_lsbdolrka%34+1)06+.&yyWyRkabo`fqvy
 
-F Eastern Plaguelands
-T Snowcrown the Elder |N|Light's Hope Chapel (75.7,54.6)| |Z|Eastern Plaguelands|
+CB^pqbokMi^drbi^kap
+QPklt`oltkqebBiaboyKyIfdeq$pElmb@e^mbi%42+4)21+3&yyWyB^pqbokMi^drbi^kapy
 
-R Stratholme
-T Farwhisper the Elder |N|North of the Festival Lane mailbox (near The Unforgiven). Enter through the back door. Make your first left in the instance, go through the gate, turn right, and the Elder will be standing at the back.|
+OPqo^qelijb
+QC^otefpmboqebBiaboyKyKloqelcqebCbpqfs^iI^kbj^fi_lu%kb^oQebRkclodfsbk&+Bkqboqeolrdeqeb_^`hallo+J^hbvlrocfopqibcqfkqebfkpq^k`b)dlqeolrdeqebd^qb)qrokofdeq)^kaqebBiabotfii_bpq^kafkd^qqeb_^`h+y
 
-R Eastern Plaguelands
-T Windrun the Elder |N|Crown Guard Tower, north of Darrowshire (35.6,68.8)| |Z|Eastern Plaguelands|
+OB^pqbokMi^drbi^kap
+QTfkaorkqebBiaboyKy@oltkDr^oaQltbo)kloqelcA^ooltpefob%02+3)35+5&yyWyB^pqbokMi^drbi^kapy
 
-R Western Plaguelands
-T Meadowrun the Elder |N|North of the road, south of The Weeping Cave (65.8,47.7)| |Z|Western Plaguelands|
-T Moonstrike the Elder |N|On top of the Scholomance Tower, outside of the instance (69,74)| |Z|Western Plaguelands|
+OTbpqbokMi^drbi^kap
+QJb^altorkqebBiaboyKyKloqelcqebol^a)plrqelcQebTbbmfkd@^sb%32+5)14+4&yyWyTbpqbokMi^drbi^kapy
+QJllkpqofhbqebBiaboyKyLkqlmlcqebP`elilj^k`bQltbo)lrqpfablcqebfkpq^k`b%36)41&yyWyTbpqbokMi^drbi^kapy
 
-R Tirisfal Glades
-T Graveborn the Elder |N|Just south of Brill (61.7,53.7)| |Z|Tirisfal Glades|
+OQfofpc^iDi^abp
+QDo^sb_lokqebBiaboyKyGrpqplrqelc?ofii%3.+4)20+4&yyWyQfofpc^iDi^abpy
 
-F Silverpine Forest
-T Obsidian the Elder |N|Near to The Sepulcher (44.8,41.1)| |Z|Silverpine Forest|
+CPfisbomfkbClobpq
+QL_pfaf^kqebBiaboyKyKb^oqlQebPbmri`ebo%11+5)1.+.&yyWyPfisbomfkbClobpqy
 
-F The Hinterlands
-T Highpeak the Elder |N|Near the Creeping Ruin (49.9,47.9)| |Z|The Hinterlands|
+CQebEfkqboi^kap
+QEfdemb^hqebBiaboyKyKb^oqeb@obbmfkdOrfk%16+6)14+6&yyWyQebEfkqboi^kapy
 
-F Badlands
-R Loch Modan
-T Silvervein the Elder |N|(33,46.3)| |Z|Loch Modan|
+C?^ai^kap
+OIl`eJla^k
+QPfisbosbfkqebBiaboyKy%00)13+0&yyWyIl`eJla^ky
 
-R Dun Morogh
-T Goldwell the Elder |N|Near the Kharanos inn (46.7,51.4)| |Z|Dun Morogh|
+OArkJlolde
+QDliatbiiqebBiaboyKyKb^oqebHe^o^klpfkk%13+4)2.+1&yyWyArkJloldey
 
-R City of Ironforge
-T Bronzebeard the Elder |N|In the Mystic Ward (28.1,17)| |Z|Ironforge|
+O@fqvlcFolkclodb
+Q?olkwb_b^oaqebBiaboyKyFkqebJvpqf`T^oa%/5+.).4&yyWyFolkclodby
 
-R Stormwind City |N|Use the Deeprun Tram if you can|
-T Hammershout the Elder |N|Standing in the Moon Well, Park District (36,66)| |Z|Stormwind City|
+OPqlojtfka@fqvyKyRpbqebAbbmorkQo^jfcvlr`^ky
+QE^jjbopelrqqebBiaboyKyPq^kafkdfkqebJllkTbii)M^ohAfpqof`q%03)33&yyWyPqlojtfka@fqvy
 
-R Elwynn Forest
-T Stormbrow the Elder |N|Near the pond (39.6,63.5)| |Z|Elwynn Forest|
+OBitvkkClobpq
+QPqloj_oltqebBiaboyKyKb^oqebmlka%06+3)30+2&yyWyBitvkkClobpqy
 
-R Westfall
-T Skychaser the Elder |N|On top of the tower, north-east of Sentinel Hill (56.6,47)| |Z|Westfall|
+OTbpqc^ii
+QPhv`e^pboqebBiaboyKyLkqlmlcqebqltbo)kloqe*b^pqlcPbkqfkbiEfii%23+3)14&yyWyTbpqc^iiy
 
-R Stranglethorn Vale
-T Starglade the Elder |N|Near Zul'Gurub, in the right "courtyard" in front of the steps up to instance entrance (53.1,18.3)| |Z|Stranglethorn Vale|
-T Winterhoof the Elder |N|Near Horde flight master on top of the bank in Booty Bay (26.3,76.4)| |Z|Stranglethorn Vale|
+OPqo^kdibqelokS^ib
+QPq^odi^abqebBiaboyKyKb^oWri$Dror_)fkqebofdeq`lroqv^oafkcolkqlcqebpqbmprmqlfkpq^k`bbkqo^k`b%20+.).5+0&yyWyPqo^kdibqelokS^iby
+QTfkqboellcqebBiaboyKyKb^oEloabcifdeqj^pqbolkqlmlcqeb_^khfk?llqv?^v%/3+0)43+1&yyWyPqo^kdibqelokS^iby
 
-F Swamp of Sorrows
-R The Temple of Atal'Hakkar
-T Starsong the Elder |N|First left up spiral stairs, through dragonkin at top landing, stay left into main room with dragonkin|
+CPt^jmlcPlooltp
+OQebQbjmiblc>q^i$E^hh^o
+QPq^oplkdqebBiaboyKyCfopqibcqrmpmfo^ipq^fop)qeolrdeao^dlkhfk^qqlmi^kafkd)pq^vibcqfkqlj^fkolljtfqeao^dlkhfky
 
-R Blasted Lands
-T Bellowrage the Elder |N|North of the Dark Portal (57.7,54.7)| |Z|Blasted Lands|
+O?i^pqbaI^kap
+Q?biilto^dbqebBiaboyKyKloqelcqebA^ohMloq^i%24+4)21+4&yyWy?i^pqbaI^kapy
 
-F Burning Steppes
-T Dawnstrider the Elder |N|Up at Flame Crest, that cave with the Libram guy (64.2,24)| |Z|Burning Steppes|
-T Rumblerock the Elder |N|On top of Dreadmaul Rock, north of Morgan's Vigil (81.9,46.3)| |Z|Burning Steppes|
+C?rokfkdPqbmmbp
+QA^tkpqofaboqebBiaboyKyRm^qCi^jb@obpq)qe^q`^sbtfqeqebIf_o^jdrv%31+/)/1&yyWy?rokfkdPqbmmbpy
+QOrj_ibol`hqebBiaboyKyLkqlmlcAob^aj^riOl`h)kloqelcJlod^k$pSfdfi%5.+6)13+0&yyWy?rokfkdPqbmmbpy
 
-F Searing Gorge
-T Ironband the Elder |N|Southwest corner in Blackchar Cave (21.1,78.8)| |Z|Searing Gorge|
+CPb^ofkdDlodb
+QFolk_^kaqebBiaboyKyPlrqetbpq`lokbofk?i^`h`e^o@^sb%/.+.)45+5&yyWyPb^ofkdDlodby
 
-R Blackrock Spire
-T Stonefort the Elder |N|At the first of the rope bridges in Lower Blackrock Spire|
+O?i^`hol`hPmfob
+QPqlkbcloqqebBiaboyKy>qqebcfopqlcqebolmb_ofadbpfkIltbo?i^`hol`hPmfoby
 
-R Blackrock Depths
-T Morndeep the Elder |N|Inside the Ring of Law|
+O?i^`hol`hAbmqep
+QJlokabbmqebBiaboyKyFkpfabqebOfkdlcI^ty
 
-N Northrend |N|The data for the Elders of Northrend is incomplete. You will have to find some of them, especially in dungeons, on your own.|
+KKloqeobkayKyQeba^q^cloqebBiaboplcKloqeobkafpfk`ljmibqb+Vlrtfiie^sbqlcfkapljblcqebj)bpmb`f^iivfkarkdblkp)lkvlroltk+y
 
-H Dalaran
-R The Storm Peaks
-T Fargal the Elder |N|In Frosthold (28.9,73.7)| |Z|The Storm Peaks|
-T Graymane the Elder |N|In K3 (41.2,84.7)| |Z|The Storm Peaks|
-T Stonebeard the Elder |N|In Bouldercrag's Refuge (31.3,37.6)| |Z|The Storm Peaks|
-T Muraco the Elder |N|in Camp Tunka'lo (64.6,51.3)| |Z|The Storm Peaks|
+EA^i^o^k
+OQebPqlojMb^hp
+QC^od^iqebBiaboyKyFkColpqelia%/5+6)40+4&yyWyQebPqlojMb^hpy
+QDo^vj^kbqebBiaboyKyFkH0%1.+/)51+4&yyWyQebPqlojMb^hpy
+QPqlkb_b^oaqebBiaboyKyFk?lriabo`o^d$pObcrdb%0.+0)04+3&yyWyQebPqlojMb^hpy
+QJro^`lqebBiaboyKyfk@^jmQrkh^$il%31+3)2.+0&yyWyQebPqlojMb^hpy
 
-R Zul'Drak
-T Tauros the Elder |N|In Zim'Torga (58.9,56)| |Z|Zul'Drak|
+OWri$Ao^h
+QQ^rolpqebBiaboyKyFkWfj$Qlod^%25+6)23&yyWyWri$Ao^hy
 
-R Grizzly Hills
-T Lunaro the Elder |N|In the Ruins of Tethys (80.5,37.6)| |Z|Grizzly Hills|
-T Beldak the Elder |N|Westfall Brigade Encampment (60.6,27.7)| |Z|Grizzly Hills|
-T Whurain the Elder |N|Camp Oneqwah (64.2,47)| |Z|Grizzly Hills|
+ODofwwivEfiip
+QIrk^olqebBiaboyKyFkqebOrfkplcQbqevp%5-+2)04+3&yyWyDofwwivEfiipy
+Q?bia^hqebBiaboyKyTbpqc^ii?ofd^abBk`^jmjbkq%3-+3)/4+4&yyWyDofwwivEfiipy
+QTero^fkqebBiaboyKy@^jmLkbnt^e%31+/)14&yyWyDofwwivEfiipy
 
-R Dragonblight
-T Thoim the Elder |N|in Moa'ki Harbor (48.8,78.2)| |Z|Dragonblight|
-T Skywarden the Elder |N|in Agmar's Hammer (35.1,48.3)| |Z|Dragonblight|
-T Morthie the Elder |N|in Star's Rest (29.7,55.9)| |Z|Dragonblight|
+OAo^dlk_ifdeq
+QQelfjqebBiaboyKyfkJl^$hfE^o_lo%15+5)45+/&yyWyAo^dlk_ifdeqy
+QPhvt^oabkqebBiaboyKyfk>dj^o$pE^jjbo%02+.)15+0&yyWyAo^dlk_ifdeqy
+QJloqefbqebBiaboyKyfkPq^o$pObpq%/6+4)22+6&yyWyAo^dlk_ifdeqy
 
-R Borean Tundra
-T Arp the Elder |N|in the D.E.H.T.A. camp (57.3,43.7)| |Z|Borean Tundra|
-T Sardis the Elder |N|in Valiance Keep (59.1,65.6)| |Z|Borean Tundra|
-T Pamuya the Elder |N|in Warsong Hold (42.9,49.6)| |Z|Borean Tundra|
-T Northal the Elder |N|in Transistus Shield (33.8,34.4)| |Z|Borean Tundra|
+O?lob^kQrkao^
+Q>omqebBiaboyKyfkqebA+B+E+Q+>+`^jm%24+0)10+4&yyWy?lob^kQrkao^y
+QP^oafpqebBiaboyKyfkS^if^k`bHbbm%26+.)32+3&yyWy?lob^kQrkao^y
+QM^jrv^qebBiaboyKyfkT^oplkdElia%1/+6)16+3&yyWy?lob^kQrkao^y
+QKloqe^iqebBiaboyKyfkQo^kpfpqrpPefbia%00+5)01+1&yyWy?lob^kQrkao^y
 
-R Sholazar Basin
-T Sandrene the Elder |N|in Lakeside Landing (49.8,63)| |Z|Sholazar Basin|
-T Wanikaya the Elder |N|in Rainspeaker Rapids (63.8,49)| |Z|Sholazar Basin|
+OPeli^w^o?^pfk
+QP^kaobkbqebBiaboyKyfkI^hbpfabI^kafkd%16+5)30&yyWyPeli^w^o?^pfky
+QT^kfh^v^qebBiaboyKyfkO^fkpmb^hboO^mfap%30+5)16&yyWyPeli^w^o?^pfky
 
-R Wintergrasp
-T Bluewolf the Elder |N|Your faction needs to control Lake Wintergrasp in order to visit Elder Bluewolf. (49,14)| |Z|Wintergrasp|
+OTfkqbodo^pm
+Q?irbtlicqebBiaboyKyVlroc^`qflkkbbapql`lkqoliI^hbTfkqbodo^pmfkloaboqlsfpfqBiabo?irbtlic+%16).1&yyWyTfkqbodo^pmy
 
-R The Nexus
-T Igasho the Elder
+OQebKburp
+QFd^pelqebBiabo
 
-R Halls of Stone
-T Yurauk the Elder |N|On the right as you go in|
+OE^iiplcPqlkb
+QVro^rhqebBiaboyKyLkqebofdeq^pvlrdlfky
 
-R Utgarde Keep
-T Jarten the Elder
+ORqd^oabHbbm
+QG^oqbkqebBiabo
 
-R Azjol-Nerub
-T Nurgen the Elder
+O>wgli*Kbor_
+QKrodbkqebBiabo
 
-R Drak'Tharon Keep
-T Kilias the Elder
+OAo^h$Qe^olkHbbm
+QHfif^pqebBiabo
 
-R Utgarde Pinnacle
-T Chogan'gada the Elder
+ORqd^oabMfkk^`ib
+Q@eld^k$d^a^qebBiabo
 
-R Gundrak |N|The elder will only appear in Heroic Mode, and requires you to defeat Moorabi along the way|
-T Ohanzee the Elder |N|The elder will only appear in Heroic Mode, and requires you to defeat Moorabi along the way|
+ODrkao^hyKyQebbiabotfiilkiv^mmb^ofkEbolf`Jlab)^kaobnrfobpvlrqlabcb^qJllo^_f^ilkdqebt^vy
+QLe^kwbbqebBiaboyKyQebbiabotfiilkiv^mmb^ofkEbolf`Jlab)^kaobnrfobpvlrqlabcb^qJllo^_f^ilkdqebt^vy
 
 ]]
 end)

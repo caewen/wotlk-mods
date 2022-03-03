@@ -1,49 +1,50 @@
 DugisGuideViewer:RegisterGuide("Winter Veil: Quest Chain", nil, "Alliance", "D", function() 
 return [[
+AAA
 
-F City of Ironforge |N|Go to Ironforge| 
-A Stolen Winter Veil Treats |N|Macey Jinglepocket (33, 67.6)| |QID|7042| |Z|Ironforge|
+C@fqvlcFolkclodbyKyDlqlFolkclodby
+>PqlibkTfkqboSbfiQob^qpyKyJ^`bvGfkdibml`hbq%00)34+3&yyNFAy4-1/yyWyFolkclodby
 
-A Great-father Winter is Here! |N|Wulmort Jinglepocket (33, 67.6)| |QID|7022| |Z|Ironforge|
-A Metzen the Reindeer |N|Wulmort Jinglepocket (33, 67.6)| |QID|8762| |Z|Ironforge|
-U [Smokywood Satchel] |N|Open [Smokywood Satchel]| |U|21315|
-A The Reason for the Season |N|Goli Krumn (30, 60) |QID|7062| |Z|Ironforge|
+>Dob^q*c^qeboTfkqbofpEbobyKyTrijloqGfkdibml`hbq%00)34+3&yyNFAy4-//yyWyFolkclodby
+>JbqwbkqebObfkabboyKyTrijloqGfkdibml`hbq%00)34+3&yyNFAy543/yyWyFolkclodby
+RXPjlhvtllaP^q`ebiZyKyLmbkXPjlhvtllaP^q`ebiZyyRy/.0.2y
+>QebOb^plkcloqebPb^plkyKyDlifHorjk%0-)3-&yNFAy4-3/yyWyFolkclodby
 
-T Great-father Winter is Here! |N|Greatfather Winter (33, 66)| |QID|7022| |Z|Ironforge|
-A Treats for Great-father Winter |N|Greatfather Winter (33, 66)| |QID|7025| |Z|Ironforge|
+QDob^q*c^qeboTfkqbofpEbobyKyDob^qc^qeboTfkqbo%00)33&yyNFAy4-//yyWyFolkclodby
+>Qob^qpcloDob^q*c^qeboTfkqboyKyDob^qc^qeboTfkqbo%00)33&yyNFAy4-/2yyWyFolkclodby
 
-T The Reason for the Season |N|Historian Karnik (77, 11)| |QID|7062| |Z|Ironforge|
-A The Feast of Winter Veil |N|Historian Karnik (77, 11)| |QID|7063| |Z|Ironforge|
+QQebOb^plkcloqebPb^plkyKyEfpqlof^kH^okfh%44)..&yyNFAy4-3/yyWyFolkclodby
+>QebCb^pqlcTfkqboSbfiyKyEfpqlof^kH^okfh%44)..&yyNFAy4-30yyWyFolkclodby
 
-T The Feast of Winter Veil |N|King Magni Bronzebeard  (60, 51.7)| |QID|7063| |Z|Ironforge|
-U Throw [Snowball] at Cairne.. |N|Throw [Snowball] at King Magni Bronzebeard  (39.3, 55.9) for achievement| |U|17202|
+QQebCb^pqlcTfkqboSbfiyKyHfkdJ^dkf?olkwb_b^oa%3-)2.+4&yyNFAy4-30yyWyFolkclodby
+RQeoltXPklt_^iiZ^q@^fokb++yKyQeoltXPklt_^iiZ^qHfkdJ^dkf?olkwb_b^oa%06+0)22+6&clo^`efbsbjbkqyyRy.4/-/y
 
-F South Shore |N|Fly to South Shore in Hillsbrad Foothills|
+CPlrqePelobyKyCivqlPlrqePelobfkEfiip_o^aCllqefiipy
 
-T Stolen Winter Veil Treats |N|Strange Snowman (35.2, 72.1)| |QID|7042| |Z|Alterac Mountains|
-A You're a Mean One... |N|Strange Snowman (35.2, 72.1)| |QID|7043| |Z|Alterac Mountains|
-C You're a Mean One... |N|Kill The Abominable Greench and collect the [Stolen Treats] (30, 54), (39.7, 63.6), (33, 69), (30,64), (40,73)| |QID|7043| |Z|Alterac Mountains|
-T You're a Mean One... |N|Wulmort Jinglepocket (33, 67.6)|  |QID|7043| |Z|Ironforge|
-A A Smokywood Pastures' Thank You! |N|Wulmort Jinglepocket (33, 67.6)| |QID|7045| |Z|Ironforge|
+QPqlibkTfkqboSbfiQob^qpyKyPqo^kdbPkltj^k%02+/)4/+.&yyNFAy4-1/yyWy>iqbo^`Jlrkq^fkpy
+>Vlr$ob^Jb^kLkb+++yKyPqo^kdbPkltj^k%02+/)4/+.&yyNFAy4-10yyWy>iqbo^`Jlrkq^fkpy
+@Vlr$ob^Jb^kLkb+++yKyHfiiQeb>_ljfk^_ibDobbk`e^ka`liib`qqebXPqlibkQob^qpZ%0-)21&)%06+4)30+3&)%00)36&)%0-)31&)%1-)40&yyNFAy4-10yyWy>iqbo^`Jlrkq^fkpy
+QVlr$ob^Jb^kLkb+++yKyTrijloqGfkdibml`hbq%00)34+3&yyNFAy4-10yyWyFolkclodby
+>>PjlhvtllaM^pqrobp$Qe^khVlryKyTrijloqGfkdibml`hbq%00)34+3&yyNFAy4-12yyWyFolkclodby
 
-F Thorium Point |N|Fly to Thorium Point|
-N Kill Stone Golems on your way... |N|Kill any Stone Golems you see in Searing Gorge and collect 5x [Deeprock Salt] (67.9, 33.7) | |L|8150| |Z|Searing Gorge|
-C Metzen the Reindeer |N|Find Metzen the Reindeer (67.9, 33.7) and talk to him| |QID|8762| |Z|Searing Gorge|
-N Get [Deeprock Salt] |N|Kill any Stone Golems you see in Searing Gorge and collect [Deeprock Salt]| |L|8150| 
+CQelofrjMlfkqyKyCivqlQelofrjMlfkqy
+KHfiiPqlkbDlibjplkvlrot^v+++yKyHfii^kvPqlkbDlibjpvlrpbbfkPb^ofkdDlodb^ka`liib`q2uXAbbmol`hP^iqZ%34+6)00+4&yyIy5.2-yyWyPb^ofkdDlodby
+@JbqwbkqebObfkabboyKyCfkaJbqwbkqebObfkabbo%34+6)00+4&^kaq^ihqlefjyyNFAy543/yyWyPb^ofkdDlodby
+KDbqXAbbmol`hP^iqZyKyHfii^kvPqlkbDlibjpvlrpbbfkPb^ofkdDlodb^ka`liib`qXAbbmol`hP^iqZyyIy5.2-y
 
-F City of Ironforge |N|Go to Ironforge| 
+C@fqvlcFolkclodbyKyDlqlFolkclodby
 
-T A Smokywood Pastures' Thank You! |N|Greatfather Winter (33, 66)| |QID|7045| |Z|Ironforge|
-T Metzen the Reindeer |N|Wulmort Jinglepocket (33, 67.6)| |QID|8762| |Z|Ironforge|
-N The Hero of the Day |N|This quest requires you to have level 300 cooking skill to pick up| 
-A The Hero of the Day |N|Wulmort Jinglepocket (33, 67.6)| |QID|8763| |Z|Ironforge|
-T The Hero of the Day |N|Wulmort Jinglepocket (33, 67.6)| |QID|8763| |Z|Ironforge|
+Q>PjlhvtllaM^pqrobp$Qe^khVlryKyDob^qc^qeboTfkqbo%00)33&yyNFAy4-12yyWyFolkclodby
+QJbqwbkqebObfkabboyKyTrijloqGfkdibml`hbq%00)34+3&yyNFAy543/yyWyFolkclodby
+KQebEbollcqebA^vyKyQefpnrbpqobnrfobpvlrqle^sbibsbi0--`llhfkdphfiiqlmf`hrmy
+>QebEbollcqebA^vyKyTrijloqGfkdibml`hbq%00)34+3&yyNFAy5430yyWyFolkclodby
+QQebEbollcqebA^vyKyTrijloqGfkdibml`hbq%00)34+3&yyNFAy5430yyWyFolkclodby
 
-B 1x [Ice Cold Milk] |N|Buy 1x [Ice Cold Milk] from Gwenna Firebrew (18.7, 51.6) | |L|1179| |Z|Ironforge|
-N Gingerbread Cookie |N|Either buy 5x [Gingerbread Cookie] from the AH or cook it yourself you only need level 1 cooking skill, the recipe and [Holiday spices] is sold by Wulmort Jinglepocket (33, 67.6) and the eggs can be found by killing the Fleshrippers in Westfall| |L|17197 5| |Z|Ironforge|
-T Treats for Great-father Winter |N|Greatfather Winter (33, 66)| |QID|7025| |Z|Ironforge|
+?.uXF`b@liaJfihZyKy?rv.uXF`b@liaJfihZcoljDtbkk^Cfob_obt%.5+4)2.+3&yyIy..46yyWyFolkclodby
+KDfkdbo_ob^a@llhfbyKyBfqebo_rv2uXDfkdbo_ob^a@llhfbZcoljqeb>Elo`llhfqvlropbicvlrlkivkbbaibsbi.`llhfkdphfii)qebob`fmb^kaXElifa^vpmf`bpZfpplia_vTrijloqGfkdibml`hbq%00)34+3&^kaqebbddp`^k_bclrka_vhfiifkdqebCibpeofmmbopfkTbpqc^iiyyIy.4.642yyWyFolkclodby
+QQob^qpcloDob^q*c^qeboTfkqboyKyDob^qc^qeboTfkqbo%00)33&yyNFAy4-/2yyWyFolkclodby
 
-N Winter Veil Quest Chain Complete!
+KTfkqboSbfiNrbpq@e^fk@ljmibqb
 
 ]]
 end)

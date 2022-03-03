@@ -1,25 +1,26 @@
 DugisGuideViewer:RegisterGuide("Midsummer Festival Northrend (70+)", nil, "Alliance", "D", function() 
 return [[
+AAA
 
-N Manual Tick Required |N|Due to the unique nature of the Midsummer event, DugisGuideViewerZ is currently unable to automatically detect the quest and you will need to tick the completed quest manually. We are working on a solution|
-N Begin From Dalaran
-A Desecrate this Fire! (Sholazar Basin) |N|River's Heart (47, 62)| |Z|Sholazar Basin| |E|
-A Honor the Flame (Sholazar Basin) |N|River's Heart (47, 66)| |Z|Sholazar Basin| |E|
-A Desecrate this Fire! (Borean Tundra) |N|Bor'gorok Outpost (51, 12)| |Z|Borean Tundra| |E|
-A Honor the Flame (Borean Tundra) |N|Fizzcrank Airstrip (55, 20)| |Z|Borean Tundra| |E|
-A Desecrate this Fire! (Dragonblight) |N|Agmar's Hammer (39, 48)| |Z|Dragonblight| |E|
-A Honor the Flame (Dragonblight) |N|Wintergarde Keep (75, 44)| |Z|Dragonblight| |E|
-A Honor the Flame (Crystalsong Forest) |N|Windrunner's Overlook (78, 75)| |Z|Crystalsong Forest| |E|
-A Desecrate this Fire! (Crystalsong Forest) |N|Sunreaver's Command 	(80, 53)| |Z|Crystalsong Forest| |E|
-A Desecrate this Fire! (Storm Peaks) |N|K3 (40, 86)| |Z|The Storm Peaks| |E|
-A Honor the Flame (Storm Peaks) |N|K3 (42, 87)| |Z|The Storm Peaks| |E|
-A Honor the Flame (Zul'Drak) |N|The Argent Stand (41, 61)| |Z|Zul'Drak| |E|
-A Desecrate this Fire! (Zul'Drak) |N|The Argent Stand (43, 71)| |Z|Zul'Drak| |E|
-A Desecrate this Fire! (Grizzly Hills) |N|Conquest Hold (19, 61)| |Z|Grizzly Hills| |E|
-A Honor the Flame (Grizzly Hills) |N|Amberpine Lodge (34, 61)| |Z|Grizzly Hills| |E|
-A Desecrate this Fire! (Howling Fjord) |N|Camp Winterhoof (48, 13)| |Z|Howling Fjord| |E|
-A Honor the Flame (Howling Fjord) |N|Fort Wildervar (58, 16)| |Z|Howling Fjord| |E|
-N Guide Complete!
+KJ^kr^iQf`hObnrfobayKyArbqlqebrkfnrbk^qroblcqebJfaprjjbobsbkq)ArdfpDrfabSfbtboWfp`roobkqivrk^_ibql^rqlj^qf`^iivabqb`qqebnrbpq^kavlrtfiikbbaqlqf`hqeb`ljmibqbanrbpqj^kr^iiv+Tb^obtlohfkdlk^plirqflky
+K?bdfkColjA^i^o^k
+>Abpb`o^qbqefpCfob%Peli^w^o?^pfk&yKyOfsbo$pEb^oq%14)3/&yyWyPeli^w^o?^pfkyyBy
+>ElkloqebCi^jb%Peli^w^o?^pfk&yKyOfsbo$pEb^oq%14)33&yyWyPeli^w^o?^pfkyyBy
+>Abpb`o^qbqefpCfob%?lob^kQrkao^&yKy?lo$dlolhLrqmlpq%2.)./&yyWy?lob^kQrkao^yyBy
+>ElkloqebCi^jb%?lob^kQrkao^&yKyCfww`o^kh>fopqofm%22)/-&yyWy?lob^kQrkao^yyBy
+>Abpb`o^qbqefpCfob%Ao^dlk_ifdeq&yKy>dj^o$pE^jjbo%06)15&yyWyAo^dlk_ifdeqyyBy
+>ElkloqebCi^jb%Ao^dlk_ifdeq&yKyTfkqbod^oabHbbm%42)11&yyWyAo^dlk_ifdeqyyBy
+>ElkloqebCi^jb%@ovpq^iplkdClobpq&yKyTfkaorkkbo$pLsboillh%45)42&yyWy@ovpq^iplkdClobpqyyBy
+>Abpb`o^qbqefpCfob%@ovpq^iplkdClobpq&yKyPrkob^sbo$p@ljj^ka%5-)20&yyWy@ovpq^iplkdClobpqyyBy
+>Abpb`o^qbqefpCfob%PqlojMb^hp&yKyH0%1-)53&yyWyQebPqlojMb^hpyyBy
+>ElkloqebCi^jb%PqlojMb^hp&yKyH0%1/)54&yyWyQebPqlojMb^hpyyBy
+>ElkloqebCi^jb%Wri$Ao^h&yKyQeb>odbkqPq^ka%1.)3.&yyWyWri$Ao^hyyBy
+>Abpb`o^qbqefpCfob%Wri$Ao^h&yKyQeb>odbkqPq^ka%10)4.&yyWyWri$Ao^hyyBy
+>Abpb`o^qbqefpCfob%DofwwivEfiip&yKy@lknrbpqElia%.6)3.&yyWyDofwwivEfiipyyBy
+>ElkloqebCi^jb%DofwwivEfiip&yKy>j_bomfkbIladb%01)3.&yyWyDofwwivEfiipyyBy
+>Abpb`o^qbqefpCfob%EltifkdCgloa&yKy@^jmTfkqboellc%15).0&yyWyEltifkdCgloayyBy
+>ElkloqebCi^jb%EltifkdCgloa&yKyCloqTfiabos^o%25).3&yyWyEltifkdCgloayyBy
+KDrfab@ljmibqb
 
 ]]
 end)

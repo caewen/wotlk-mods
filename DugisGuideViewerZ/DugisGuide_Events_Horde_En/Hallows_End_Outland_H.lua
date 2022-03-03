@@ -1,23 +1,25 @@
 DugisGuideViewer:RegisterGuide("Hallow's End Outland", nil, "Horde", "D", function() 
 return [[
+AAA
 
-N Manual Tick Required |N|The guide will detect the trick or treats that you have already done, but you will still need to manually tick the step as you complete them or press the Reload button|
-R Shattrath City |N|Travel to Shattrath City|
-A Shattrath City |N|Go to your respective faction, Aldor Rise (28.1,49) Scryers Tier (56.2,81.8)| |AID|968| |AC|12| |Z|Shattrath City|
-A Hellfire Peninsula, Thrallmar |N|Thrallmar (56.8, 37.5)| |AID|968| |AC|5| |Z|Hellfire Peninsula|
-A Hellfire Peninsula, Falcon Watch |N|Falcon Watch (26.9, 59.6)| |AID|968| |AC|3| |Z|Hellfire Peninsula|
-A Zangarmarsh, Cenarion Refuge |N|Cenarion Refuge (78.5, 62.9)| |AID|968| |AC|13| |Z|Zangarmarsh|
-A Blade's Edge Mountains, Mok'Nathal Village |N|Mok'Nathal Village (76.2, 60.4)| |AID|968| |AC|1| |QID|12394| |Z|Blade's Edge Mountains|
-A Netherstorm, Area 52 |N|Netherstorm-Area 52 (32.1, 64.5)| |AID|968| |AC|10| |Z|Netherstorm|
-A Netherstorm, The Stormspire |N|Netherstorm-The Stormspire (43.4, 36.1)| |AID|968| |AC|11||Z|Netherstorm|
-A Blade's Edge Mountains, Evergrove |N|Evergrove (62.9, 38.3)| |AID|968| |AC|9| |Z|Blade's Edge Mountains|
-A Blade's Edge Mountains, Thunderlord Stronghold |N|Thunderlord Stronghold (53.4, 55.5)| |AID|968| |AC|2| |Z|Blade's Edge Mountains|
-A Zangarmarsh, Zabra'jin |N|Zabra'jin (30.7, 50.9)| |AID|968| |AC|8| |Z|Zangarmarsh|
-A Nagrand, Garadar |N|Garadar (56.7, 34.6)| |AID|968| |AC|4| |Z|Nagrand|
-A Terokkar Forest, Stonebreaker Hold |N|Stonebreaker Hold (48.8, 45.2)| |AID|968| |AC|7| |Z|Terokkar Forest|
-A Shadowmoon Valley, Shadowmoon Village |N|Shadowmoon Village (30.3, 27.8)| |AID|968| |AC|6| |Z|Shadowmoon Valley|
-A Shadowmoon Valley, Aldor or Scryer Inn |N|Go to your respective faction Altar of Sha'tar (61, 28.2), Sanctum of the Stars (56.3,59.8)| |AID|968| |AC|14| |Z|Shadowmoon Valley|
-N Outland Guide Complete!
+KQ^hb^Mloq^iqlLodofjj^o
+O?i^pqbaI^kapyKyQ^hbqebmloq^iql?i^pqbaI^kap%05+.)52+4&yyWyLodofjj^oy
+OEbiicfobMbkfkpri^yKyDlqeolrdeqebA^ohMloq^i%25+4)26+3&yyWy?i^pqbaI^kapy
+QEbiicfobMbkfkpri^)Qeo^iij^oyKyQeo^iij^o%23+5)04+2&yyNFAy./055yyWyEbiicfobMbkfkpri^y
+QEbiicfobMbkfkpri^)C^i`lkT^q`eyKyC^i`lkT^q`e%/3+6)26+3&yyNFAy./056yyWyEbiicfobMbkfkpri^y
+QW^kd^oj^ope)@bk^oflkObcrdbyKy@bk^oflkObcrdb%45+2)3/+6&yyNFAy./1-0yyWyW^kd^oj^opey
+Q?i^ab$pBadbJlrkq^fkp)Jlh$K^qe^iSfii^dbyKyJlhß??K^qe^iSfii^db%43+/)3-+1&yyNFAy./061yyWy?i^ab$pBadbJlrkq^fkpy
+QKbqebopqloj)>ob^2/yKyKbqebopqloj*>ob^2/%0/+.)31+2&yyNFAy./1-4yyWyKbqebopqlojy
+QKbqebopqloj)QebPqlojpmfobyKyKbqebopqloj*QebPqlojpmfob%10+1)03+.&yyNFAy./1-5yyWyKbqebopqlojy
+Q?i^ab$pBadbJlrkq^fkp)BsbodolsbyKyBsbodolsb%3/+6)05+0&yyNFAy./1-3yyWy?i^ab$pBadbJlrkq^fkpy
+Q?i^ab$pBadbJlrkq^fkp)QerkaboiloaPqolkdeliayKyQerkaboiloaPqolkdelia%20+1)22+2&yyNFAy./060yyWy?i^ab$pBadbJlrkq^fkpy
+QW^kd^oj^ope)W^_o^$gfkyKyW^_o^ß??gfk%0-+4)2-+6&yyNFAy./06-yyWyW^kd^oj^opey
+QK^do^ka)D^o^a^oyKyD^o^a^o%23+4)01+3&yyNFAy./06/yyWyK^do^kay
+QQbolhh^oClobpq)Pqlkb_ob^hboEliayKyPqlkb_ob^hboElia%15+5)12+/&yyNFAy./06.yyWyQbolhh^oClobpqy
+QPe^qqo^qe@fqvyKyDlqlvlroobpmb`qfsbc^`qflk)>ialoOfpb%/5+.)16&P`ovbopQfbo%23+/)5.+5&yyNFAy./1-1yyWyPe^qqo^qe@fqvy
+QPe^altjllkS^iibv)Pe^altjllkSfii^dbyKyPe^altjllkSfii^db%0-+0)/4+5&yyNFAy./062yyWyPe^altjllkS^iibvy
+QPe^altjllkS^iibv)>ialoloP`ovboFkkyKyDlqlvlroobpmb`qfsbc^`qflk>iq^olcPe^ß??q^o%3.)/5+/&)P^k`qrjlcqebPq^op%23+0)26+5&yyNFAy./1-6yyWyPe^altjllkS^iibvy
+KLrqi^kaDrfab@ljmibqb
 
 ]]
 end)

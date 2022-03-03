@@ -1,7 +1,6 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">
 	
 	<Script file="Event.lua"/>
-	
 	<Script file="LunarFestival_A.lua"/>
 	
 	<Script file="Childrens_Week_Azeroth_A.lua"/>

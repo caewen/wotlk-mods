@@ -1,48 +1,49 @@
 DugisGuideViewer:RegisterGuide("Children's Week (70+ Northrend Oracles)", nil, "Horde", "D", function()
 return [[
+AAA
 
-F Dalaran
-A Little Orphan Roo Of The Oracles |N|Talk to Orphan Matron Aria (49.3, 63.3)| |Z|Dalaran| |QID|13926|
-U [Oracle Orphan Whistle] |N|Use the [Oracle Orphan Whistle] to call the orphan| |U|46397| |Z|Dalaran|
-C Little Orphan Roo Of The Oracles |N|Talk to Orphan Matron Aria (49.3, 63.3)| |QID|13926| |Z|Dalaran|
-T Little Orphan Roo Of The Oracles |N|Talk to Roo| |QID|13926| |Z|Dalaran|
+CA^i^o^k
+>IfqqibLome^kOllLcQebLo^`ibpyKyQ^ihqlLome^kJ^qolk>of^%16+0)30+0&yyWyA^i^o^kyyNFAy.06/3y
+RXLo^`ibLome^kTefpqibZyKyRpbqebXLo^`ibLome^kTefpqibZql`^iiqeblome^kyyRy13064yyWyA^i^o^ky
+@IfqqibLome^kOllLcQebLo^`ibpyKyQ^ihqlLome^kJ^qolk>of^%16+0)30+0&yyNFAy.06/3yyWyA^i^o^ky
+QIfqqibLome^kOllLcQebLo^`ibpyKyQ^ihqlOllyyNFAy.06/3yyWyA^i^o^ky
 
-A The Biggest Tree Ever! |N|Talk to the Orphan Roo that you summon with [Oracle Orphan Whistle]|  |QID|13929| |Z|Dalaran|
-A The Bronze Dragonshrine |N|Talk to the Orphan Roo that you summon with [Oracle Orphan Whistle]| |QID|13933| |Z|Dalaran|
-A Playmates!  |N|Talk to the Orphan Roo that you summon with [Oracle Orphan Whistle]| |QID|13950| |Z|Dalaran|
+>Qeb?fddbpqQobbBsboyKyQ^ihqlqebLome^kOllqe^qvlrprjjlktfqeXLo^`ibLome^kTefpqibZyyNFAy.06/6yyWyA^i^o^ky
+>Qeb?olkwbAo^dlkpeofkbyKyQ^ihqlqebLome^kOllqe^qvlrprjjlktfqeXLo^`ibLome^kTefpqibZyyNFAy.0600yyWyA^i^o^ky
+>Mi^vj^qbpyKyQ^ihqlqebLome^kOllqe^qvlrprjjlktfqeXLo^`ibLome^kTefpqibZyyNFAy.062-yyWyA^i^o^ky
 
-F Grizzly Hills |N|Fly to Grizzly Hills|
-C The Biggest Tree Ever! |N|Fly to the southern entrance of Grizzlemaw (50.4, 45.9), call Roo, then walk along the ground to the interior. It will probably be necessary to kill some nearby Redfang to have enough room to walk in | |U|46397| |QID|13929| |Z|Grizzly Hills|
-T The Biggest Tree Ever! |N|Talk to the Orphan Roo| |U|46397| |QID|13929| |Z|Grizzly Hills|
+CDofwwivEfiipyKyCivqlDofwwivEfiipy
+@Qeb?fddbpqQobbBsboyKyCivqlqebplrqebokbkqo^k`blcDofwwibj^t%2-+1)12+6&)`^iiOll)qebkt^ih^ilkdqebdolrkaqlqebfkqboflo+Fqtfiimol_^_iv_bkb`bpp^ovqlhfiipljbkb^o_vObac^kdqle^sbbklrdeolljqlt^ihfkyyRy13064yyNFAy.06/6yyWyDofwwivEfiipy
+QQeb?fddbpqQobbBsboyKyQ^ihqlqebLome^kOllyyRy13064yyNFAy.06/6yyWyDofwwivEfiipy
 
-F Dragonblight |N|Fly to Dragonblight|
-C The Bronze Dragonshrine |N|Fly to the steps at the southwestern end of the shrine (72, 39), call Roo, then walk down the steps towards the shrine prope| |U|46397| |QID|13933| |Z|Dragonblight|
-T The Bronze Dragonshrine |N|Talk to the Orphan Roo that you summon with [Oracle Orphan Whistle]| |U|46397| |QID|13933| |Z|Dragonblight|
+CAo^dlk_ifdeqyKyCivqlAo^dlk_ifdeqy
+@Qeb?olkwbAo^dlkpeofkbyKyCivqlqebpqbmp^qqebplrqetbpqbokbkalcqebpeofkb%4/)06&)`^iiOll)qebkt^ihaltkqebpqbmpqlt^oapqebpeofkbmolmbyyRy13064yyNFAy.0600yyWyAo^dlk_ifdeqy
+QQeb?olkwbAo^dlkpeofkbyKyQ^ihqlqebLome^kOllqe^qvlrprjjlktfqeXLo^`ibLome^kTefpqibZyyRy13064yyNFAy.0600yyWyAo^dlk_ifdeqy
 
-F Borean Tundra |N|Fly to Borean Tundra|
-C Playmates! |N|Fly down to the Winterfin Retreat. Land somewhere near King Mrgl-Mrgl (43.5, 13.9) and summon Roo if he's not already out.| |U|46397| |QID|13950| |Z|Borean Tundra|
-T Playmates! |N|Talk to the Orphan Roo| |U|46397| |QID|13950| |Z|Borean Tundra|
+C?lob^kQrkao^yKyCivql?lob^kQrkao^y
+@Mi^vj^qbpyKyCivaltkqlqebTfkqbocfkObqob^q+I^kapljbtebobkb^oHfkdJodi*Jodi%10+2).0+6&^kaprjjlkOllfceb$pklq^iob^avlrq+yyRy13064yyNFAy.062-yyWy?lob^kQrkao^y
+QMi^vj^qbpyKyQ^ihqlqebLome^kOllyyRy13064yyNFAy.062-yyWy?lob^kQrkao^y
 
-A Meeting a Great One |N|Talk to the Orphan Roo that you summon with [Oracle Orphan Whistle]| |U|46397| |QID|13956| 
-A The Dragon Queen |N|Talk to the Orphan Roo that you summon with [Oracle Orphan Whistle]| |U|46397| |QID|13954| 
-F Sholazar Basin |N|Fly Sholazar Basin| |Z|Sholazar Basin|
-R Un'Goro Crater |N|Use the Waygate (40, 82) to get to Shaper's Terrace|  |Z|Sholazar Basin|
-C Meeting a Great One |N|Visit the Etymidian at the Shaper's Terrace in Un'Goro Crater (47.4, 9.2)| |U|46397| |QID|13956| |Z|Un'Goro Crater|
-T Meeting a Great One |N|Visit the Etymidian at the Shaper's Terrace in Un'Goro Crater| |U|46397| |QID|13956| 
+>Jbbqfkd^Dob^qLkbyKyQ^ihqlqebLome^kOllqe^qvlrprjjlktfqeXLo^`ibLome^kTefpqibZyyRy13064yyNFAy.0623y
+>QebAo^dlkNrbbkyKyQ^ihqlqebLome^kOllqe^qvlrprjjlktfqeXLo^`ibLome^kTefpqibZyyRy13064yyNFAy.0621y
+CPeli^w^o?^pfkyKyCivPeli^w^o?^pfkyyWyPeli^w^o?^pfky
+ORk$Dlol@o^qboyKyRpbqebT^vd^qb%1-)5/&qldbqqlPe^mbo$pQboo^`byyWyPeli^w^o?^pfky
+@Jbbqfkd^Dob^qLkbyKySfpfqqebBqvjfaf^k^qqebPe^mbo$pQboo^`bfkRk$Dlol@o^qbo%14+1)6+/&yyRy13064yyNFAy.0623yyWyRk$Dlol@o^qboy
+QJbbqfkd^Dob^qLkbyKySfpfqqebBqvjfaf^k^qqebPe^mbo$pQboo^`bfkRk$Dlol@o^qboyyRy13064yyNFAy.0623y
 
-F Dragonblight |N|Fly to Dragonblight|
-C The Dragon Queen |N|Visit Alexstrasza the Life-Binder (49.8, 54.6) at the top of Wyrmrest Temple| |U|46397| |QID|13954|  |Z|Dragonblight|
-T The Dragon Queen |N|Talk to the Orphan Roo that you summon with [Oracle Orphan Whistle]| |U|46397| |QID|13954| |Z|Dragonblight|
+CAo^dlk_ifdeqyKyCivqlAo^dlk_ifdeqy
+@QebAo^dlkNrbbkyKySfpfq>ibupqo^pw^qebIfcb*?fkabo%16+5)21+3&^qqebqlmlcTvojobpqQbjmibyyRy13064yyNFAy.0621yyWyAo^dlk_ifdeqy
+QQebAo^dlkNrbbkyKyQ^ihqlqebLome^kOllqe^qvlrprjjlktfqeXLo^`ibLome^kTefpqibZyyRy13064yyNFAy.0621yyWyAo^dlk_ifdeqy
 
-A A Trip To The Wonderworks |N|Talk to the Orphan Roo that you summon with [Oracle Orphan Whistle]| |U|46397| |QID|13937|
-F Dalaran |N|Fly or Hearth back to Dalaran|
-B [Small Paper Zeppelin] |N|Buy a [Small Paper Zeppelin] from the Wonderworks (44, 46)| |L|46693| |Z|Dalaran|
-C A Trip To The Wonderworks |N|Use [Small Paper Zeppelin] with your Orphan out| |U|46693| |QID|13937|
-T A Trip To The Wonderworks |N|Talk to the Orphan Roo that you summon with [Oracle Orphan Whistle]| |U|46397| |QID|13937|
+>>QofmQlQebTlkabotlohpyKyQ^ihqlqebLome^kOllqe^qvlrprjjlktfqeXLo^`ibLome^kTefpqibZyyRy13064yyNFAy.0604y
+CA^i^o^kyKyCivloEb^oqe_^`hqlA^i^o^ky
+?XPj^iiM^mboWbmmbifkZyKy?rv^XPj^iiM^mboWbmmbifkZcoljqebTlkabotlohp%11)13&yyIy13360yyWyA^i^o^ky
+@>QofmQlQebTlkabotlohpyKyRpbXPj^iiM^mboWbmmbifkZtfqevlroLome^klrqyyRy13360yyNFAy.0604y
+Q>QofmQlQebTlkabotlohpyKyQ^ihqlqebLome^kOllqe^qvlrprjjlktfqeXLo^`ibLome^kTefpqibZyyRy13064yyNFAy.0604y
 
-A Back To The Orphanage |N|Talk to the Orphan Roo that you summon with [Oracle Orphan Whistle]| |U|46397| |QID|13959|
-T Back To The Orphanage |N|Talk to Orphan Matron Aria (49.3, 63.3)| |QID|13959| |Z|Dalaran|
+>?^`hQlQebLome^k^dbyKyQ^ihqlqebLome^kOllqe^qvlrprjjlktfqeXLo^`ibLome^kTefpqibZyyRy13064yyNFAy.0626y
+Q?^`hQlQebLome^k^dbyKyQ^ihqlLome^kJ^qolk>of^%16+0)30+0&yyNFAy.0626yyWyA^i^o^ky
 
-N Guide Complete - UltimateWoWGuide.com
+KDrfab@ljmibqb*Riqfj^qbTlTDrfab+`lj
 ]]
 end)

@@ -41,7 +41,7 @@ setmetatable(DugisLocals, {__index=function(t,k) rawset(t, k, k); return k; end}
 	["Maps"] = "",
 	["Map each destination with TomTom"] = "",
 	["No Guide Loaded"] = "",
-	["No Guide Loaded. Right Click Here To Select One"] = "",
+	["No Guide Loaded. Click Here To Select One"] = "",
 	["Note"] = "",
 	["Optional"] = "",
 	["Quest accepted: (.*)"] = "",	
@@ -62,7 +62,7 @@ setmetatable(DugisLocals, {__index=function(t,k) rawset(t, k, k); return k; end}
 	["Travel to"] = "",
 	["Turn in Daily"] = "",
 	["Turn in Quest"] = "",
-	["Use Dungeon Finder"] = "",
+--	["Use Dungeon Finder"] = "",
 	["Use Hearthstone"] = "",	
 	["Use Item"] = "",
 

@@ -1,105 +1,105 @@
 DugisGuideViewer:RegisterGuide("Hallow's End Azeroth + Achievement Quest", nil, "Horde", "D", function() 
 return [[
+AAA
 
-N Manual Tick Required |N|The guide will detect the trick or treats that you have already done, but you will still need to manually tick the step as you complete them or press the Reload button|
-R Silvermoon City |N|Begin at Silvermoon City, take the portal from Dalaran or Shattrath City|
+K?bdfk^qPfisbojllkyKyQ^hbqebmloq^iqlPfisbojllkcoljA^i^o^ky
 
-A Silvermoon, The Royal Exchange |N|The Royal Exchange (79.6, 57.8)| |AID|967| |AC|11| |Z|Silvermoon City|
-A Silvermoon, The Bazaar |N|The Bazaar (67.7,73.2)| |AID|967| |AC|10| |Z|Silvermoon City|
-A Eversong Woods, Falconwing Square |N|Falconwing Sq (48.1, 47.8)| |AID|967| |AC|6| |Z|Eversong Woods|
-A Eversong Woods, Fairbreeze Village |N|Fairbreeze Village (43.7,71.1)| |AID|967| |AC|5| |Z|Eversong Woods|
-A Ghostlands, Tranquillien |N|Tranquillien (48.6, 32)| |AID|967| |AC|7| |Z|Ghostlands|
+QPfisbojllk)QebOlv^iBu`e^kdbyKyQebOlv^iBu`e^kdb%46+3)24+5&yyNFAy./036yyWyPfisbojllk@fqvy
+QPfisbojllk)Qeb?^w^^oyKyQeb?^w^^o%34+4)40+/&yyNFAy./04-yyWyPfisbojllk@fqvy
+QBsboplkdTllap)C^i`lktfkdPnr^obyKyC^i`lktfkdPn%15+.)14+5&yyNFAy./031yyWyBsboplkdTllapy
+QBsboplkdTllap)C^fo_obbwbSfii^dbyKyC^fo_obbwbSfii^db%10+4)4.+.&yyNFAy./032yyWyBsboplkdTllapy
+QDelpqi^kap)Qo^knrfiifbkyKyQo^knrfiifbk%15+3)0/&yyNFAy./040yyWyDelpqi^kapy
 
-F Light's Hope Chapel |N|Fly to Eastern Plaguelands (45.4, 30.5)| |Z|Ghostlands|
-A Eastern Plaguelands, Light's Hope Chapel |N|Light's Hope Chapel (75.9,52.3)| |AID|967| |AC|1| |Z|Eastern Plaguelands|
+CIfdeq$pElmb@e^mbiyKyCivqlB^pqbokMi^drbi^kap%12+1)0-+2&yyWyDelpqi^kapy
+QB^pqbokMi^drbi^kap)Ifdeq$pElmb@e^mbiyKyIfdeq$pElmb@e^mbi%42+6)2/+0&yyNFAy./1-/yyWyB^pqbokMi^drbi^kapy
 
-F Undercity |N|Fly to the Undercity (74.5, 51.2)| |Z|Eastern Plaguelands|
-A Undercity, The Trade Quarter |N|The Trade Quarter (68,37.3)| |AID|967| |AC|16||Z|Undercity|
-A Tirisfal Glades, Brill |N|Tirisfal Glades, Brill (61.8,52.2)| |AID|967| |AC|15| |Z|Tirisfal Glades|
-A Rotten Eggs |N|Darkcaller Yanka (55.5, 69.9)| |QID|8409| |Z|Tirisfal Glades|
-A Stinking Up Southshore |N|Darkcaller Yanka (55.5, 69.9)| |QID|1657| |Z|Tirisfal Glades|
+CRkabo`fqvyKyCivqlqebRkabo`fqv%41+2)2.+/&yyWyB^pqbokMi^drbi^kapy
+QRkabo`fqv)QebQo^abNr^oqboyKyQebQo^abNr^oqbo%35)04+0&yyNFAy./035yyWyRkabo`fqvy
+QQfofpc^iDi^abp)?ofiiyKyQfofpc^iDi^abp)?ofii%3.+5)2/+/&yyNFAy./030yyWyQfofpc^iDi^abpy
+>OlqqbkBddpyKyA^oh`^iiboV^kh^%22+2)36+6&yyNFAy51-6yyWyQfofpc^iDi^abpy
+>PqfkhfkdRmPlrqepelobyKyA^oh`^iiboV^kh^%22+2)36+6&yyNFAy.324yyWyQfofpc^iDi^abpy
 
-A Silverpine Forest, The Sepulcher |N|The Sepulcher (43.2,41.4)| |AID|967| |AC|12| |Z|Silverpine Forest|
-F Tarren Mill |N|Fly to Hillsbrad Foothills (45.6, 42.6)| |Z|Silverpine Forest|
-A Hillsbrad Foothills, Tarren Mill |N|Tarren Mill (62.8,19)| |AID|967| |AC|8||Z|Hillsbrad Foothills|
-C Stinking Up Southshore |N|Go to (49, 59) and throw it in the middle of Southshore| |QID|1657| |Z|Hillsbrad Foothills| |U|20387|
-A Rotten Eggs |N|Once you enter the inn (51.2, 58.9), you'll see a pyramid of kegs near the stairs going to the second floor. Simply clicking on the keg is enough to complete the quest; it doesn't function like a chest where you have to wait 5 seconds| |QID|8409| |Z|Hillsbrad Foothills|
-A Ruined Kegs |N|Keg (51.3, 58.9)| |QID|8409|  |Z|Hillsbrad Foothills|
+QPfisbomfkbClobpq)QebPbmri`eboyKyQebPbmri`ebo%10+/)1.+1&yyNFAy./04.yyWyPfisbomfkbClobpqy
+CQ^oobkJfiiyKyCivqlEfiip_o^aCllqefiip%12+3)1/+3&yyWyPfisbomfkbClobpqy
+QEfiip_o^aCllqefiip)Q^oobkJfiiyKyQ^oobkJfii%3/+5).6&yyNFAy./043yyWyEfiip_o^aCllqefiipy
+@PqfkhfkdRmPlrqepelobyKyDlql%16)26&^kaqeoltfqfkqebjfaaiblcPlrqepelobyyNFAy.324yyWyEfiip_o^aCllqefiipyyRy/-054y
+QOlqqbkBddpyKyLk`bvlrbkqboqebfkk%2.+/)25+6&)vlr$iipbb^mvo^jfalchbdpkb^oqebpq^fopdlfkdqlqebpb`lkacillo+Pfjmiv`if`hfkdlkqebhbdfpbklrdeql`ljmibqbqebnrbpq8fqalbpk$qcrk`qflkifhb^`ebpqtebobvlre^sbqlt^fq2pb`lkapyyNFAy51-6yyWyEfiip_o^aCllqefiipy
+>OrfkbaHbdpyKyHbd%2.+0)25+6&yyNFAy51-6yyWyEfiip_o^aCllqefiipy
 
-F Hammerfall |N|Fly to Arathi Highlands (60.1, 18.6)| |Z|Hillsbrad Foothills|
-A Arathi Highlands, Hammerfall |N|Hammerfall (73.9, 32.6)| |AID|967| |AC|3| |Z|Arathi Highlands|
+CE^jjboc^iiyKyCivql>o^qefEfdei^kap%3-+.).5+3&yyWyEfiip_o^aCllqefiipy
+Q>o^qefEfdei^kap)E^jjboc^iiyKyE^jjboc^ii%40+6)0/+3&yyNFAy./05-yyWy>o^qefEfdei^kapy
 
-F Revantusk Village |N|Fly to the Hinterlands (73, 32.7)| |Z|Arathi Highlands|
-A Hinterlands, Revantusk Village |N|Revantusk Village (78.2,81.5)| |Z|The Hinterlands| |AID|967| |AC|9|
+CObs^kqrphSfii^dbyKyCivqlqebEfkqboi^kap%40)0/+4&yyWy>o^qefEfdei^kapy
+QEfkqboi^kap)Obs^kqrphSfii^dbyKyObs^kqrphSfii^db%45+/)5.+2&yyWyQebEfkqboi^kapy
 
-F Kargath |N|Fly to Kargath  (81.7, 81.8)|  |Z|The Hinterlands| 
-A Badlands, Kargath |N|Kargath (2.9, 36)| |AID|967| |AC|4| |Z|Badlands|
+CH^od^qeyKyCivqlH^od^qe%5.+4)5.+5&yyWyQebEfkqboi^kapy
+Q?^ai^kap)H^od^qeyKyH^od^qe%/+6)03&yyNFAy./052yyWy?^ai^kapy
 
-F Stonard |N|Fly to Swamp of Sorrows (4, 44.8)| |Z|Badlands|
-A Swamp of Sorrows, Stonard |N|Stonard (45.1, 56.5)| |AID|967| |AC|14| |Z|Swamp of Sorrows| 
+CPqlk^oayKyCivqlPt^jmlcPlooltp%1)11+5&yyWy?^ai^kapy
+QPt^jmlcPlooltp)Pqlk^oayKyPqlk^oa%12+.)23+2&yyNFAy./051yyWyPt^jmlcPlooltpy
 
-F Grom'gol Base Camp |N|Fly to Stranglethorn Vale (46.1, 54.8)| |Z|Swamp of Sorrows| 
-A Stranglethorn Vale, Grom'gol Base Camp |N|Grom'gol Base Camp (35.1, 29.7)| |AID|967| |AC|13| |Z|Stranglethorn Vale|
+CDolj$dli?^pb@^jmyKyCivqlPqo^kdibqelokS^ib%13+.)21+5&yyWyPt^jmlcPlooltpy
+QPqo^kdibqelokS^ib)Dolj$dli?^pb@^jmyKyDolj$dli?^pb@^jm%02+.)/6+4&yyNFAy./05/yyWyPqo^kdibqelokS^iby
 
-F Booty Bay |N|Fly to Booty Bay (32.5, 29.4)| |Z|Stranglethorn Vale|
-A Stranglethorn Vale, Booty Bay |N|Booty Bay (27.1, 77.3)| |AID|967| |AC|2| |Z|Stranglethorn Vale| 
+C?llqv?^vyKyCivql?llqv?^v%0/+2)/6+1&yyWyPqo^kdibqelokS^iby
+QPqo^kdibqelokS^ib)?llqv?^vyKy?llqv?^v%/4+.)44+0&yyNFAy./064yyWyPqo^kdibqelokS^iby
 
-b Ratchet |N|Take the boat to Ratchet (26, 73.2)|  |Z|Stranglethorn Vale| 
-A Barrens, Ratchet |N|The Barrens-Ratchet (62, 39)| |AID|965| |AC|1| |Z|The Barrens|
+_O^q`ebqyKyQ^hbqeb_l^qqlO^q`ebq%/3)40+/&yyWyPqo^kdibqelokS^iby
+Q?^oobkp)O^q`ebqyKyQeb?^oobkp*O^q`ebq%3/)06&yyNFAy./063yyWyQeb?^oobkpy
 
-F The Crossroads |N|Fly to Crossroads (63.1, 37.2)| |Z|The Barrens|
-A Barrens, The Crossroads |N|The Barrens-The Crossroads (52, 30)| |AID|965| |AC|8| |Z|The Barrens|
+CQeb@olppol^apyKyCivql@olppol^ap%30+.)04+/&yyWyQeb?^oobkpy
+Q?^oobkp)Qeb@olppol^apyKyQeb?^oobkp*Qeb@olppol^ap%2/)0-&yyNFAy./041yyWyQeb?^oobkpy
 
-F Camp Taurajo |N|Fly to Camp Taurajo (51.5, 30.3)| |Z|The Barrens| 
-A Barrens, Camp Taurajo |N|The Barrens-Camp Taurajo (74, 61)| |AID|965| |AC|7| |Z|The Barrens| 
+C@^jmQ^ro^glyKyCivql@^jmQ^ro^gl%2.+2)0-+0&yyWyQeb?^oobkpy
+Q?^oobkp)@^jmQ^ro^glyKyQeb?^oobkp*@^jmQ^ro^gl%41)3.&yyNFAy./042yyWyQeb?^oobkpy
 
-F Brackenwall Village |N|Fly to Brackenwall Village (44.5, 59.2)| |Z|The Barrens| 
-A Dustwallow Marsh, Brackenwall Village |N|Brackenwall Vg (36, 32)| |AID|965| |AC|11| |Z|Dustwallow Marsh|
+C?o^`hbkt^iiSfii^dbyKyCivql?o^`hbkt^iiSfii^db%11+2)26+/&yyWyQeb?^oobkpy
+QArpqt^iiltJ^ope)?o^`hbkt^iiSfii^dbyKy?o^`hbkt^iiSd%03)0/&yyNFAy./050yyWyArpqt^iiltJ^opey
 
-F Mudsprocket |N|Fly to Mudsprocket (35.6, 31.9)| |Z|Dustwallow Marsh|
-A Dustwallow Marsh, Mudsprocket |N|Mudsprocket( 41, 74)| |AID|965| |AC|2| |Z|Dustwallow Marsh|
+CJrapmol`hbqyKyCivqlJrapmol`hbq%02+3)0.+6&yyWyArpqt^iiltJ^opey
+QArpqt^iiltJ^ope)Jrapmol`hbqyKyJrapmol`hbq%1.)41&yyNFAy./065yyWyArpqt^iiltJ^opey
 
-F Freewind Post |N|Fly to Freewind Post (42.8, 72.4)| |Z|Dustwallow Marsh|
-A Thousand Needles, Freewind Post |N|Thousand Needles-Freewind Post (46, 51)| |AID|965| |AC|17| |Z|Thousand Needles|
+CCobbtfkaMlpqyKyCivqlCobbtfkaMlpq%1/+5)4/+1&yyWyArpqt^iiltJ^opey
+QQelrp^kaKbbaibp)CobbtfkaMlpqyKyQelrp^kaKbbaibp*CobbtfkaMlpq%13)2.&yyNFAy./046yyWyQelrp^kaKbbaibpy
 
-F Gadgetzan |N|Fly to Gadgetzan (45.1, 49.1)| |Z|Thousand Needles|
-A Tanaris, Gadgetzan |N|Tanaris-Gadgetzan (52, 28)| |AID|965| |AC|4| |Z|Tanaris| 
+CD^adbqw^kyKyCivqlD^adbqw^k%12+.)16+.&yyWyQelrp^kaKbbaibpy
+QQ^k^ofp)D^adbqw^kyKyQ^k^ofp*D^adbqw^k%2/)/5&yyNFAy./066yyWyQ^k^ofpy
 
-F Cenarion Hold |N|Fly to Cenarion Hold (51.6, 25.4)| |Z|Tanaris| 
-A Silithus, Cenarion Hold |N|Silithus-Cenarion Hold (51, 39)| |AID|965| |AC|3| |Z|Silithus|
+C@bk^oflkEliayKyCivql@bk^oflkElia%2.+3)/2+1&yyWyQ^k^ofpy
+QPfifqerp)@bk^oflkEliayKyPfifqerp*@bk^oflkElia%2.)06&yyNFAy./1-.yyWyPfifqerpy
 
-F Camp Mojache |N|Fly to Camp Mojache (48.7, 36.7)| |Z|Silithus|
-A Feralas, Camp Mojache |N|Feralas-Camp Mojache (75, 45)| |AID|965| |AC|12| |Z|Feralas|
+C@^jmJlg^`ebyKyCivql@^jmJlg^`eb%15+4)03+4&yyWyPfifqerpy
+QCbo^i^p)@^jmJlg^`ebyKyCbo^i^p*@^jmJlg^`eb%42)12&yyNFAy./053yyWyCbo^i^py
 
-F Thunder Bluff |N|Fly to Thunder Bluff (75.5, 44.4)| |Z|Feralas|
-A Thunder Bluff, Lower Rise |N|Thunder Bluff-Lower Rise (45, 64)| |AID|965| |AC|12| |Z|Thunder Bluff|
-h Thunder Bluff  |N|Set your hearth to Thunder Bluff inn (45, 64)| |Z|Thunder Bluff|
+CQerkabo?irccyKyCivqlQerkabo?ircc%42+2)11+1&yyWyCbo^i^py
+QQerkabo?ircc)IltboOfpbyKyQerkabo?ircc*IltboOfpb%12)31&yyNFAy./034yyWyQerkabo?irccy
+eQerkabo?irccyKyPbqvlroeb^oqeqlQerkabo?irccfkk%12)31&yyWyQerkabo?irccy
 
-A Mulgore, Bloodhoof Village |N|Mulgore-Bloodhoof Village(47, 61)| |AID|965| |AC|13| |Z|Mulgore|
-H Thunder Bluff |U|6948| |N|Hearth to Thunderbluff|
+QJridlob)?illaellcSfii^dbyKyJridlob*?illaellcSfii^db%14)3.&yyNFAy./03/yyWyJridloby
+EQerkabo?irccyRy3615yyKyEb^oqeqlQerkabo_irccy
 
-F Shadowprey Village |N|Fly to Shadowprey Village (47, 49.8| |Z|Thunder Bluff|
-A Desolace, Shadowprey Village |N|Desolace-Shadowprey Village (24, 68)| |AID|965| |AC|12|  |Z|Desolace|
+CPe^altmobvSfii^dbyKyCivqlPe^altmobvSfii^db%14)16+5yyWyQerkabo?irccy
+QAbpli^`b)Pe^altmobvSfii^dbyKyAbpli^`b*Pe^altmobvSfii^db%/1)35&yyNFAy./05.yyWyAbpli^`by
 
-F Sun Rock Retreat |N|Fly to Sun Rock Retreat (21.6, 74.2)| |Z|Desolace|
-A Stonetalon Mountains, Sun Rock Retreat |N|Stonetalon Mnts-Sun Rock Rrt (47, 62)| |AID|965| |AC|15| |Z|Stonetalon Mountains|
+CPrkOl`hObqob^qyKyCivqlPrkOl`hObqob^q%/.+3)41+/&yyWyAbpli^`by
+QPqlkbq^ilkJlrkq^fkp)PrkOl`hObqob^qyKyPqlkbq^ilkJkqp*PrkOl`hOoq%14)3/&yyNFAy./045yyWyPqlkbq^ilkJlrkq^fkpy
 
-F Splintertree Post |N|Fly to Splintertree Post (45.1, 59.9)| |Z|Stonetalon Mountains|
-A Ashenvale, Splintertree Post |N|Ashenvale-Splintertree Post (74, 60)| |AID|965| |AC|6| |Z|Ashenvale|
+CPmifkqboqobbMlpqyKyCivqlPmifkqboqobbMlpq%12+.)26+6&yyWyPqlkbq^ilkJlrkq^fkpy
+Q>pebks^ib)PmifkqboqobbMlpqyKy>pebks^ib*PmifkqboqobbMlpq%41)3-&yyNFAy./044yyWy>pebks^iby
 
-F Everlook |N|Fly to Everlook (73.2, 61.6)| |Z|Ashenvale|
-A Winterspring, Everlook |N|Winterspring-Everlook (61, 39)| |AID|965| |AC|5| |Z|Winterspring|
+CBsboillhyKyCivqlBsboillh%40+/)3.+3&yyWy>pebks^iby
+QTfkqbopmofkd)BsboillhyKyTfkqbopmofkd*Bsboillh%3.)06&yyNFAy./1--yyWyTfkqbopmofkdy
 
-F Orgrimmar |N|Fly to Orgrimmar (60.5, 36.6)| |Z|Winterspring|
-A Orgrimmar, Valley of Strength |N|Orgrimmar-Valley of Strength (54, 69)| |AID|965| |AC|14| |Z|Orgrimmar|
+CLodofjj^oyKyCivqlLodofjj^o%3-+2)03+3&yyWyTfkqbopmofkdy
+QLodofjj^o)S^iibvlcPqobkdqeyKyLodofjj^o*S^iibvlcPqobkdqe%21)36&yyNFAy./033yyWyLodofjj^oy
 
-A Durotar, Razor Hill |N|Durotar-Razor Hill (51, 41)| |AID|965| |AC|10| |Z|Durotar|
+QArolq^o)O^wloEfiiyKyArolq^o*O^wloEfii%2.)1.&yyNFAy./03.yyWyArolq^oy
 
-F Tirisfal Glades |N|Take the Zeppelin to Tirisfal Glades (50.9, 13.9)| |Z|Durotar|
-A Ruined Kegs |N|Darkcaller Yanka (55.5, 69.9)| |QID|8409|  |Z|Tirisfal Glades|
-A Stinking Up Southshore |N|Darkcaller Yanka (55.5, 69.9)| |QID|1657| |Z|Tirisfal Glades|
+CQfofpc^iDi^abpyKyQ^hbqebWbmmbifkqlQfofpc^iDi^abp%2-+6).0+6&yyWyArolq^oy
+QOrfkbaHbdpyKyA^oh`^iiboV^kh^%22+2)36+6&yyNFAy51-6yyWyQfofpc^iDi^abpy
+QPqfkhfkdRmPlrqepelobyKyA^oh`^iiboV^kh^%22+2)36+6&yyNFAy.324yyWyQfofpc^iDi^abpy
 
-N Azeroth Guide Complete!
+K>wbolqeDrfab@ljmibqb
 
 ]]
 end)

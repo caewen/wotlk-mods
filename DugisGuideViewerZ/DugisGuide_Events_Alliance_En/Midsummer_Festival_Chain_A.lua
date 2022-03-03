@@ -1,20 +1,21 @@
 DugisGuideViewer:RegisterGuide("Midsummer Festival - Lord Ahune (70+)", nil, "Alliance", "D", function() 
 return [[
+AAA
 
-A Unusual Activity |N|You can pick up this quest from Earthen Ring Elder found in any major city Valley of Wisdom in Orgrimmar or Hall of Explorer in Ironforge| |QID|11886|
-R Astranaar |N|Travel to Astranaar in Ashenvale | 
-C Unusual Activity |N|Kill the Twilights NPC (15, 17) to get [Twilight Correspondence]| |QID|11886| |Z|Ashenvale|
-T Unusual Activity |N|Use the [Totemic Beacon] to summon the NPC to turn in the quest| |QID|11886| |U|35828|
-A An Innocent Disguise |QID|11891|
-C An Innocent Disguise |N|Follow the blue torches to (9.5, 93.2) and use the [Orb of the Crawler]| |QID|11891| |U|35237| |Z|Ashenvale|
-T An Innocent Disguise |N|Use the [Totemic Beacon] to summon the NPC to turn in the quest|  |QID|11891| |U|35828|
-A Inform the Elder |QID|12012|
-T Inform the Elder |N|Go back to the elder in any capital city| |QID|12012|
-R The Frost Lord Ahune  |N|Use the Dungeon Finder to queue for Lord Ahune| |I|
-K Lord Ahune |N|Just kill the adds until Lord Ahune becomes vunerable, then everyone can damage Lord Ahune| |L|35723|
-A Shards of Ahune |U|35723| |O| |QID|11972|
-T Shards of Ahune |N|Luma Skymother inside the slave pens| |O| |QID|11972|
-N Guide Complete
+>Rkrpr^i>`qfsfqvyKyVlr`^kmf`hrmqefpnrbpqcoljB^oqebkOfkdBiaboclrkafk^kvj^glo`fqvS^iibvlcTfpaljfkLodofjj^oloE^iilcBumilobofkFolkclodbyyNFAy..553y
+O>pqo^k^^oyKyQo^sbiql>pqo^k^^ofk>pebks^iby
+@Rkrpr^i>`qfsfqvyKyHfiiqebQtfifdeqpKM@%.2).4&qldbqXQtfifdeq@loobpmlkabk`bZyyNFAy..553yyWy>pebks^iby
+QRkrpr^i>`qfsfqvyKyRpbqebXQlqbjf`?b^`lkZqlprjjlkqebKM@qlqrokfkqebnrbpqyyNFAy..553yyRy025/5y
+>>kFkkl`bkqAfpdrfpbyNFAy..56.y
+@>kFkkl`bkqAfpdrfpbyKyCliiltqeb_irbqlo`ebpql%6+2)60+/&^karpbqebXLo_lcqeb@o^tiboZyyNFAy..56.yyRy02/04yyWy>pebks^iby
+Q>kFkkl`bkqAfpdrfpbyKyRpbqebXQlqbjf`?b^`lkZqlprjjlkqebKM@qlqrokfkqebnrbpqyyNFAy..56.yyRy025/5y
+>FkclojqebBiaboyNFAy./-./y
+QFkclojqebBiaboyKyDl_^`hqlqebbiabofk^kv`^mfq^i`fqvyyNFAy./-./y
+OQebColpqIloa>erkbyKyRpbqebArkdblkCfkaboqlnrbrbcloIloa>erkbyyFy
+HIloa>erkbyKyGrpqhfiiqeb^aaprkqfiIloa>erkb_b`ljbpsrkbo^_ib)qebkbsbovlkb`^ka^j^dbIloa>erkbyyIy024/0y
+>Pe^oaplc>erkbyRy024/0yyLyyNFAy..64/y
+QPe^oaplc>erkbyKyIrj^Phvjlqebofkpfabqebpi^sbmbkpyyLyyNFAy..64/y
+KDrfab@ljmibqb
 
 ]]
 end)

@@ -1,8 +1,9 @@
 DugisGuideViewer:RegisterGuide("|cfff0c502_____________ Event Guides ________________|r ", nil, "Alliance", "D", function()
 return [[
+AAA
 
-N Do not tick |N|Do not tick, this is not a guide|
-N Do not tick |N|Do not tick, this is not a guide|
+KAlklqqf`hyKyAlklqqf`h)qefpfpklq^drfaby
+KAlklqqf`hyKyAlklqqf`h)qefpfpklq^drfaby
 
 ]]
 end)
