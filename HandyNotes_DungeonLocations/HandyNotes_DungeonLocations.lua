@@ -378,11 +378,13 @@ local function setWaypoint(mapFile, coord)
 	})
 end
 
+--[[
 function pluginHandler:OnClick(button, pressed, mapFile, coord)
  if button == "RightButton" and db.tomtom and TomTom then
   setWaypoint(mapFile, coord)
  end
 end
+--]]
 
 local defaults = {
  profile = {
@@ -471,19 +473,20 @@ function Addon:PLAYER_LOGIN()
     u[1] = name
    end ]]--
    --if (u[2] == "Merged") then
-   local n = 4 -- Start of merged dungeons/raids
-   local newName = EJ_GetInstanceInfo(u[1])
-   while(u[n]) do
-	if (type(u[n]) == "number") then
-	 local name = EJ_GetInstanceInfo(u[n])
-	 newName = newName .. "\n" .. name
-	else
-	 newName = newName .. "\n" .. u[n]
-	end
-	u[n] = nil
-	n = n + 1
-   end
-   u[1] = newName
+   
+--   local n = 4 -- Start of merged dungeons/raids
+--   local newName = EJ_GetInstanceInfo(u[1])
+--   while(u[n]) do
+--	if (type(u[n]) == "number") then
+--	 local name = EJ_GetInstanceInfo(u[n])
+--	 newName = newName .. "\n" .. name
+--	else
+--	 newName = newName .. "\n" .. u[n]
+--	end
+--	u[n] = nil
+--	n = n + 1
+--   end
+--   u[1] = newName
   end
  end
  
@@ -495,6 +498,7 @@ function Addon:PLAYER_LOGIN()
   end
  end
  
+--[[ 
  local HereBeDragons = LibStub("HereBeDragons-1.0") -- Phanx
  local continents = { GetMapContinents() }
  local temp = { } -- I switched to the temp table because modifying the nodes table while iterating over it sometimes stopped it short for some reason
@@ -522,6 +526,7 @@ function Addon:PLAYER_LOGIN()
  end
  
  --self:UpdateLockouts()
+--]]
 end
 
 -- I only put a few specific nodes on the minimap, so if the minimap is used in a zone then I need to add all zone nodes to it except for the specific ones
