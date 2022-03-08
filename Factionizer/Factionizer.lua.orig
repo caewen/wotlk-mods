@@ -919,7 +919,6 @@ function FIZ_AddMob(faction, from, to, name, rep, zone, limit)
 	if ((to<1) or (to>8)) then return end
 	if (from > to) then return end
 	faction = string.lower(faction)
-	rep = rep * 3
 	
 	if FIZ_IsHuman then rep = rep * 1.1 end
 
@@ -961,7 +960,6 @@ function FIZ_AddQuest(faction, from, to, name, rep, itemList, limitType, arg1, a
 	if ((to<1) or (to>8)) then return end
 	if (from > to) then return end
 	faction = string.lower(faction)
-	rep = rep * 3
 
 	if FIZ_IsHuman then rep = rep * 1.1 end
 
@@ -1025,7 +1023,6 @@ function FIZ_AddInstance(faction, from, to, name, rep, heroic)
 	if ((to<1) or (to>8)) then return end
 	if (from > to) then return end
 	faction = string.lower(faction)
-	rep = rep * 3
 
 	if FIZ_IsHuman then rep = rep * 1.1 end
 
@@ -1071,7 +1068,6 @@ function FIZ_AddItems(faction, from, to, rep, itemList)
 	if ((to<1) or (to>8)) then return end
 	if (from > to) then return end
 	faction = string.lower(faction)
-	rep = rep * 3
 
 	if FIZ_IsHuman then rep = rep * 1.1 end
 
