@@ -103,14 +103,10 @@ nodes["SwampOfSorrows"] = {
 }
 nodes["Tanaris"] = {
  [65604870] = { "Caverns of Time", "Merged", false, "The Black Morass", "Old Hillsbrad Foothills", "Hyjal Summit" },
- --[[[61006210] = { "The Culling of Stratholme", "Dungeon" },  --65604870 May look more accurate and merge all CoT dungeons/raids
+ [61006210] = { "The Culling of Stratholme", "Dungeon" },  --65604870 May look more accurate and merge all CoT dungeons/raids
  [57006230] = { "The Black Morass", "Dungeon" },
- [54605880] = { 185, "Dungeon" }, -- Well of Eternity
  [55405350] = { "The Escape from Durnholde", "Dungeon" },
  [57004990] = { "The Battle for Mount Hyjal", "Raid" },
- [60905240] = { 184, "Dungeon" }, -- End Time
- [61705190] = { 187, "Raid" }, -- Dragon Soul
- [62705240] = { 186, "Dungeon" }, -- Hour of Twilight Merge END ]]--
  [39202130] = { "Zul'Farrak", "Dungeon" }, -- Zul'Farrak
 }
 nodes["Tirisfal"] = {
@@ -173,10 +169,10 @@ nodes["Ghostlands"] = {
  [85206430] = { "Zul'Aman", "Dungeon" }, -- Zul'Aman World 58302480
 }
 nodes["Hellfire"] = {
- --[47505210] = { 747, "Raid" }, -- Magtheridon's Lair World 56705270
- --[47605360] = { 248, "Dungeon" }, -- Hellfire Ramparts World 56805310 Stone 48405240 World 57005280
- --[47505200] = { 259, "Dungeon" }, -- The Shattered Halls World 56705270
- --[46005180] = { 256, "Dungeon" }, -- The Blood Furnace World 56305260
+ [47505210] = { 747, "Raid" }, -- Magtheridon's Lair World 56705270
+ [47605360] = { 248, "Dungeon" }, -- Hellfire Ramparts World 56805310 Stone 48405240 World 57005280
+ [47505200] = { 259, "Dungeon" }, -- The Shattered Halls World 56705270
+ [46005180] = { 256, "Dungeon" }, -- The Blood Furnace World 56305260
  [47205220] = { "Hellfire Ramparts", "Merged", false, "The Blood Furnace", "The Shattered Halls", "Magtheridon's Lair" }, -- Hellfire Ramparts, The Blood Furnace, The Shattered Halls, Magtheridon's Lair
 }
 nodes["Netherstorm"] = {
@@ -199,9 +195,9 @@ nodes["Sunwell"] = {
  [44304570] = { "Sunwell Plateau", "Raid" }, -- Sunwell Plateau World 55300380
 }
 nodes["Zangarmarsh"] = {
- --[54203450] = { 262, "Dungeon" }, -- Underbog World 35804330
- --[48903570] = { 260, "Dungeon" }, -- Slave Pens World 34204370
- --[51903280] = { 748, "Raid" }, -- Serpentshrine Cavern World 35104280
+ [54203450] = { 262, "Dungeon" }, -- Underbog World 35804330
+ [48903570] = { 260, "Dungeon" }, -- Slave Pens World 34204370
+ [51903280] = { 748, "Raid" }, -- Serpentshrine Cavern World 35104280
  [50204100] = { "Coilfang Reservoir", "Merged", false, "The Steamvault", "Underbog", "Serpentshrine Cavern" }, -- Merged Location
 }
 minimap["Hellfire"] = {
@@ -490,6 +486,7 @@ function Addon:PLAYER_LOGIN()
   end
  end
  
+--[[ 
  for i,v in pairs(minimap) do
   for j,u in pairs(v) do
    if (type(u[1]) == "number") then -- Added because since some nodes are connected to the node table they were being changed before this and this function was then messing it up
@@ -498,7 +495,6 @@ function Addon:PLAYER_LOGIN()
   end
  end
  
---[[ 
  local HereBeDragons = LibStub("HereBeDragons-1.0") -- Phanx
  local continents = { GetMapContinents() }
  local temp = { } -- I switched to the temp table because modifying the nodes table while iterating over it sometimes stopped it short for some reason
