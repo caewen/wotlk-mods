@@ -1,0 +1,3 @@
+Adirelle:
+	- Fixed ticket #40.
+	- X-Compatible-With: 40000.
